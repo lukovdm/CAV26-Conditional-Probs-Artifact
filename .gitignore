@@ -1,0 +1,13 @@
+.vscode/
+.venv/
+.git-old/
+storm/
+stormpy/
+synthesis/
+premise/
+out/
+
+# Ignore all buildable models in rq1
+benchmarks/rq1/models/transformed-mdp
+benchmarks/rq1/models/concrete-mdps
+benchmarks/rq1/models/BN-benchmarks-mdp
