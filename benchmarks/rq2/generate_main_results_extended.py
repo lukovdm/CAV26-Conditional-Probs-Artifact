@@ -62,12 +62,13 @@ def main():
 
 	# Define bisection and restart algorithms for labeling
 	bisection_algs = [
-		('bisection', 'Bisection'),
-		('bisection_advanced', 'Bisection$_{adv}$'),
-		('bisection_pt', 'Bisection$_{pt}$'),
-		('bisection_advanced_pt', 'Bisection$_{adv,pt}$'),
+		(('bisection', True), 'treat'),
+		(('bisection', False), 'bis-std'),
+		(('bisection_advanced', False), 'bis-adv'),
+		(('bisection_pt', False), 'pt-bis-std'),
+		(('bisection_advanced_pt', False), 'pt-bis-adv'),
 	]
-	restart_alg = ('restart', 'Restart')
+	restart_alg = (('restart', False), 'Restart')
 	# Only keep rows that match any (alg, opt) in considered_algs
 	alg_opt_set = set(considered_algs)
 	def row_match(row):
@@ -87,8 +88,8 @@ def main():
 	print(r"\toprule")
 	# First header row: model, fam size, mdp size, then each algorithm (with multicolumn)
 	col_headers = ["Model", "$|\\mathcal{F}|$", "$|M|$"]
-	for alg, _ in considered_algs:
-		col_headers.append(rf"\multicolumn{{2}}{{c@{{\hskip 12pt}}}}{{{alg_label_map.get(alg, alg)}}}")
+	for alg, alg_opt in considered_algs:
+		col_headers.append(rf"\multicolumn{{2}}{{c@{{\hskip 12pt}}}}{{{alg_label_map.get((alg, alg_opt), alg)}}}")
 	print(" & ".join(col_headers) + r" \\")
 	# Second header row: subcolumns for time and ips
 	# sub_headers = ["", "", ""]
@@ -101,9 +102,20 @@ def main():
 		row = df[df['model'] == model]
 		if row.empty:
 			continue
-		fam_size = row.iloc[0]['family_size']
-		fam_size_str = sci_notation(float(fam_size))
-		avg_mdp_size = row.iloc[0]['avg_mdp_size']
+		fam_size = 0
+		avg_mdp_size = 0
+		fam_idx = None
+		for idx in range(len(row)):
+			if row.iloc[idx]['family_size'] != '-':
+				fam_idx = idx
+				break
+		if fam_idx is not None:
+			fam_size = row.iloc[fam_idx]['family_size']
+			fam_size_str = sci_notation(float(fam_size))
+			avg_mdp_size = row.iloc[fam_idx]['avg_mdp_size']
+		else:
+			fam_size_str = '-'
+			avg_mdp_size = '-'
 
 		cells = []
 		min_time = None

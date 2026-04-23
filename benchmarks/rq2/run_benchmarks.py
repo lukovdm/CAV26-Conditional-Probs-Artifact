@@ -4,6 +4,7 @@ import click
 import subprocess
 import tqdm
 import pandas as pd
+import signal
 
 
 def add_result_to_csv(
@@ -146,14 +147,15 @@ def main(results_folder, exact, timeout, smoke_test):
         command = f"python3 -m paynt {models[model]} --conditional-algorithm {conditional_alg} --conditional-splitting {splitting} {'--conditional-bisection-optimization' if conditional_bisection_optimization else ''} {exact_setting} {timeout_setting}"
 
         timeout_full_val = timeout * 1.2
+        process = subprocess.Popen(
+            command,
+            shell=True,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.STDOUT,
+            cwd=Path(os.path.abspath(__file__)).parent.parent.parent / "synthesis",
+            preexec_fn=os.setsid,
+        )
         try:
-            process = subprocess.Popen(
-                command,
-                shell=True,
-                stdout=subprocess.PIPE,
-                stderr=subprocess.STDOUT,
-                cwd=Path(os.path.abspath(__file__)).parent.parent.parent / "synthesis",
-            )
             output, _ = process.communicate(timeout=timeout_full_val)
             with open(script_log_path, "a") as f:
                 f.write(output.decode())
@@ -182,6 +184,8 @@ def main(results_folder, exact, timeout, smoke_test):
             print(
                 f"Timeout expired for model={model}, splitting={splitting}, conditional_alg={conditional_alg}, conditional_bisection_optimization={conditional_bisection_optimization}"
             )
+            process.kill()
+            os.killpg(os.getpgid(process.pid), signal.SIGTERM)
             # Write timeout result: iterations=0, time=timeout, family_size and avg_mdp_size as '-'
             add_result_to_csv(
                 main_csv_path,
