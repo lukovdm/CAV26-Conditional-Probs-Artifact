@@ -6,36 +6,9 @@ Claimed badges: Available + Functional + Reusable
 
 Justification for the badges:
 
-  * Functional: [give reasons why you believe that the Functional badge should
-    be awarded (if applied for Functional or Reusable); example:  The artifact
-    replicates most of the results in the paper (see below for details).  It
-    compiles Tool and executes the benchmarks on it and the other tools.  We
-    validate the correctness of the outputs of Tool by cross-comparison with
-    the results of the other tools.  The source code of Tool is included in the
-    artifact.]
-
-    - replicated: [which claims/results of the paper are replicated by the
-      artifact and how (you can, e.g., refer to a concrete point in FULL REVIEW
-      below), e.g.,
-       * Table 1: point (1)
-       * Figure 1: point (2)
-       * Figures 2 and 3: point (3)
-       * Figure 4: point (4) [requires external connectivity]
-       * Proof of Thm. 5: point (5)
-      ]
-
-    - not-replicated: [which claims/results cannot be replicated and why, e.g.,
-       * Table 2: to reproduce the results, one needs to have access to the
-                  computer Holly 6000, which is not available outside our
-                  research lab
-       * Table 3: this table is a result of a survey among undergraduate students
-                  at the Institute of Happiness; the survey cannot be
-                  reproduced as a part of the artifact, but the raw filled in
-                  questionnaires are available in the directory survey/
-       * Fig. 6: to obtain the results, one needs to have a working installation
-                 of AcmeVerifier of Acme Inc.; if the reviewers have it,
-                 they can reproduce the results by point (6) below.
-      ]
+  * Functional: 
+    - The full source code of the tools is attached with the artifact. The tools can be compiled by following the instructions availabe in their respective README files. We also provide a docker container with all tools already installed.
+    - All results presented in the paper can be reproduced using this artifact. The results in Figures 2-4 and Tables 2-4 can be replicated by following the full review steps. Table 1 is a hand combined version of Tables 3 and 4.
 
   * Reusable: Our algorithms as described in the paper are built into the existing tools Storm and PAYNT. 
     + We include a unittests as part of storm here: `storm/src/test/storm/modelchecker/prctl/mdp/ConditionalMdpPrctlModelCheckerTest.cpp`. Furthermore, all changes in Storm have already been merged into upstream and will be released within short notice. After it is released, you will be able to install storm with python bindings using the python package manager: `pip install stormpy`. Until such time nightly builds of storm and stormpy docker containers are availabe where one can use the _treat_ algorithm and its bisection variants. The docker container used for this artifact is based on these containers.
@@ -130,3 +103,16 @@ To generate the plots for the full experiments you can run the following command
 ```bash
 ./create_plots.sh res
 ```
+
+The plots and tables in the paper can now be found in the following locations:
+- Fig. 2:
+  - Left: out/plots/rq1/res/scatter_bounded_bisection_exact_vs_restart_exact.pdf"
+  - Right: out/plots/rq1/res/scatter_bounded_bisection_float_vs_restart_float.pdf"
+- Fig. 3:
+  - Left: out/plots/rq1/res/scatter_quantitative_bisection-pt_exact_vs_restart_exact.pdf"
+  - Right: out/plots/rq1/res/scatter_quantitative_bisection-pt_float_vs_restart_float.pdf"
+- Fig. 4:
+  - Left: out/plots/rq1/res/scatter_quantitative_bisection-pt_exact_vs_bisection_exact.pdf"
+  - Right: out/plots/rq1/res/scatter_quantitative_bisection-pt_eps-exact_vs_bisection_eps-exact.pdf"
+- Table 3: out/plots/rq2/res/rq2-exact.tex"
+- Table 4: out/plots/rq2/res/rq2-float.tex"
