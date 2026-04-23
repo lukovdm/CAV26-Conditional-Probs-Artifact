@@ -55,7 +55,6 @@ Requirements:
 
 external connectivity: NO
 
--------------------------------------------------------------------------------
 **SMOKE TEST**
 -------------------------------------------------------------------------------
 
@@ -82,148 +81,52 @@ disposable container that will be deleted upon exit.
 Start the smoke test with
 
 ```bash
-./run-smoke.sh results/output-smoke.csv       # [ ~ runtime: 10 minutes]
+./run-smoke.sh      # [ ~ runtime: 10 minutes]
 ```
 
-The smoke test runs all tools on the first 10 benchmarks from each data set.
+The smoke test runs all tools on a reduced set of benchmarks and configurations.
 If everything runs successfully, the script should print out intermediate progress, similar to the following:
 
-  ==Executing experiments on data set: Pikachu==
-  [1/30] Running Tool on gym1.pok... YES, 0.24345
-  [2/30] Running BigCatcher on gym1.pok... YES, 12.3124
-  [3/30] Running AshRevived on gym1.pok... -, TIMEOUT
-  [4/30] Running Tool on gym2.pok... NO, 1.2344
-  ....
-  [30/30] Running AshRevived on gym10.pok... NO, 34.3333
+```
+[fill in]
+```
 
-  ==Executing experiments on data set: Psyduck==
-  [1/30] Running Tool on bear1.pok... -, TIMEOUT
-  [2/30] Running BigCatcher on bear1.pok... -, TIMEOUT
-  [3/30] Running AshRevived on bear1.pok... NO, 0.3334
-  [4/30] Running Tool on bear2.pok... YES, 0.4322
-  ....
-  [30/30] Running AshRevived on bear10.pok... NO, 4.2345
+To generate the plots for the smoke test you can run the following command:
+```bash
+./create_plots.sh smoke_test
+```
 
-  ==EXPERIMENTS FINISHED==
-
-(1) To check that Table 1 generation works, run the following command:
-
-    cd results/
-    ./generate_table1.sh output-smoke.csv
-
-    and the output table should looks like this (with possible different mean
-    and median values):
-
-    Name           Pikachu mean     Pikachu median     Pikachu TO     Psyduck mean     Psyduck median     Psyduck TO
-    ----------  ---------------  -----------------  -------------  ---------------  -----------------  -------------
-    Tool                 0.3454             0.1233              2           0.5666             0.8923              1
-    BigCatcher          12.343              9.983               5          45.3434            45.3434              9
-    AshRevived           7.343             34.344               2         324.33             344.34                2
-
-(2) To check that Figure 1 generation works, run the following command:
-
-    cd results/
-    ./generate_fig1.sh output-smoke.csv
-
-    the figure will then be in results/fig1.svg; there should be 8 blue
-    triangle points and 2 red circle points.
-
-(3) To check that Figures 2 and 3 generation works, run the following command:
-
-    cd results/
-    ./generate_figs2_3.sh output.csv
-
-    the figures will then be in results/fig2.png (it should contain one red and
-    one blue line) and results/fig3.pdf (it should contain a pie chart with 3
-    segments).
-
-(4) To check that certification of the proof of Thm. 5. works, run
-
-    rocqc thm5_proof_short.v
-    echo "exit code = $?"
-
-    The exit code should be 0.
+It will generate plots in the folders `out/plots/rqn/smoke_test/`. 
+ - There should be [n] files in `out/plots/rq1/smoke_test/`
+ - There should be [n] files in `out/plots/rq2/smoke_test/`
+ - There should be [n] files in `out/plots/rq3/smoke_test/`
 
 For completeness, we included the output files obtained by our experiments in
-folder ref_output_smoke/.
+the folder `ref_out/`.
 
-If the results are not as described above, please check the file
-$HOME/artifact/smoke.log and try to identify something extraordinary (e.g. by
-comparing it to the file ref_output_smoke/smoke.log.ref) and include the part
+If the results are not as described above, please check the output of `smoke_test.sh` and `create_plots.sh`, compare to the log files in `ref_logs/smoke_test/` and include any different parts
 of the log in the review.
 
--------------------------------------------------------------------------------
-**                               FULL REVIEW                                 **
--------------------------------------------------------------------------------
-
-[below is an example of how to write this section; delete it and substitute
-with your instructions]
+**FULL REVIEW**
+--------------------------------
 
 Assuming the smoke test passed, run the following command to reproduce the
-results.  Running the full benchmark suite can take around 1 week on a standard
-laptop, so we also provide a short version containing a selection of benchmarks
-that should show the same trends as the whole suite and finishes in ~4 hours.
+results. Running the full benchmark suite can take around [n hours] on a standard
+laptop.
 
-  cd results/
-
-  ./run_full.sh results/output.csv     [to run the full version ~ runtime: 1 week]
-
-or 
-
-  ./run_short.sh results/output.csv    [to run the short version ~ runtime: 4 hours]
+```bash
+./run_all.sh    # [to run the full version ~ runtime: n hours]
+```
 
 The commands will print out progress as their execute the benchmarks.
-The output will be a file "output.csv".
+The output will be in the folders `out/rqn/res/`.
 
 For completeness, we included the output files obtained by our experiments in
-folder ref_output_full/.
+folder `ref_out/`.
 
-In the following outputs, concrete values may differt but the overall trends
-(e.g., ratios between the mean times of the tools) should stay the same.
+In the following outputs, concrete values may be differt but the overall trends should stay the same.
 
-(1) To obtain the results in Table 1, run the following command:
-
-    cd results/
-    ./generate_table1.sh output.csv
-
-    and the table will be printed on the standard output
-
-(2) To obtain the results in Figure 1, run the following command:
-
-    cd results/
-    ./generate_fig1.sh output.csv
-
-    the figure will then be in results/fig1.svg
-
-(3) To generate Figures 2 and 3, run the following command:
-
-    cd results/
-    ./generate_figs2_3.sh output.csv
-
-    the figure will then be in results/fig2.png and results/fig3.pdf
-
-(4) [this point requires external connectivity]
-    To generate Figure 4, run
-
-    cd results/
-    ./generate_fig4.sh survey/data.xml
-
-    this will access the servers of Acme Inc. to generate the figure, which will be in results/fig4.svg
-
-(5) To certify the proof of Thm. 5., run
-
-    rocqc thm5_proof.v
-    echo "exit code = $?"
-
-    if exit code is 0, the proof is verified
-
-(6) [optional, this step needs a working copy of AcmeVerifier; expected runtime: 1 hour]
-    To generate Figure 6, run the following command
-    
-    # set up a working copy of AcmeVerifier on the virtual machine
-    export ACME_VER_PATH=<path to the AcmeVerifier binary>
-    export ACME_VER_LICENSE_KEY=<AcmeVerifier license key>
-    ./run_acme.sh output_acme.csv
-    ./generate_fig5.sh output_acme.csv
-
-    the resulting figure will be in results/fig5.gif
+To generate the plots for the full experiments you can run the following command:
+```bash
+./create_plots.sh res
+```

@@ -55,7 +55,7 @@ Currently defined models:
 After running benchmarks with JSON export, visualize the results:
 
 ```bash
-python premise/bn/plot_results.py benchmark_results.json --output plots/
+python plot_results.py benchmark_results.json --output plots/
 ```
 
 This generates:

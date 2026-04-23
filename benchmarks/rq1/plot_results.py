@@ -1014,7 +1014,7 @@ def create_scatter_plot(
 
 
 def plot_method_scatter(
-    results, output_dir, correctness, requested_query_type="bounded"
+    results, output_dir, correctness, requested_query_type="bounded", format="pgf"
 ):
     """Create scatter plots for all method×arithmetic combinations.
 
@@ -1159,7 +1159,9 @@ def plot_method_scatter(
             .replace("\\", "")
             .replace("varepsilon", "eps")
         )
-        filename = f"scatter_{requested_query_type}_{combo1_file}_vs_{combo2_file}.pgf"
+        filename = (
+            f"scatter_{requested_query_type}_{combo1_file}_vs_{combo2_file}.{format}"
+        )
 
         create_scatter_plot(
             points=points,
@@ -1174,7 +1176,7 @@ def plot_method_scatter(
         )
 
 
-def plot_iterations_scatter(results, output_dir, correctness):
+def plot_iterations_scatter(results, output_dir, correctness, format="pgf"):
     """Create scatter plots comparing iterations between bisection and bisection-advanced for same arithmetic modes."""
 
     # Include both successful results and timeouts
@@ -1296,7 +1298,7 @@ def plot_iterations_scatter(results, output_dir, correctness):
             .replace("\\", "")
             .replace("varepsilon", "eps")
         )
-        filename = f"scatter_iterations_{method1}_vs_{method2}_{arith_file}.pdf"
+        filename = f"scatter_iterations_{method1}_vs_{method2}_{arith_file}.{format}"
 
         create_scatter_plot(
             points=points,
@@ -1937,6 +1939,11 @@ def main():
         default=None,
         help="Output directory for plots (default: plots/)",
     )
+    parser.add_argument(
+        "--format",
+        choices=["pdf", "png", "pgf"],
+        default="pgf",
+    )
     args = parser.parse_args()
 
     if args.output is None:
@@ -2015,8 +2022,12 @@ def main():
     # plot_speedup_heatmap(results, args.output, correctness, query_type="bounded")
     # plot_iterations_scatter(results, args.output, correctness)
     # plot_speedup_vs_marginal(results, args.output, correctness)
-    plot_method_scatter(results, args.output, correctness, "bounded")
-    plot_method_scatter(results, args.output, correctness, "quantitative")
+    plot_method_scatter(
+        results, args.output, correctness, "bounded", format=args.format
+    )
+    plot_method_scatter(
+        results, args.output, correctness, "quantitative", format=args.format
+    )
 
     print(f"\nAll plots and tables saved to {args.output}/")
 

@@ -127,7 +127,7 @@ def main(results_folder, exact, timeout, smoke_test):
         splitting,
         conditional_alg,
         conditional_bisection_optimization,
-    ) in tqdm.tqdm(eval_combinations):
+    ) in tqdm.tqdm(eval_combinations, mininterval=0):
 
         # Check if result already exists in df
         exists = (
