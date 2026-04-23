@@ -10,10 +10,9 @@ Justification for the badges:
     - The full source code of the tools is attached with the artifact. The tools can be compiled by following the instructions availabe in their respective README files. We also provide a docker container with all tools already installed.
     - All results presented in the paper can be reproduced using this artifact. The results in Figures 2-4 and Tables 2-4 can be replicated by following the full review steps. Table 1 is a hand combined version of Tables 3 and 4.
 
-  * Reusable: Our algorithms as described in the paper are built into the existing tools Storm and PAYNT. 
+  * Reusable: Our algorithms as described in the paper are built into the existing tool Storm with its python bindings stormpy. 
     + We include a unittests as part of storm here: `storm/src/test/storm/modelchecker/prctl/mdp/ConditionalMdpPrctlModelCheckerTest.cpp`. Furthermore, all changes in Storm have already been merged into upstream and will be released within short notice. After it is released, you will be able to install storm with python bindings using the python package manager: `pip install stormpy`. Until such time nightly builds of storm and stormpy docker containers are availabe where one can use the _treat_ algorithm and its bisection variants. The docker container used for this artifact is based on these containers.
-    Lastly, we have included a Jupyter notebook detailing how the python bindings of storm can be used to model check conditional properties on MDPs. More documentatian on Storm and Stormpy can also be found here: https://www.stormchecker.org/.
-    + _Expectations on adding the conditional algs to PAYNT._
+    + Lastly, we have included a Jupyter notebook detailing how the python bindings of storm can be used to model check conditional properties on MDPs. More documentatian on Storm and Stormpy can also be found here: https://www.stormchecker.org/.
 
 
 Requirements:
@@ -88,7 +87,7 @@ results. Running the full benchmark suite can take around [n hours] on a standar
 laptop.
 
 ```bash
-./run_all.sh    # [to run the full version ~ runtime: n hours]
+./run_all.sh    # [runtime: n hours]
 ```
 
 The commands will print out progress as their execute the benchmarks.
