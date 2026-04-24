@@ -21,7 +21,8 @@ python benchmarks/rq2/generate_main_results_extended.py out/rq2/$folder/float/ev
 echo "====================="
 echo "  Creating plots for RQ3..."
 echo "====================="
-python premise/premise/analysis/check.py out/rq3/$folder/ --output out/plots/rq3/$folder/
+python benchmarks/rq3/latex_table_2.py out/rq3/$folder/ --variant exact > out/plots/rq3/$folder/rq3-exact.tex
+python benchmarks/rq3/latex_table_2.py out/rq3/$folder/ --variant float > out/plots/rq3/$folder/rq3-float.tex
 
 if [ "$folder" == "res" ]; then
     echo "====================="

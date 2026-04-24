@@ -6,6 +6,8 @@ stormpy/
 synthesis/
 premise/
 out/
+*.pyc
+**/__pycache__/
 
 # Ignore all buildable models in rq1
 benchmarks/rq1/models/transformed-mdp
