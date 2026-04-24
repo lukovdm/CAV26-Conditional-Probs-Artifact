@@ -57,11 +57,7 @@ Start the smoke test with
 ```
 
 The smoke test runs all tools on a reduced set of benchmarks and configurations.
-If everything runs successfully, the script should print out intermediate progress, similar to the following:
-
-```
-[fill in]
-```
+If everything runs successfully, the script should print out intermediate progress.
 
 To generate the plots for the smoke test you can run the following command:
 ```bash
@@ -83,14 +79,14 @@ of the log in the review.
 --------------------------------
 
 Assuming the smoke test passed, run the following command to reproduce the
-results. Running the full benchmark suite can take around [n hours] on a standard
+results. Running the full benchmark suite can take around 18 hours on a standard
 laptop.
 
 ```bash
-./run_all.sh    # [runtime: n hours]
+./run_all.sh    # [runtime: 18 hours]
 ```
 
-The commands will print out progress as their execute the benchmarks.
+The commands will print out progress as they execute the benchmarks.
 The output will be in the folders `out/rqn/res/`.
 
 For completeness, we included the output files obtained by our experiments in
@@ -115,3 +111,5 @@ The plots and tables in the paper can now be found in the following locations:
   - Right: out/plots/rq1/res/scatter_quantitative_bisection-pt_eps-exact_vs_bisection_eps-exact.pdf"
 - Table 3: out/plots/rq2/res/rq2-exact.tex"
 - Table 4: out/plots/rq2/res/rq2-float.tex"
+
+> Note that we did find a bug in our experiments for RQ2. This changed the Tables 3 and 4 a bit. These changes did not affect our analysis or conclusions of RQ2.

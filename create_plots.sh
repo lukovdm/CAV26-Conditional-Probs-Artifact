@@ -5,10 +5,12 @@ if [ -z "$folder" ]; then
     folder="res"
 fi
 
+mkdir -p out/plots/rq1/$folder out/plots/rq2/$folder out/plots/rq3/$folder
+
 echo "====================="
 echo "  Creating plots for RQ1..."
 echo "====================="
-python benchmarks/rq1/plot_results.py --results-folder out/rq1/$folder/ --output out/plots/rq1/$folder/
+python benchmarks/rq1/plot_results.py out/rq1/$folder/results.json --output out/plots/rq1/$folder/
 
 echo "====================="
 echo "  Creating plots for RQ2..."
@@ -19,6 +21,7 @@ python benchmarks/rq2/generate_main_results_extended.py out/rq2/$folder/float/ev
 echo "====================="
 echo "  Creating plots for RQ3..."
 echo "====================="
+python premise/premise/analysis/check.py out/rq3/$folder/ --output out/plots/rq3/$folder/
 
 if [ "$folder" == "res" ]; then
     echo "====================="

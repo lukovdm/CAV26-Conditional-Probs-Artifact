@@ -13,7 +13,7 @@ python benchmarks/rq2/run_benchmarks.py --results-folder out/rq2/smoke_test/exac
 echo "====================="
 echo "  RQ3 benchmarks..."
 echo "====================="
-benchmarks/rq3/run_benchmark.sh --results-folder out/rq3/smoke_test/ --smoke-test
+benchmarks/rq3/run_benchmark.sh smoke_test
 
 echo "====================="
 echo "       DONE!"
