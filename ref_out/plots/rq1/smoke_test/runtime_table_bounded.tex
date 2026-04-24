@@ -1,0 +1,13 @@
+\begin{longtable}{lrr@{\hskip 12pt}r@{\hskip 12pt}r@{\hskip 12pt}r@{\hskip 12pt}r@{\hskip 12pt}r}
+\toprule
+ID & Model & States & Transitions & \multicolumn{2}{c}{exact} & \multicolumn{2}{c}{float} \\
+\cmidrule(lr){5-6}\cmidrule(lr){7-8}
+ & & &  & bisection & restart & bisection & restart \\
+\midrule
+\endhead
+1 & \multirow{2}{*}{crowds\_3-5-0.01} & \multirow{2}{*}{1772} & \multirow{2}{*}{4712} & \textbf{0.04} & 0.19 & \textbf{<0.01} & \textbf{<0.01} \\
+2 &  &  &  & \textbf{0.04} & 0.13 & \textbf{<0.01} & \textbf{<0.01} \\
+\midrule
+3 & \multirow{1}{*}{coin-03-K=4} & \multirow{1}{*}{5216} & \multirow{1}{*}{13380} & \textbf{0.14} & 0.2 & \textbf{0.06} & 0.07 \\
+\bottomrule
+\end{longtable}

@@ -101,7 +101,10 @@ PROPERTIES = {
 # Threshold for bounded properties (can be changed)
 THRESHOLD = 0.5
 
-STORM_BINARY = "storm/build/bin/storm"
+_STORM_CANDIDATES = ["/opt/storm/build/bin/storm", "storm/build/bin/storm"]
+STORM_BINARY = next(
+    (p for p in _STORM_CANDIDATES if os.path.isfile(p)), _STORM_CANDIDATES[0]
+)
 
 
 def _build_tasks(args):
@@ -126,6 +129,14 @@ def _build_tasks(args):
         if not models:
             print(f"Error: No models found matching: {args.models}")
             return []
+    elif args.random_subset_models is not None:
+        import random
+
+        random.seed(0)
+
+        num_models = len(all_models)
+        subset_size = int(num_models * args.random_subset_models)
+        models = random.sample(all_models, subset_size)
     else:
         models = all_models
 
@@ -149,11 +160,7 @@ def _build_tasks(args):
                 if method == "restart" and exact_mode == "exact-tolerance":
                     continue
                 for path_formula in PROPERTIES[model_key]:
-                    # Quantitative query
-                    print(f"SKIP QUANTITIVE: {args.skip_quantitative}")
-
                     if not args.skip_quantitative:
-                        print(f"NOT SKIP QUANTITIVEs")
                         tasks.append(
                             (
                                 str(drn_file),
@@ -512,13 +519,13 @@ def main():
     parser.add_argument(
         "--cores",
         type=int,
-        default=max(1, ((os.cpu_count() or 1) - 1)),
+        default=8,  # max(1, ((os.cpu_count() or 1) - 1)),
         help="Number of CPU cores to use for parallel execution",
     )
     parser.add_argument(
         "--timeout",
         type=int,
-        default=10,
+        default=300,
         help="Timeout in seconds for each model checking call (default: 300)",
     )
     parser.add_argument(
@@ -528,6 +535,12 @@ def main():
     )
     parser.add_argument(
         "--skip-quantitative", action="store_true", help="Skip quantitative tests"
+    )
+    parser.add_argument(
+        "--random-subset-models",
+        type=float,
+        default=None,
+        help="If set, randomly select this fraction of models to benchmark",
     )
 
     args = parser.parse_args()
