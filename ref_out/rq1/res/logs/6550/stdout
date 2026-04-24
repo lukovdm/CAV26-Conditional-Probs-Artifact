@@ -1,0 +1,32 @@
+Storm 1.12.0 (dev)
+
+Date: Thu Apr 23 17:42:22 2026
+Command line arguments: -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.01.drn --prop 'Pmax=? [true];Pmax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 10 --dot-maxwidth 6549 --exact '--conditional:algorithm' bisection-advanced-pt
+Current working directory: /home/luko/Cond
+
+Time for model construction: 0.038s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	1772
+Transitions: 	4712
+Choices: 	2612
+Reward Models:  none
+State Labels: 	5 labels
+   * deadlock -> 56 item(s)
+   * observeIGreater1 -> 806 item(s)
+   * observeOnlyTrueSender -> 337 item(s)
+   * observe0Greater1 -> 425 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": Pmax=? [true] ...
+Result (for initial states): 1 (approx. 1)
+Time for model checking: 0.000s.
+
+Model checking property "2": Pmax=? [(F "observeIGreater1") || (F "observe0Greater1")] ...
+WARN  (AbstractEquationSolver.cpp:327): Iterative solver was aborted after 1 iterations.
+WARN  (TopologicalMinMaxLinearEquationSolver.cpp:148): Topological solver aborted after analyzing 1/245 SCCs.
+Result till abort (for initial states): 26968802634105423034196479641089372273422215309044858930884960684908684276733091111578316697392546518066787844217734447402272417348996158218868/168162624339568325131996255941957916230757358656969538454025651577634849668710987987400740752461057871273671827981098201655322330362325386684637 (approx. 0.1603733454)
+Time for model checking: 10.000s.

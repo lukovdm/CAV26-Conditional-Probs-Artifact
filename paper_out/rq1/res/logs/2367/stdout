@@ -1,0 +1,29 @@
+Storm 1.11.1 (dev)
+
+Date: Sun Jan 25 22:26:43 2026
+Command line arguments: -drn /home/sjunges/Cond/premise/premise/examples/monitoring-cond-mdps/refuelC-12-40-11-151.drn --prop 'Pmax=? [true];Pmax=? [F "_goal" || F "_end"]' --timeout 600 --dot-maxwidth 2366 '--minmax:precision' 1e-6 -condtol 1e-6 --conditional restart
+Current working directory: /home/sjunges/Cond/premise
+
+Time for model construction: 2.975s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	118158
+Transitions: 	2175231
+Choices: 	429881
+Reward Models:  none
+State Labels: 	4 labels
+   * _goal -> 1 item(s)
+   * _end -> 2 item(s)
+   * init -> 1 item(s)
+   * _violated -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": Pmax=? [true] ...
+Result (for initial states): 1
+Time for model checking: 0.000s.
+
+Model checking property "2": Pmax=? [(F "_goal") || (F "_end")] ...
+Analyzing normal form with 97723 maybe states using algorithm 'restart.Processed model has 8639 states and 8639 choices and 186578 transitions.Result (for initial states): 0.9978232177
+Time for model checking: 0.531s.

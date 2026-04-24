@@ -1,0 +1,9 @@
+Storm 1.11.1 (dev)
+
+Date: Mon Jan 26 02:34:45 2026
+Command line arguments: -drn /home/sjunges/Cond/premise/premise/examples/transformed-mdp/crowds_10-5.drn --prop 'Pmax=? [true];Pmax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 600 --dot-maxwidth 6168 --exact '--minmax:precision' 0.0 -condtol 0 --conditional bisection-advanced-pt
+Current working directory: /home/sjunges/Cond/premise
+
+Parsed 99780/111294 states before abort.
+ERROR (DirectEncodingParser.cpp:371): Aborted in state space exploration.
+ERROR (storm-cli.cpp:49): An exception caused Storm to terminate. The message of the exception is: AbortException: Aborted in state space exploration.

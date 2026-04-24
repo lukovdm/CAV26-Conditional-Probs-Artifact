@@ -1,0 +1,86 @@
+Storm 1.11.1 (dev)
+
+Date: Sun Jan 25 21:16:26 2026
+Command line arguments: -drn /home/sjunges/Cond/premise/premise/examples/BN-benchmarks-mdp/child.drn --prop 'Pmax=? [true];Pmax=? [F "Disease4" || F "CO21"]' --timeout 600 --dot-maxwidth 60 '--minmax:precision' 1e-6 -condtol 1e-6 --conditional restart
+Current working directory: /home/sjunges/Cond/premise
+
+Time for model construction: 0.167s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	1450
+Transitions: 	13350
+Choices: 	4465
+Reward Models:  none
+State Labels: 	61 labels
+   * CO2Report0 -> 2 item(s)
+   * LowerBodyO21 -> 108 item(s)
+   * LungParench1 -> 428 item(s)
+   * XrayReport1 -> 36 item(s)
+   * LungParench0 -> 428 item(s)
+   * Disease0 -> 232 item(s)
+   * BirthAsphyxia1 -> 1 item(s)
+   * DuctFlow0 -> 30 item(s)
+   * CardiacMixing2 -> 63 item(s)
+   * RUQO21 -> 36 item(s)
+   * GruntingReport0 -> 6 item(s)
+   * CardiacMixing0 -> 63 item(s)
+   * Age1 -> 12 item(s)
+   * CardiacMixing3 -> 63 item(s)
+   * ChestXray4 -> 36 item(s)
+   * DuctFlow2 -> 20 item(s)
+   * DuctFlow1 -> 25 item(s)
+   * CardiacMixing1 -> 63 item(s)
+   * HypoxiaInO21 -> 144 item(s)
+   * init -> 1 item(s)
+   * CO20 -> 2 item(s)
+   * HypDistrib1 -> 671 item(s)
+   * BirthAsphyxia0 -> 1 item(s)
+   * Disease5 -> 232 item(s)
+   * Disease4 -> 232 item(s)
+   * HypoxiaInO20 -> 144 item(s)
+   * GruntingReport1 -> 6 item(s)
+   * LVHreport0 -> 6 item(s)
+   * XrayReport3 -> 36 item(s)
+   * LVH0 -> 6 item(s)
+   * Disease1 -> 232 item(s)
+   * Disease3 -> 222 item(s)
+   * LVH1 -> 6 item(s)
+   * LVHreport1 -> 6 item(s)
+   * LungFlow1 -> 36 item(s)
+   * CO22 -> 2 item(s)
+   * LowerBodyO22 -> 108 item(s)
+   * ChestXray2 -> 36 item(s)
+   * RUQO20 -> 36 item(s)
+   * Disease2 -> 227 item(s)
+   * Grunting0 -> 6 item(s)
+   * CO21 -> 2 item(s)
+   * ChestXray3 -> 36 item(s)
+   * RUQO22 -> 36 item(s)
+   * LungFlow0 -> 36 item(s)
+   * LungFlow2 -> 36 item(s)
+   * LowerBodyO20 -> 108 item(s)
+   * ChestXray0 -> 36 item(s)
+   * ChestXray1 -> 36 item(s)
+   * XrayReport0 -> 36 item(s)
+   * XrayReport2 -> 36 item(s)
+   * HypoxiaInO22 -> 144 item(s)
+   * Sick0 -> 54 item(s)
+   * XrayReport4 -> 36 item(s)
+   * HypDistrib0 -> 671 item(s)
+   * Sick1 -> 54 item(s)
+   * CO2Report1 -> 2 item(s)
+   * LungParench2 -> 428 item(s)
+   * Age0 -> 12 item(s)
+   * Age2 -> 12 item(s)
+   * Grunting1 -> 6 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": Pmax=? [true] ...
+Result (for initial states): 1
+Time for model checking: 0.000s.
+
+Model checking property "2": Pmax=? [(F "Disease4") || (F "CO21")] ...
+Analyzing normal form with 1208 maybe states using algorithm 'restart.Processed model has 1208 states and 1208 choices and 11088 transitions.Result (for initial states): 0.9999016761
+Time for model checking: 0.016s.

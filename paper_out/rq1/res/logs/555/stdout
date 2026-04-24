@@ -1,0 +1,29 @@
+Storm 1.11.1 (dev)
+
+Date: Sun Jan 25 22:05:35 2026
+Command line arguments: -drn /home/sjunges/Cond/premise/premise/examples/monitoring-cond-mdps/evadeV-12-4-14-601.drn --prop 'Pmax=? [true];Pmax=? [F "_goal" || F "_end"]' --timeout 600 --dot-maxwidth 554 --exact '--minmax:precision' 0.0 -condtol 0 --conditional restart
+Current working directory: /home/sjunges/Cond/premise
+
+Time for model construction: 0.249s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	49802
+Transitions: 	236461
+Choices: 	123143
+Reward Models:  none
+State Labels: 	4 labels
+   * _goal -> 1 item(s)
+   * _end -> 2 item(s)
+   * init -> 1 item(s)
+   * _violated -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": Pmax=? [true] ...
+Result (for initial states): 1 (approx. 1)
+Time for model checking: 0.009s.
+
+Model checking property "2": Pmax=? [(F "_goal") || (F "_end")] ...
+Analyzing normal form with 45546 maybe states using algorithm 'restart.Processed model has 7060 states and 7060 choices and 34604 transitions.Result (for initial states): 75002122921219438467232976108789414339805460171/113686837721616029739379882812500013136000000000 (approx. 0.6597256501)
+Time for model checking: 1.125s.

@@ -1,0 +1,9 @@
+Storm 1.12.0 (dev)
+
+Date: Thu Apr 23 17:40:59 2026
+Command line arguments: -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.01.drn --prop 'Pmax=? [true];Pmax>=0.5 [F "observe0Greater1" || F "observeIGreater1"]' --timeout 10 --dot-maxwidth 6353 --exact '--conditional:algorithm' restart
+Current working directory: /home/luko/Cond
+
+Parsed 429968/442069 states before abort.
+ERROR (DirectEncodingParser.cpp:463): Aborted in state space exploration.
+ERROR (storm-cli.cpp:49): An exception caused Storm to terminate. The message of the exception is: AbortException: Aborted in state space exploration.

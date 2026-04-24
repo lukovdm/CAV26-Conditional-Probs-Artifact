@@ -1,0 +1,31 @@
+Storm 1.11.1 (dev)
+
+Date: Mon Jan 26 02:24:45 2026
+Command line arguments: -drn /home/sjunges/Cond/premise/premise/examples/transformed-mdp/crowds_10-5-0.05.drn --prop 'Pmax=? [true];Pmax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 600 --dot-maxwidth 6091 --exact '--minmax:precision' 0.0 -condtol 0 --conditional bisection-advanced
+Current working directory: /home/sjunges/Cond/premise
+
+Time for model construction: 5.897s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	111294
+Transitions: 	316044
+Choices: 	138594
+Reward Models:  none
+State Labels: 	5 labels
+   * deadlock -> 3003 item(s)
+   * observeIGreater1 -> 58752 item(s)
+   * observeOnlyTrueSender -> 5853 item(s)
+   * observe0Greater1 -> 7068 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": Pmax=? [true] ...
+Result (for initial states): 1 (approx. 1)
+Time for model checking: 0.016s.
+
+Model checking property "2": Pmax=? [(F "observeIGreater1") || (F "observe0Greater1")] ...
+Analyzing normal form with 17111 maybe states using algorithm 'bisection-advanced.Processed model has 17111 states and 17111 choices and 62597 transitions. Matrix is cyclic.WARN  (TopologicalMinMaxLinearEquationSolver.cpp:148): Topological solver aborted after analyzing 4403/6265 SCCs.
+Bisection method converged after 505 iterations. Difference is 0.Result till abort (for initial states): 16874550830982430147729651822059536224853874666629619884662903733679536339143882158833328386524148126494340417720457655950980018248829673485987869898155361667987571754149975462913291447710868836801328182343016159263321592127857772649/113849581920970690702507171213839027959555391799839508979983044172732690270464314625902830893462333090999561761816152339161843736595714916331409228222954376271468165030726479416595122897179712728634944181523615902396550611368909285923 (approx. 0.148217942887976)
+Time for model checking: 594.107s.

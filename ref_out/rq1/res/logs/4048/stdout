@@ -1,0 +1,30 @@
+Storm 1.12.0 (dev)
+
+Date: Thu Apr 23 17:31:32 2026
+Command line arguments: -drn benchmarks/rq1/models/monitoring-cond-mdps/refuelC-25-20-5-51.drn --prop 'Pmax=? [true];Pmax=? [F "_goal" || F "_end"]' --timeout 10 --dot-maxwidth 4047 --exact '--conditional:algorithm' bisection
+Current working directory: /home/luko/Cond
+
+Time for model construction: 3.976s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	129993
+Transitions: 	2417172
+Choices: 	484336
+Reward Models:  none
+State Labels: 	4 labels
+   * _goal -> 1 item(s)
+   * _end -> 2 item(s)
+   * init -> 1 item(s)
+   * _violated -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": Pmax=? [true] ...
+Result (for initial states): 1 (approx. 1)
+Time for model checking: 0.020s.
+
+Model checking property "2": Pmax=? [(F "_goal") || (F "_end")] ...
+WARN  (ConditionalHelper.cpp:1093): Bisection solver aborted after 118iterations. Bound difference is 4.28703e-36.
+Result till abort (for initial states): 1019068535940052258171993202288148253/1399570499257418921805816287441449990 (approx. 0.7281294772)
+Time for model checking: 6.289s.

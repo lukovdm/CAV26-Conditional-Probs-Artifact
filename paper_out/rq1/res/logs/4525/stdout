@@ -1,0 +1,34 @@
+Storm 1.11.1 (dev)
+
+Date: Mon Jan 26 00:17:15 2026
+Command line arguments: -drn /home/sjunges/Cond/premise/premise/examples/transformed-mdp/brp-N=128-MAX=11-PCHAN=0.035.drn --prop 'Pmax=? [true];Pmax=? [F "success" || F "retries_MAX_min_3"]' --timeout 600 --dot-maxwidth 4524 --exact '--minmax:precision' 0.0 -condtol 0 --conditional bisection
+Current working directory: /home/sjunges/Cond/premise
+
+Time for model construction: 0.817s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	20366
+Transitions: 	42221
+Choices: 	27651
+Reward Models:  none
+State Labels: 	9 labels
+   * success -> 12 item(s)
+   * deadlock -> 268 item(s)
+   * target -> 256 item(s)
+   * retries_MAX_min_2 -> 1665 item(s)
+   * retries_MAX_min_3 -> 1665 item(s)
+   * retries_MAX_min_1 -> 1665 item(s)
+   * retries_MAX_min_4 -> 1665 item(s)
+   * retries_MAX_min_5 -> 1665 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": Pmax=? [true] ...
+Result (for initial states): 1 (approx. 1)
+Time for model checking: 0.003s.
+
+Model checking property "2": Pmax=? [(F "success") || (F "retries_MAX_min_3")] ...
+Analyzing normal form with 12274 maybe states using algorithm 'bisection.Processed model has 12274 states and 12274 choices and 25407 transitions. Matrix is acyclic.Bisection solver aborted after 370iterations. Bound difference is 3.287917105e-109.Result till abort (for initial states): 24331513670990625858821181189424681019932203632187646383994030139866519254735612119478178972169792473238510306/24331513670990625858821181228355095107433407198911272987690269610377723477522957119153429086648354050428693045 (approx. 1)
+Time for model checking: 599.593s.

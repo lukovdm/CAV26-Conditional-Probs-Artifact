@@ -1,0 +1,31 @@
+Storm 1.11.1 (dev)
+
+Date: Sun Jan 25 21:16:28 2026
+Command line arguments: -drn /home/sjunges/Cond/premise/premise/examples/concrete-mdps/coin-03-K=4.drn --prop 'Pmax=? [true];Pmax>=0.5 [F "finished" & "all_coins_equal_0"  || F "all_coins_equal_1"]' --timeout 600 --dot-maxwidth 103 '--minmax:precision' 1e-6 -condtol 1e-6 --conditional bisection
+Current working directory: /home/sjunges/Cond/premise
+
+Time for model construction: 0.130s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	5216
+Transitions: 	13380
+Choices: 	10752
+Reward Models:  none
+State Labels: 	5 labels
+   * finished -> 24 item(s)
+   * all_coins_equal_1 -> 173 item(s)
+   * init -> 1 item(s)
+   * all_coins_equal_0 -> 1593 item(s)
+   * agree -> 1766 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": Pmax=? [true] ...
+Result (for initial states): 1
+Time for model checking: 0.000s.
+
+Model checking property "2": Pmax>=1/2 [(F ("finished" & "all_coins_equal_0")) || (F "all_coins_equal_1")] ...
+Analyzing normal form with 2798 maybe states using algorithm 'bisection.Processed model has 2798 states and 2798 choices and 8253 transitions. Matrix is cyclic.Result (for initial states): true
+
+Time for model checking: 0.036s.

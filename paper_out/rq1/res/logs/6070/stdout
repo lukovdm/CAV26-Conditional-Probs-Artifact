@@ -1,0 +1,30 @@
+Storm 1.11.1 (dev)
+
+Date: Mon Jan 26 02:20:34 2026
+Command line arguments: -drn /home/sjunges/Cond/premise/premise/examples/transformed-mdp/crowds_10-5-0.01.drn --prop 'Pmax=? [true];Pmax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 600 --dot-maxwidth 6069 '--minmax:precision' 1e-6 -condtol 1e-6 --conditional bisection-advanced-pt
+Current working directory: /home/sjunges/Cond/premise
+
+Time for model construction: 5.873s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	111294
+Transitions: 	316044
+Choices: 	138594
+Reward Models:  none
+State Labels: 	5 labels
+   * deadlock -> 3003 item(s)
+   * observeIGreater1 -> 58752 item(s)
+   * observeOnlyTrueSender -> 5853 item(s)
+   * observe0Greater1 -> 7068 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": Pmax=? [true] ...
+Result (for initial states): 1
+Time for model checking: 0.000s.
+
+Model checking property "2": Pmax=? [(F "observeIGreater1") || (F "observe0Greater1")] ...
+Analyzing normal form with 17111 maybe states using algorithm 'bisection-advanced-pt.Processed model has 17111 states and 17111 choices and 62597 transitions. Matrix is cyclic.Bisection method converged after 6 iterations. Difference is 1.17838551277893e-08.Result (for initial states): 0.0587526190716828
+Time for model checking: 0.158s.

@@ -1,0 +1,15 @@
+\begin{tabular}{lrr@{\hskip 12pt}r@{\hskip 4pt}l@{\hskip 12pt}r@{\hskip 4pt}l@{\hskip 12pt}r@{\hskip 4pt}l@{\hskip 12pt}r@{\hskip 4pt}l@{\hskip 12pt}r@{\hskip 4pt}l@{\hskip 12pt}r@{\hskip 4pt}l@{\hskip 12pt}}
+\toprule
+Model & $|\mathcal{F}|$ & $|M|$ & \multicolumn{2}{c@{\hskip 12pt}}{treat} & \multicolumn{2}{c@{\hskip 12pt}}{bis-std} & \multicolumn{2}{c@{\hskip 12pt}}{bis-adv} & \multicolumn{2}{c@{\hskip 12pt}}{pt-bis-std} & \multicolumn{2}{c@{\hskip 12pt}}{pt-bis-adv} & \multicolumn{2}{c@{\hskip 12pt}}{Restart} \\
+\midrule
+ceas-4-10 & 1e6 & 265 & 2s & 86 & 2s & 87 & \textbf{1s} & 125 & - & - & - & - & 2s & 79 \\
+ceas-10-8 & 1e8 & 451 & 513s & 85 & 525s & 83 & \textbf{393s} & 110 & - & - & - & - & 578s & 75 \\
+ladder & 8.6e11 & 251 & TO & 54 & TO & 53 & TO & 77 & - & - & - & - & TO & 43 \\
+ladder-in & 8.6e12 & 519 & TO & 44 & TO & 39 & TO & 65 & - & - & - & - & TO & 36 \\
+dpm & 1620.0 & 1723 & \textbf{37s} & 7 & 44s & 6 & 39s & 7 & - & - & - & - & 51s & 5 \\
+dpm-q & 1.6e4 & 1733 & 38s & 7 & 44s & 6 & \textbf{38s} & 7 & - & - & - & - & 52s & 5 \\
+virus & 1.2e4 & 118 & 47s & 84 & 69s & 58 & 64s & 62 & - & - & - & - & \textbf{42s} & 100 \\
+airport & 1.3e12 & 67 & 456s & 678 & 506s & 611 & \textbf{374s} & 776 & - & - & - & - & TO & 408 \\
+airport-b & 1.8e14 & 104 & \textbf{96s} & 347 & 194s & 347 & 208s & 458 & - & - & - & - & TO & 140 \\
+\bottomrule
+\end{tabular}

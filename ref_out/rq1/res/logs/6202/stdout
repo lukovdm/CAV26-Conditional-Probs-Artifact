@@ -1,0 +1,28 @@
+Storm 1.12.0 (dev)
+
+Date: Thu Apr 23 17:39:56 2026
+Command line arguments: -drn benchmarks/rq1/models/transformed-mdp/crowds_12-5-0.01.drn --prop 'Pmax=? [true];Pmax>=0.5 [F "observe0Greater1" || F "observeIGreater1"]' --timeout 10 --dot-maxwidth 6201 --exact '--conditional:algorithm' restart
+Current working directory: /home/luko/Cond
+
+Time for model construction: 5.218s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	232709
+Transitions: 	718229
+Choices: 	289829
+Reward Models:  none
+State Labels: 	5 labels
+   * deadlock -> 6188 item(s)
+   * observeIGreater1 -> 96768 item(s)
+   * observeOnlyTrueSender -> 9947 item(s)
+   * observe0Greater1 -> 11396 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": Pmax=? [true] ...
+Result (for initial states): 1 (approx. 1)
+Time for model checking: 0.048s.
+
+Model checking property "2": Pmax>=1/2 [(F "observe0Greater1") || (F "observeIGreater1")] ...

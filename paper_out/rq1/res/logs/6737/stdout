@@ -1,0 +1,32 @@
+Storm 1.11.1 (dev)
+
+Date: Mon Jan 26 03:54:17 2026
+Command line arguments: -drn /home/sjunges/Cond/premise/premise/examples/transformed-mdp/crowds_5-5-0.15.drn --prop 'Pmax=? [true];Pmax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 600 --dot-maxwidth 6736 --exact '--minmax:precision' 0.0 -condtol 0 --conditional bisection-advanced
+Current working directory: /home/sjunges/Cond/premise
+
+Time for model construction: 0.482s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	8653
+Transitions: 	19153
+Choices: 	10753
+Reward Models:  none
+State Labels: 	5 labels
+   * deadlock -> 252 item(s)
+   * observeIGreater1 -> 4732 item(s)
+   * observeOnlyTrueSender -> 1008 item(s)
+   * observe0Greater1 -> 1288 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": Pmax=? [true] ...
+Result (for initial states): 1 (approx. 1)
+Time for model checking: 0.001s.
+
+Model checking property "2": Pmax=? [(F "observe0Greater1") || (F "observeIGreater1")] ...
+Analyzing normal form with 2190 maybe states using algorithm 'bisection-advanced.Processed model has 2190 states and 2190 choices and 5318 transitions. Matrix is cyclic.WARN  (AbstractEquationSolver.cpp:327): Iterative solver was aborted after 1 iterations.
+WARN  (TopologicalMinMaxLinearEquationSolver.cpp:148): Topological solver aborted after analyzing 751/1098 SCCs.
+Bisection method converged after 2729 iterations. Difference is 0.Result till abort (for initial states): 137243473332730658643725987847779393652228649763168287385662106638273284224575420135681329833445874508669920523021501932775616166453009797619547113536790479154386174885088417450027521090645617573257738870749080833256867647075654926556137467979715497596544077704451791558594575432612168792329994936565953939345955844148484492360380417219113405374013658456939484141945975104920678407521532169602856998143857372121176782513234482166931361538973521912773515041287310264170374394944467567664725180009374328631402849409221093341977308012517/138295824543729485838214136469907333796209994275402265696171975058369502402744778474646306140129639573940161612140910084531185451977773961418041033102651791844478545644193463728261829299361444162220727567461946483756106851172003296617848016214186081596124468077012890459582750929084036095039913059828484790136582333305731810426783073581230807481124489389070489906675568555496026273257089753183246241761785748171098590046867438544649362910586103058847722441012691672985269956598611211419635593475454739356332377416980831477981305932225 (approx. 0.992390578569738)
+Time for model checking: 599.517s.

@@ -1,0 +1,29 @@
+Storm 1.11.1 (dev)
+
+Date: Mon Jan 26 03:25:12 2026
+Command line arguments: -drn /home/sjunges/Cond/premise/premise/examples/transformed-mdp/crowds_14-5-0.05.drn --prop 'Pmax=? [true];Pmax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 600 --dot-maxwidth 6390 --exact '--minmax:precision' 0.0 -condtol 0 --conditional restart
+Current working directory: /home/sjunges/Cond/premise
+
+Time for model construction: 18.094s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	442069
+Transitions: 	1473085
+Choices: 	550597
+Reward Models:  none
+State Labels: 	5 labels
+   * deadlock -> 11628 item(s)
+   * observeIGreater1 -> 148068 item(s)
+   * observeOnlyTrueSender -> 15517 item(s)
+   * observe0Greater1 -> 17200 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": Pmax=? [true] ...
+Result (for initial states): 1 (approx. 1)
+Time for model checking: 0.066s.
+
+Model checking property "2": Pmax=? [(F "observe0Greater1") || (F "observeIGreater1")] ...
+Analyzing normal form with 147031 maybe states using algorithm 'restart.Processed model has 147031 states and 147031 choices and 790517 transitions.

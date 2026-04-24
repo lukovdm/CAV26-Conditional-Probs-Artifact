@@ -1,0 +1,31 @@
+Storm 1.11.1 (dev)
+
+Date: Sun Jan 25 21:28:28 2026
+Command line arguments: -drn /home/sjunges/Cond/premise/premise/examples/concrete-mdps/wlan-BOFF=10.drn --prop 'Pmax=? [true];Pmax>=0.5 [F "collision8" || F "collision2"]' --timeout 600 --dot-maxwidth 254 --exact '--minmax:precision' 0.0 -condtol 0 --conditional restart
+Current working directory: /home/sjunges/Cond/premise
+
+Time for model construction: 589.121s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	7424375
+Transitions: 	16494394
+Choices: 	10351486
+Reward Models:  none
+State Labels: 	7 labels
+   * collision8 -> 2221 item(s)
+   * collision4 -> 164518 item(s)
+   * deadlock -> 3 item(s)
+   * collision2 -> 30730 item(s)
+   * bothbackoff -> 7386204 item(s)
+   * collision -> 7422972 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": Pmax=? [true] ...
+Result (for initial states): 1 (approx. 1)
+Time for model checking: 1.280s.
+
+Model checking property "2": Pmax>=1/2 [(F "collision8") || (F "collision2")] ...
+WARN  (TopologicalMinMaxLinearEquationSolver.cpp:148): Topological solver aborted after analyzing 1/103572 SCCs.

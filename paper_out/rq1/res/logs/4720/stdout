@@ -1,0 +1,35 @@
+Storm 1.11.1 (dev)
+
+Date: Mon Jan 26 00:48:44 2026
+Command line arguments: -drn /home/sjunges/Cond/premise/premise/examples/transformed-mdp/brp-N=128-MAX=11-PCHAN=0.045.drn --prop 'Pmax=? [true];Pmax>=0.5 [F "target" || F "retries_MAX_min_1"]' --timeout 600 --dot-maxwidth 4719 '--minmax:precision' 1e-6 -condtol 1e-6 --conditional restart
+Current working directory: /home/sjunges/Cond/premise
+
+Time for model construction: 0.827s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	20366
+Transitions: 	42221
+Choices: 	27651
+Reward Models:  none
+State Labels: 	9 labels
+   * success -> 12 item(s)
+   * deadlock -> 268 item(s)
+   * target -> 256 item(s)
+   * retries_MAX_min_2 -> 1665 item(s)
+   * retries_MAX_min_3 -> 1665 item(s)
+   * retries_MAX_min_1 -> 1665 item(s)
+   * retries_MAX_min_4 -> 1665 item(s)
+   * retries_MAX_min_5 -> 1665 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": Pmax=? [true] ...
+Result (for initial states): 1
+Time for model checking: 0.003s.
+
+Model checking property "2": Pmax>=1/2 [(F "target") || (F "retries_MAX_min_1")] ...
+Analyzing normal form with 15598 maybe states using algorithm 'restart.Processed model has 15598 states and 15598 choices and 32595 transitions.Result (for initial states): false
+
+Time for model checking: 2.403s.

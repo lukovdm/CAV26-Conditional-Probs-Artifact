@@ -1,0 +1,34 @@
+Storm 1.12.0 (dev)
+
+Date: Thu Apr 23 17:38:34 2026
+Command line arguments: -drn benchmarks/rq1/models/transformed-mdp/brp-N=64-MAX=8-PCHAN=0.1-0.15.drn --prop 'Pmax=? [true];Pmax=? [F "success" || F "retries_MAX_min_3"]' --timeout 10 --dot-maxwidth 5872 --exact '--conditional:precision' 1e-6 '--conditional:algorithm' bisection
+Current working directory: /home/luko/Cond
+
+Time for model construction: 0.118s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	7691
+Transitions: 	15731
+Choices: 	10371
+Reward Models:  none
+State Labels: 	9 labels
+   * success -> 80 item(s)
+   * deadlock -> 137 item(s)
+   * target -> 128 item(s)
+   * retries_MAX_min_2 -> 833 item(s)
+   * retries_MAX_min_3 -> 833 item(s)
+   * retries_MAX_min_1 -> 833 item(s)
+   * retries_MAX_min_4 -> 833 item(s)
+   * retries_MAX_min_5 -> 833 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": Pmax=? [true] ...
+Result (for initial states): 1 (approx. 1)
+Time for model checking: 0.001s.
+
+Model checking property "2": Pmax=? [(F "success") || (F "retries_MAX_min_3")] ...
+Result (for initial states): 2969653/2969654 (approx. 0.9999996633)
+Time for model checking: 7.342s.

@@ -1,0 +1,29 @@
+Storm 1.11.1 (dev)
+
+Date: Sun Jan 25 22:59:00 2026
+Command line arguments: -drn /home/sjunges/Cond/premise/premise/examples/monitoring-cond-mdps/refuelC-25-20-15-101.drn --prop 'Pmax=? [true];Pmax=? [F "_goal" || F "_end"]' --timeout 600 --dot-maxwidth 3691 --exact '--minmax:precision' 0.0 -condtol 0 --conditional bisection-advanced
+Current working directory: /home/sjunges/Cond/premise
+
+Time for model construction: 18.071s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	696120
+Transitions: 	14816867
+Choices: 	2693774
+Reward Models:  none
+State Labels: 	4 labels
+   * _goal -> 1 item(s)
+   * _end -> 2 item(s)
+   * init -> 1 item(s)
+   * _violated -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": Pmax=? [true] ...
+Result (for initial states): 1 (approx. 1)
+Time for model checking: 0.096s.
+
+Model checking property "2": Pmax=? [(F "_goal") || (F "_end")] ...
+Analyzing normal form with 620997 maybe states using algorithm 'bisection-advanced.Processed model has 57401 states and 57401 choices and 1252332 transitions. Matrix is acyclic.Bisection method converged after 134 iterations. Difference is 0.Result (for initial states): 47988374436335546683781/48950000000000000000000 (approx. 0.980354942519623)
+Time for model checking: 305.823s.

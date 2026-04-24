@@ -1,0 +1,33 @@
+Storm 1.12.0 (dev)
+
+Date: Thu Apr 23 17:15:19 2026
+Command line arguments: -drn benchmarks/rq1/models/concrete-mdps/coin-04-K=4.drn --prop 'Pmax=? [true];Pmax=? [F "finished" & "all_coins_equal_0"  || F "all_coins_equal_1"]' --timeout 10 --dot-maxwidth 152 --exact '--conditional:algorithm' bisection
+Current working directory: /home/luko/Cond
+
+Time for model construction: 0.280s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	43136
+Transitions: 	144352
+Choices: 	115840
+Reward Models:  none
+State Labels: 	5 labels
+   * finished -> 64 item(s)
+   * all_coins_equal_1 -> 497 item(s)
+   * init -> 1 item(s)
+   * all_coins_equal_0 -> 8673 item(s)
+   * agree -> 9170 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": Pmax=? [true] ...
+Result (for initial states): 1 (approx. 1)
+Time for model checking: 0.007s.
+
+Model checking property "2": Pmax=? [(F ("finished" & "all_coins_equal_0")) || (F "all_coins_equal_1")] ...
+WARN  (AbstractEquationSolver.cpp:327): Iterative solver was aborted after 4 iterations.
+WARN  (TopologicalMinMaxLinearEquationSolver.cpp:148): Topological solver aborted after analyzing 611/611 SCCs.
+WARN  (ConditionalHelper.cpp:1093): Bisection solver aborted after 10iterations. Bound difference is 0.0011538.
+Result till abort (for initial states): 4703/8667 (approx. 0.5426329757)
+Time for model checking: 9.744s.

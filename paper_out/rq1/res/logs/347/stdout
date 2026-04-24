@@ -1,0 +1,9 @@
+Storm 1.11.1 (dev)
+
+Date: Sun Jan 25 21:59:11 2026
+Command line arguments: -drn /home/sjunges/Cond/premise/premise/examples/concrete-mdps/wlan-BOFF=6.drn --prop 'Pmax=? [true];Pmax>=0.5 [F "collision1" || F "bothbackoff"]' --timeout 600 --dot-maxwidth 346 '--minmax:precision' 1e-6 -condtol 1e-6 --conditional restart
+Current working directory: /home/sjunges/Cond/premise
+
+Parsed 8016906/12616368 states before abort.
+ERROR (DirectEncodingParser.cpp:371): Aborted in state space exploration.
+ERROR (storm-cli.cpp:49): An exception caused Storm to terminate. The message of the exception is: AbortException: Aborted in state space exploration.

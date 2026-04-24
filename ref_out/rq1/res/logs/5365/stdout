@@ -1,0 +1,35 @@
+Storm 1.12.0 (dev)
+
+Date: Thu Apr 23 17:37:32 2026
+Command line arguments: -drn benchmarks/rq1/models/transformed-mdp/brp-N=16-MAX=8-PCHAN=0.2-0.15.drn --prop 'Pmax=? [true];Pmax=? [F "target" || F "retries_MAX_min_3"]' --timeout 10 --dot-maxwidth 5364 --exact '--conditional:algorithm' bisection
+Current working directory: /home/luko/Cond
+
+Time for model construction: 0.035s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	1931
+Transitions: 	3923
+Choices: 	2595
+Reward Models:  none
+State Labels: 	9 labels
+   * success -> 80 item(s)
+   * deadlock -> 41 item(s)
+   * target -> 32 item(s)
+   * retries_MAX_min_2 -> 209 item(s)
+   * retries_MAX_min_3 -> 209 item(s)
+   * retries_MAX_min_1 -> 209 item(s)
+   * retries_MAX_min_4 -> 209 item(s)
+   * retries_MAX_min_5 -> 209 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": Pmax=? [true] ...
+Result (for initial states): 1 (approx. 1)
+Time for model checking: 0.000s.
+
+Model checking property "2": Pmax=? [(F "target") || (F "retries_MAX_min_3")] ...
+WARN  (ConditionalHelper.cpp:1093): Bisection solver aborted after 1093iterations. Bound difference is 0.
+Result till abort (for initial states): 1359742191130219749084459449056412196541296903104179254197259491206619253380664266830342181839099302632479634710138022122749426839706800412878425787345897489889715786959964685794423634029932577139345050310688857983282506497404513225665106860590351121286924365697873800468717846552015315609148367672035761769076281251498619200835345/6739309305185598262137810359132090250029465029452165297378962511756831179143769887535226808942675632847594840534010426845040891795386483266363813928412527656161592363192598733205970397509730726359362092126489916433048378487623757530511393610313450468779870531338917999144563938279128827551039091573117213421663228065695825245995732 (approx. 0.2017628409)
+Time for model checking: 9.969s.

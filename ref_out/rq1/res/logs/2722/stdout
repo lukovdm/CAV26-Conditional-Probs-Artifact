@@ -1,0 +1,28 @@
+Storm 1.12.0 (dev)
+
+Date: Thu Apr 23 17:23:23 2026
+Command line arguments: -drn benchmarks/rq1/models/monitoring-cond-mdps/refuelC-12-40-18-201.drn --prop 'Pmax=? [true];Pmax>=0.5 [F "_goal" || F "_end"]' --timeout 10 --dot-maxwidth 2721 --exact '--conditional:algorithm' restart
+Current working directory: /home/luko/Cond
+
+Time for model construction: 9.836s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	301616
+Transitions: 	5833435
+Choices: 	1126011
+Reward Models:  none
+State Labels: 	4 labels
+   * _goal -> 1 item(s)
+   * _end -> 2 item(s)
+   * init -> 1 item(s)
+   * _violated -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": Pmax=? [true] ...
+Result (for initial states): 1 (approx. 1)
+Time for model checking: 0.047s.
+
+Model checking property "2": Pmax>=1/2 [(F "_goal") || (F "_end")] ...
+WARN  (TopologicalMinMaxLinearEquationSolver.cpp:148): Topological solver aborted after analyzing 1/7296 SCCs.

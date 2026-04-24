@@ -1,0 +1,33 @@
+Storm 1.12.0 (dev)
+
+Date: Thu Apr 23 17:15:27 2026
+Command line arguments: -drn benchmarks/rq1/models/concrete-mdps/coin-04-K=8.drn --prop 'Pmax=? [true];Pmax=? [F "finished" & "all_coins_equal_0"  || F "all_coins_equal_1"]' --timeout 10 --dot-maxwidth 185 --exact '--conditional:precision' 1e-6 '--conditional:algorithm' bisection
+Current working directory: /home/luko/Cond
+
+Time for model construction: 0.505s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	84096
+Transitions: 	282592
+Choices: 	226432
+Reward Models:  none
+State Labels: 	5 labels
+   * finished -> 64 item(s)
+   * all_coins_equal_1 -> 977 item(s)
+   * init -> 1 item(s)
+   * all_coins_equal_0 -> 16833 item(s)
+   * agree -> 17810 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": Pmax=? [true] ...
+Result (for initial states): 1 (approx. 1)
+Time for model checking: 0.013s.
+
+Model checking property "2": Pmax=? [(F ("finished" & "all_coins_equal_0")) || (F "all_coins_equal_1")] ...
+WARN  (TopologicalLinearEquationSolver.cpp:129): Topological solver aborted after analyzing 3/3525 SCCs.
+WARN  (AbstractEquationSolver.cpp:327): Iterative solver was aborted after 43 iterations.
+WARN  (TopologicalMinMaxLinearEquationSolver.cpp:148): Topological solver aborted after analyzing 871/995 SCCs.
+Result till abort (for initial states): 3/4 (approx. 0.75)
+Time for model checking: 9.534s.

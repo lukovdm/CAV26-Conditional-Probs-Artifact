@@ -1,0 +1,29 @@
+Storm 1.11.1 (dev)
+
+Date: Sun Jan 25 22:24:02 2026
+Command line arguments: -drn /home/sjunges/Cond/premise/premise/examples/monitoring-cond-mdps/patrol-12-2-8-301.drn --prop 'Pmax=? [true];Pmax=? [F "_goal" || F "_end"]' --timeout 600 --dot-maxwidth 1881 --exact '--minmax:precision' 0.0 -condtol 0 --conditional bisection
+Current working directory: /home/sjunges/Cond/premise
+
+Time for model construction: 0.126s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	14768
+Transitions: 	119195
+Choices: 	35108
+Reward Models:  none
+State Labels: 	4 labels
+   * _goal -> 1 item(s)
+   * _end -> 2 item(s)
+   * init -> 1 item(s)
+   * _violated -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": Pmax=? [true] ...
+Result (for initial states): 1 (approx. 1)
+Time for model checking: 0.002s.
+
+Model checking property "2": Pmax=? [(F "_goal") || (F "_end")] ...
+Analyzing normal form with 9198 maybe states using algorithm 'bisection.Processed model has 9198 states and 9198 choices and 62653 transitions. Matrix is acyclic.Bisection method converged after 846 iterations. Difference is 0.Result (for initial states): 111224919288816221733528709809740714043683919280163085117277020360665288847075464015485498681574922518628843532203696272464577/2498184897802273345510783488395736222150065316897139496268940870896881207314380988344616143714969580861127956621108250665906000 (approx. 0.0445222927200721)
+Time for model checking: 63.403s.

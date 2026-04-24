@@ -1,0 +1,34 @@
+Storm 1.11.1 (dev)
+
+Date: Mon Jan 26 01:21:04 2026
+Command line arguments: -drn /home/sjunges/Cond/premise/premise/examples/transformed-mdp/brp-N=128-MAX=8-PCHAN=0.2-0.15.drn --prop 'Pmax=? [true];Pmax=? [F "success" || F "retries_MAX_min_3"]' --timeout 600 --dot-maxwidth 5056 --exact '--minmax:precision' 0.0 -condtol 0 --conditional bisection
+Current working directory: /home/sjunges/Cond/premise
+
+Time for model construction: 0.739s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	15371
+Transitions: 	31475
+Choices: 	20739
+Reward Models:  none
+State Labels: 	9 labels
+   * success -> 80 item(s)
+   * deadlock -> 265 item(s)
+   * target -> 256 item(s)
+   * retries_MAX_min_2 -> 1665 item(s)
+   * retries_MAX_min_3 -> 1665 item(s)
+   * retries_MAX_min_1 -> 1665 item(s)
+   * retries_MAX_min_4 -> 1665 item(s)
+   * retries_MAX_min_5 -> 1665 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": Pmax=? [true] ...
+Result (for initial states): 1 (approx. 1)
+Time for model checking: 0.003s.
+
+Model checking property "2": Pmax=? [(F "success") || (F "retries_MAX_min_3")] ...
+Analyzing normal form with 7254 maybe states using algorithm 'bisection.Processed model has 7254 states and 7254 choices and 14615 transitions. Matrix is acyclic.Bisection solver aborted after 1660iterations. Bound difference is 0.Result till abort (for initial states): 839001999753651578263191800520839664794748898804746984966582954701245838128543461552409046122802597667924930426995395077995793683259951903751190080980588202887098396506432653589290461955110885696197518685809940817305996925172201080760312383952575901041623625479250291522624013806394783271555280685457007709358118121990371371888817548827898042446451020096819235331265926391868215237505065712096935746710771368874032711177738892868386763901296695923256047114962681234211659231031775951391301626695253/839003422204780374927626872534763333299692609203286039230222055018812083992265427897896503840789759063309188781745404385230832094983540074248303947645576638165858343384854072074162650671551028761153169663295744563127422780932394366546646847023148232690816115222229860462812589054796212354681477372804739346070547221977101384911709568509171348893591322872451573678515399154456408129116339981382685480899705128164123556712424815984501985854854791822609139951628613915388689622596111136803330192897832 (approx. 0.9999983046)
+Time for model checking: 599.558s.

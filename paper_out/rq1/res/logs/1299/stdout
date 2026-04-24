@@ -1,0 +1,29 @@
+Storm 1.11.1 (dev)
+
+Date: Sun Jan 25 22:18:15 2026
+Command line arguments: -drn /home/sjunges/Cond/premise/premise/examples/monitoring-cond-mdps/evadeV-14-4-19-401.drn --prop 'Pmax=? [true];Pmax=? [F "_goal" || F "_end"]' --timeout 600 --dot-maxwidth 1298 --exact '--minmax:precision' 0.0 -condtol 0 --conditional bisection-advanced-pt
+Current working directory: /home/sjunges/Cond/premise
+
+Time for model construction: 0.252s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	49168
+Transitions: 	234420
+Choices: 	121264
+Reward Models:  none
+State Labels: 	4 labels
+   * _goal -> 1 item(s)
+   * _end -> 2 item(s)
+   * init -> 1 item(s)
+   * _violated -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": Pmax=? [true] ...
+Result (for initial states): 1 (approx. 1)
+Time for model checking: 0.008s.
+
+Model checking property "2": Pmax=? [(F "_goal") || (F "_end")] ...
+Analyzing normal form with 45510 maybe states using algorithm 'bisection-advanced-pt.Processed model has 14368 states and 14368 choices and 60228 transitions. Matrix is acyclic.Bisection method converged after 191 iterations due to identical schedulers for lower and upper bound.Result (for initial states): 192066273688943190688036462739537414421226528811263760622374357/225875452601146757084886000181238253911336263911375000000000000 (approx. 0.850319375)
+Time for model checking: 5.192s.

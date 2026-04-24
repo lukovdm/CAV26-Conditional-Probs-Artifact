@@ -1,0 +1,33 @@
+Storm 1.11.1 (dev)
+
+Date: Sun Jan 25 21:48:23 2026
+Command line arguments: -drn /home/sjunges/Cond/premise/premise/examples/concrete-mdps/wlan-BOFF=4.drn --prop 'Pmax=? [true];Pmax=? [F "collision1" || F "bothbackoff"]' --timeout 600 --dot-maxwidth 315 --exact '--minmax:precision' 1e-6 -condtol 1e-6 --conditional bisection
+Current working directory: /home/sjunges/Cond/premise
+
+Time for model construction: 161.257s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	2138800
+Transitions: 	4566953
+Choices: 	3312957
+Reward Models:  none
+State Labels: 	6 labels
+   * collision8 -> 464870 item(s)
+   * collision4 -> 164518 item(s)
+   * collision2 -> 30730 item(s)
+   * bothbackoff -> 2110816 item(s)
+   * collision -> 2137397 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": Pmax=? [true] ...
+Result (for initial states): 1 (approx. 1)
+Time for model checking: 0.317s.
+
+Model checking property "2": Pmax=? [(F "collision1") || (F "bothbackoff")] ...
+ERROR (SparsePropositionalModelChecker.cpp:46): The property refers to unknown label 'collision1'.
+WARN  (model-handling.h:1104): Cannot handle property: InvalidPropertyException: The property refers to unknown label 'collision1'.
+ERROR (model-handling.h:1050): Property is unsupported by selected engine/settings.
+

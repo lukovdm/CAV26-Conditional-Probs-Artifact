@@ -1,0 +1,36 @@
+Storm 1.12.0 (dev)
+
+Date: Thu Apr 23 17:41:14 2026
+Command line arguments: -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.05.drn --prop 'Pmax=? [true];Pmax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 10 --dot-maxwidth 6388 --exact '--conditional:algorithm' bisection-pt
+Current working directory: /home/luko/Cond
+
+Time for model construction: 9.817s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	442069
+Transitions: 	1473085
+Choices: 	550597
+Reward Models:  none
+State Labels: 	5 labels
+   * deadlock -> 11628 item(s)
+   * observeIGreater1 -> 148068 item(s)
+   * observeOnlyTrueSender -> 15517 item(s)
+   * observe0Greater1 -> 17200 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": Pmax=? [true] ...
+Result (for initial states): 1 (approx. 1)
+Time for model checking: 0.084s.
+
+Model checking property "2": Pmax=? [(F "observe0Greater1") || (F "observeIGreater1")] ...
+WARN  (AbstractEquationSolver.cpp:327): Iterative solver was aborted after 1 iterations.
+WARN  (TopologicalMinMaxLinearEquationSolver.cpp:148): Topological solver aborted after analyzing 1/3150 SCCs.
+WARN  (AbstractEquationSolver.cpp:327): Iterative solver was aborted after 1 iterations.
+WARN  (TopologicalMinMaxLinearEquationSolver.cpp:148): Topological solver aborted after analyzing 1/1422 SCCs.
+WARN  (AbstractEquationSolver.cpp:327): Iterative solver was aborted after 1 iterations.
+WARN  (TopologicalMinMaxLinearEquationSolver.cpp:148): Topological solver aborted after analyzing 1/46335 SCCs.
+Result till abort (for initial states): 1/2 (approx. 0.5)
+Time for model checking: 1.647s.

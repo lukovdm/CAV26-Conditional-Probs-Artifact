@@ -1,0 +1,31 @@
+Storm 1.11.1 (dev)
+
+Date: Mon Jan 26 03:22:14 2026
+Command line arguments: -drn /home/sjunges/Cond/premise/premise/examples/transformed-mdp/crowds_14-5-0.01.drn --prop 'Pmax=? [true];Pmax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 600 --dot-maxwidth 6359 --exact '--minmax:precision' 0.0 -condtol 0 --conditional bisection-advanced-pt
+Current working directory: /home/sjunges/Cond/premise
+
+Time for model construction: 18.251s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	442069
+Transitions: 	1473085
+Choices: 	550597
+Reward Models:  none
+State Labels: 	5 labels
+   * deadlock -> 11628 item(s)
+   * observeIGreater1 -> 148068 item(s)
+   * observeOnlyTrueSender -> 15517 item(s)
+   * observe0Greater1 -> 17200 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": Pmax=? [true] ...
+Result (for initial states): 1 (approx. 1)
+Time for model checking: 0.067s.
+
+Model checking property "2": Pmax=? [(F "observeIGreater1") || (F "observe0Greater1")] ...
+Analyzing normal form with 63231 maybe states using algorithm 'bisection-advanced-pt.Processed model has 63231 states and 63231 choices and 304705 transitions. Matrix is cyclic.WARN  (TopologicalMinMaxLinearEquationSolver.cpp:148): Topological solver aborted after analyzing 6139/18541 SCCs.
+Bisection method converged after 89 iterations. Difference is 0.Result till abort (for initial states): 19362609392372723554041557280564698750401965046581857393999/635401900836118690495663895225142812459640986324231244502036 (approx. 0.0304730114387346)
+Time for model checking: 581.946s.

@@ -1,0 +1,30 @@
+Storm 1.11.1 (dev)
+
+Date: Sun Jan 25 21:19:26 2026
+Command line arguments: -drn /home/sjunges/Cond/premise/premise/examples/concrete-mdps/coin-05-K=4.drn --prop 'Pmax=? [true];Pmax=? [F "finished" & "all_coins_equal_0"  || F "all_coins_equal_1"]' --timeout 600 --dot-maxwidth 212 --exact '--minmax:precision' 0.0 -condtol 0 --conditional restart
+Current working directory: /home/sjunges/Cond/premise
+
+Time for model construction: 4.605s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	327936
+Transitions: 	1363120
+Choices: 	1093120
+Reward Models:  none
+State Labels: 	5 labels
+   * finished -> 160 item(s)
+   * all_coins_equal_1 -> 1289 item(s)
+   * init -> 1 item(s)
+   * all_coins_equal_0 -> 43737 item(s)
+   * agree -> 45026 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": Pmax=? [true] ...
+Result (for initial states): 1 (approx. 1)
+Time for model checking: 0.045s.
+
+Model checking property "2": Pmax=? [(F ("finished" & "all_coins_equal_0")) || (F "all_coins_equal_1")] ...
+Analyzing normal form with 126606 maybe states using algorithm 'restart.Processed model has 126606 states and 126606 choices and 630665 transitions.Result (for initial states): 503129244/922575247 (approx. 0.5453530708)
+Time for model checking: 73.933s.

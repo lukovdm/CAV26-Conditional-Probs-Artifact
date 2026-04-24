@@ -1,0 +1,32 @@
+Storm 1.11.1 (dev)
+
+Date: Sun Jan 25 21:38:31 2026
+Command line arguments: -drn /home/sjunges/Cond/premise/premise/examples/concrete-mdps/wlan-BOFF=10.drn --prop 'Pmax=? [true];Pmax=? [F "collision8" || F "collision2"]' --timeout 600 --dot-maxwidth 279 --exact '--minmax:precision' 1e-6 -condtol 1e-6 --conditional bisection-pt
+Current working directory: /home/sjunges/Cond/premise
+
+Time for model construction: 559.840s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	7424375
+Transitions: 	16494394
+Choices: 	10351486
+Reward Models:  none
+State Labels: 	7 labels
+   * collision8 -> 2221 item(s)
+   * collision4 -> 164518 item(s)
+   * deadlock -> 3 item(s)
+   * collision2 -> 30730 item(s)
+   * bothbackoff -> 7386204 item(s)
+   * collision -> 7422972 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": Pmax=? [true] ...
+Result (for initial states): 1 (approx. 1)
+Time for model checking: 1.277s.
+
+Model checking property "2": Pmax=? [(F "collision8") || (F "collision2")] ...
+Analyzing normal form with 2944 maybe states using algorithm 'bisection-pt.Processed model has 1 states and 1 choices and 0 transitions. Matrix is acyclic.Bisection method converged after 40 iterations due to identical schedulers for lower and upper bound.Result (for initial states): 25126922873929825/1237940039285380274899124224 (approx. 2.029736665e-11)
+Time for model checking: 14.362s.
