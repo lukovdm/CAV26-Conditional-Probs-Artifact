@@ -47,7 +47,7 @@ After that, run the image using
 docker run -v `pwd`/out:/opt/benchmarks/out -p 8888:8888 --rm -it lukovdm/cav26-cond:latest
 ```
 
-The command above starts the docker container and places you in a bash environment, where you can inspect the source code or run the experiments. A Jupyter Lab environment is started at the same time and can be accessed at [http://127.0.0.1:8888/...]() to view any files in the docker container.
+The command above starts the docker container and places you in a bash environment, where you can inspect the source code or run the experiments. A Jupyter Lab environment is started at the same time and can be accessed at [http://127.0.0.1:8888/lab?token=cav26]() to view any files in the docker container.
 
 Start the smoke test with
 
@@ -88,7 +88,7 @@ laptop.
 We also provide a reduced experiment set. This experiment set supports our main results while skipping many experiments only used for auxiliary results. This set takes around [n hours]. The reduced experiment set takes a seeded random subset of all models and only runs methods directly contributing to the figures in the paper.
 
 ```bash
-./run_fast.sh
+./run_fast.sh   # [runtime: 4 hours]
 ```
 
 The commands will print out progress as they execute the benchmarks.
@@ -136,12 +136,12 @@ Or for the fast experiment set:
 - Table 3: `out/plots/rq2/fast/rq2-exact.tex`
 - Table 4: `out/plots/rq2/fast/rq2-float.tex`
 
-> Note that we did find a bug in our experiments for RQ2. This changed the tables 3 and 4 a bit. These changes did not affect our analysis or conclusions of RQ2.
+> Note that we did find a bug in our experiments for RQ2. This did not affect the treat and restart methods, and thus did our main conclusions of RQ 2, that the restart method was not able to solve many of the instances that treat solved. The bug did impact how the bisection methods performed, they perform worse in general after fixing the bug. However, treat already outperformed these methods in most models anyway and thus did not influence the conclusions here either.
 
 **Example Usage Notebook**
 ----------------------------------------
 
-We provide a notebook showing example usages of our tool. When starting the docker image a Jupyter Lab server is started alongside it. You can access this Jupyter notebook server using the following URL: [http://127.0.0.1:8888/]. In the folder notebooks you can open the file `Usage.ipynb`.
+We provide a notebook showing example usages of our tool. When starting the docker image a Jupyter Lab server is started alongside it. You can access this Jupyter notebook server using the following URL: [http://127.0.0.1:8888/lab?token=cav26](). In the folder notebooks you can open the file `Usage.ipynb`.
 
 Furthermore, you can also view all files in the artifact and all output generated in the `out/` folder in this interface.
 

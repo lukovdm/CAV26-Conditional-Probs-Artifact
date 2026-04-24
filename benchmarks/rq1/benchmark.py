@@ -519,7 +519,7 @@ def main():
     parser.add_argument(
         "--cores",
         type=int,
-        default=8,  # max(1, ((os.cpu_count() or 1) - 1)),
+        default=max(1, min(8, ((os.cpu_count() or 1) - 1))),
         help="Number of CPU cores to use for parallel execution",
     )
     parser.add_argument(
