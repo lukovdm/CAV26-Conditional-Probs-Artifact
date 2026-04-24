@@ -60,7 +60,7 @@ If everything runs successfully, the script should print out intermediate progre
 
 To generate the plots for the smoke test you can run the following command:
 ```bash
-./create_plots.sh smoke_test
+./create_plots.sh smoke_test out
 ```
 
 It will generate plots in the folders `out/plots/rqn/smoke_test/`. 
@@ -95,7 +95,7 @@ In the following outputs, concrete values may be differt but the overall trends 
 
 To generate the plots for the full experiments you can run the following command:
 ```bash
-./create_plots.sh res
+./create_plots.sh res out
 ```
 
 The plots and tables in the paper can now be found in the following locations:
@@ -113,3 +113,26 @@ The plots and tables in the paper can now be found in the following locations:
 - Table 4: `out/plots/rq2/res/rq2-float.tex`
 
 > Note that we did find a bug in our experiments for RQ2. This changed the Tables 3 and 4 a bit. These changes did not affect our analysis or conclusions of RQ2.
+
+**Replicating the Figures from the Original Experiment Data**
+-----------------------------------------------------------------
+
+The original experiment data can be found in the folder `paper_out`. By running the following command the figures and tables found in the paper can be replicated.
+
+```bash
+./create_plots.sh res paper_out
+```
+
+The plots and tables in the paper can now be found in the following locations:
+- Fig. 2:
+  - Left: `paper_out/plots/rq1/res/scatter_bounded_bisection_exact_vs_restart_exact.pdf`
+  - Right: `paper_out/plots/rq1/res/scatter_bounded_bisection_float_vs_restart_float.pdf`
+- Fig. 3:
+  - Left: `paper_out/plots/rq1/res/scatter_quantitative_bisection-pt_exact_vs_restart_exact.pdf`
+  - Right: `paper_out/plots/rq1/res/scatter_quantitative_bisection-pt_float_vs_restart_float.pdf`
+- Fig. 4:
+  - Left: `paper_out/plots/rq1/res/scatter_quantitative_bisection-pt_exact_vs_bisection_exact.pdf`
+  - Right: `paper_out/plots/rq1/res/scatter_quantitative_bisection-pt_eps-exact_vs_bisection_eps-exact.pdf`
+- Table 2: `paper_out/plots/rq3/res/rq3-exact.tex`
+- Table 3: `paper_out/plots/rq2/res/rq2-exact.tex`
+- Table 4: `paper_out/plots/rq2/res/rq2-float.tex`

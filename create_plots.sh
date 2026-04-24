@@ -45,6 +45,7 @@ if [ "$folder" == "res" ]; then
     echo "Fig. 4:"
     echo "  - Left: $base/plots/rq1/res/scatter_quantitative_bisection-pt_exact_vs_bisection_exact.pdf"
     echo "  - Right: $base/plots/rq1/res/scatter_quantitative_bisection-pt_eps-exact_vs_bisection_eps-exact.pdf"
+    echo "Table 2: $base/plots/rq3/res/rq3-exact.tex"
     echo "Table 3: $base/plots/rq2/res/rq2-exact.tex"
     echo "Table 4: $base/plots/rq2/res/rq2-float.tex"
 else

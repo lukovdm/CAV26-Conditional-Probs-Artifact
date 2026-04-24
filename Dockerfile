@@ -1,6 +1,6 @@
 FROM lukovdm/paynt:cav26
 
-RUN apt-get install texlive-full
+RUN apt-get install texlive-full -y
 
 WORKDIR /opt/benchmarks
 
