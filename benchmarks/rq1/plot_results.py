@@ -44,6 +44,25 @@ QUERY_TYPE_NAMES = {
     "bounded": "qualitative",
 }
 
+# Method display names used for axis labels. Picked per query type so the
+# bounded/qualitative plots can use task-specific naming.
+METHOD_LABELS = {
+    "bounded": {
+        "bisection": "treat",
+    },
+    "quantitative": {
+        "bisection": "bis-std",
+        "bisection-advanced": "bis-adv",
+        "bisection-pt": "pt-bis-std",
+        "bisection-advanced-pt": "pt-bis-adv",
+    },
+}
+
+
+def get_method_label(method, query_type):
+    """Display name for a method in the axis labels of a scatter plot."""
+    return METHOD_LABELS.get(query_type, {}).get(method, method)
+
 # Model display names (maps internal names to display names)
 # Only list models that need renaming; others will use their internal name
 MODEL_NAMES = {
@@ -204,6 +223,7 @@ def validate_results(results):
                 r for r in group_results if r["arithmetic_mode"] == "exact"
             ]
 
+            majority_value = None
             if exact_results:
                 # Get majority value (round to 10 decimal places for comparison)
                 exact_values = [round(r["value"], 10) for r in exact_results]
@@ -213,17 +233,6 @@ def validate_results(results):
                     print(
                         f"No majority value for model {model}, query {query_type}, path_formula {path_formula}: {value_counts}"
                     )
-            # else:
-            # No force-exact results, fall back to exact
-            # exact_results = [
-            #     r for r in group_results if r["arithmetic_mode"] == "exact-tolerance"
-            # ]
-            # majority_value = np.average(
-            #     [round(r["value"], 10) for r in exact_results]
-            # )
-            # print(
-            #     f"WARNING, no exact results for model {model}, query {query_type}, path_formula {path_formula}, using exact-tolerance average {majority_value} for validation."
-            # )
 
             # Mark all results as correct/incorrect based on majority
             for r in group_results:
@@ -234,6 +243,12 @@ def validate_results(results):
                     r["query_type"],
                     r["path_formula"],
                 )
+
+                if majority_value is None:
+                    # No exact baseline — can't validate; leave as unknown.
+                    correctness[result_key] = None
+                    continue
+
                 rounded_value = round(r["value"], 10)
 
                 if r["arithmetic_mode"] == "exact":
@@ -790,22 +805,24 @@ def create_scatter_plot(
     """
     fig, ax = plt.subplots(figsize=(2.3, 2.3))
 
-    # Find max value to place incorrect points on a line above
-    # max_val = max(
-    #     max(
-    #         (v1 for v1, _, _, _, c1, _, to1, _ in points if c1 and not to1),
-    #         default=1.0,
-    #     ),
-    #     max(
-    #         (v2 for _, v2, _, _, _, c2, _, to2 in points if c2 and not to2),
-    #         default=1.0,
-    #     ),
-    # )
-    max_val = 600
-    error_line = max_val * 10  # Place error line 5x higher
-    timeout_line = max_val * 4  # Place timeout line 10x higher
-
     min_val = 0.05
+
+    # End the "normal data" region at the next power of 10 above the largest
+    # correct, non-timeout value, so TO/Er fall cleanly outside the data range.
+    data_max = max(
+        max(
+            (v1 for v1, _, _, _, c1, _, to1, _ in points if c1 and not to1),
+            default=1.0,
+        ),
+        max(
+            (v2 for _, v2, _, _, _, c2, _, to2 in points if c2 and not to2),
+            default=1.0,
+        ),
+    )
+    max_val = 10 ** np.ceil(np.log10(max(data_max, min_val * 10)))
+
+    timeout_line = max_val * 3   # half a decade above max_val
+    error_line = max_val * 10    # one decade above max_val
 
     # Plot points
     labeled_models = set()
@@ -969,11 +986,15 @@ def create_scatter_plot(
     #     for qt in markers.keys()
     # ]
 
-    # Add tick labels for incorrect results on the error line and timeout line
-    yticks = list(t for t in ax.get_yticks() if t < error_line)
-    yticks.extend([error_line, timeout_line])
+    # Regular decade ticks only within the data region; TO/Er above it.
+    tick_cutoff = max_val * 1.5
+
+    yticks = [t for t in ax.get_yticks() if t < tick_cutoff]
+    yticks.extend([timeout_line, error_line])
     ax.set_yticks(yticks)
-    ax.set_yticks([t for t in ax.get_yticks(minor=True) if t < error_line], minor=True)
+    ax.set_yticks(
+        [t for t in ax.get_yticks(minor=True) if t < tick_cutoff], minor=True
+    )
     tick_labels = [
         (
             rf"$10^{{{int(np.log10(t))}}}$"
@@ -984,10 +1005,12 @@ def create_scatter_plot(
     ]
     ax.set_yticklabels(tick_labels)
 
-    xticks = list(t for t in ax.get_xticks() if t < error_line)
-    xticks.extend([error_line, timeout_line])
+    xticks = [t for t in ax.get_xticks() if t < tick_cutoff]
+    xticks.extend([timeout_line, error_line])
     ax.set_xticks(xticks)
-    ax.set_xticks([t for t in ax.get_xticks(minor=True) if t < error_line], minor=True)
+    ax.set_xticks(
+        [t for t in ax.get_xticks(minor=True) if t < tick_cutoff], minor=True
+    )
     tick_labels = [
         (
             rf"$10^{{{int(np.log10(t))}}}$"
@@ -1057,8 +1080,8 @@ def plot_method_scatter(
 
         combo1_name = f"{method1}/{get_arithmetic_mode_name(arith1)}"
         combo2_name = f"{method2}/{get_arithmetic_mode_name(arith2)}"
-        combo1_label = f"{method1}".replace("_", "").replace("-", "")
-        combo2_label = f"{method2}".replace("_", "").replace("-", "")
+        combo1_label = get_method_label(method1, requested_query_type)
+        combo2_label = get_method_label(method2, requested_query_type)
 
         combo1_results = [
             r

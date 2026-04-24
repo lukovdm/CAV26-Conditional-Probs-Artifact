@@ -5,18 +5,17 @@ Paper title: Fast Computation of Conditional Probabilities in MDPs and Markov Ch
 Claimed badges: Available + Functional + Reusable
 
 Justification for the badges:
-
-  * Functional: 
+  * **Functional**:
+    - All experiments can be rerun in the docker file using three simple scripts, and this raw data can be automatically formatted as presented in the paper. We additionally provide the raw data we used to generate our submitted tables and figures. The results in figures 2-4 and tables 2-4 can be replicated by following the full review steps. Table 1 is a hand combined version of tables 3 and 4.
     - The full source code of the tools is attached with the artifact. The tools can be compiled by following the instructions availabe in their respective README files. We also provide a docker container with all tools already installed.
-    - All results presented in the paper can be reproduced using this artifact. The results in Figures 2-4 and Tables 2-4 can be replicated by following the full review steps. Table 1 is a hand combined version of Tables 3 and 4.
-
-  * Reusable: Our algorithms as described in the paper are built into the existing tool Storm with its python bindings stormpy. 
-    + We include a unittests as part of storm here: `storm/src/test/storm/modelchecker/prctl/mdp/ConditionalMdpPrctlModelCheckerTest.cpp`. Furthermore, all changes in Storm have already been merged into upstream and will be released within short notice. After it is released, you will be able to install storm with python bindings using the python package manager: `pip install stormpy`. Until such time nightly builds of storm and stormpy docker containers are availabe where one can use the _treat_ algorithm and its bisection variants. The docker container used for this artifact is based on these containers.
-    + Lastly, we have included a Jupyter notebook detailing how the python bindings of storm can be used to model check conditional properties on MDPs. More documentatian on Storm and Stormpy can also be found here: https://www.stormchecker.org/.
-
+  * **Reusable**: 
+    + Our algorithms as described in the paper are built into the existing tool Storm with its python bindings stormpy.
+    + In our docker image you can use the storm tool to model check conditional properties on any MDP accepted by storm (i.e. in the .prism, .jani, .drn, and .umb formats). Additionally you can use our python bindings to do any of these operations from within python. Examples of this can be found in the notebook: [notebooks/Usage.ipynb].
+    + We include a unittests as part of storm here: `storm/src/test/storm/modelchecker/prctl/mdp/ConditionalMdpPrctlModelCheckerTest.cpp`. 
+    + All changes in Storm have already been merged into upstream and will be released as part of Storm 1.13. After it is released, you will be able to install storm with python bindings using the python package manager: `pip install stormpy`.
+    + More documentatian on Storm and Stormpy can also be found here: https://www.stormchecker.org/.
 
 Requirements:
-
   * RAM: 8GB
   * CPU cores: 8 (If you use more cores the benchmarks will go faster and consume more RAM)
   * Time (smoke test): [expected time to execute the smoke test on a standard
