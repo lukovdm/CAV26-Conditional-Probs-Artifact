@@ -32,18 +32,18 @@ external connectivity: NO
 Run the following to load the Docker image:
 
 ```bash
-docker load < docker-tool-image.tar
+docker load < docker-image.tar
 ```
 
 After that, run the image using
 
 ```bash
-docker run -v `pwd`/output:/tool/output --rm -it docker-tool
+docker run -v `pwd`/out:/opt/benchmarks/out --rm -it docker-tool
 ```
 
 The command above starts the docker container and places you in a bash
 environment, where you can inspect the source code or run the experiments. `-v`
-option will mount `output` folder in your current directory to the
+option will mount `out` folder in your current directory to the
 corresponding folder within the container where the evaluation results will be
 stored. This will allow you to view the generated output even after the
 container has stopped running. `--rm` is an optional flag that creates a
