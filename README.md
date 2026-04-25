@@ -52,7 +52,7 @@ The command above starts the docker container and places you in a bash environme
 Start the smoke test with
 
 ```bash
-./run-smoke.sh      # [ ~ runtime: 3 minutes]
+./smoke-test.sh      # [ ~ runtime: 3 minutes]
 ```
 
 The smoke test runs all tools on a reduced set of benchmarks and configurations.
