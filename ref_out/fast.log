@@ -1,0 +1,39 @@
+Script started on 2026-04-26 08:54:15+02:00 [COMMAND="bash run_fast.sh" TERM="tmux-256color" TTY="/dev/pts/0" COLUMNS="98" LINES="26"]
+=====================
+   RQ1 benchmarks    
+=====================
+=====================
+   RQ2 benchmarks    
+=====================
+Results file out/rq2/fast/float/evaluation_results.csv already exists. Appending new results.
+  0%|                                                                      | 0/21 [00:00<?, ?it/s]Skipping existing result for model=ceaser-cipher-4-10, splitting=backward, conditional_alg=bisection, conditional_bisection_optimization=True
+  5%|██▊                                                         | 1/21 [00:00<00:00, 1951.75it/s]Skipping existing result for model=ceaser-cipher-4-10, splitting=backward, conditional_alg=bisection_pt, conditional_bisection_optimization=False
+ 10%|█████▋                                                      | 2/21 [00:00<00:00, 2650.38it/s]Skipping existing result for model=ceaser-cipher-4-10, splitting=backward, conditional_alg=restart, conditional_bisection_optimization=False
+ 14%|████████▌                                                   | 3/21 [00:00<00:00, 3194.73it/s]Skipping existing result for model=ceaser-cipher-10-8, splitting=backward, conditional_alg=bisection, conditional_bisection_optimization=True
+ 19%|███████████▍                                                | 4/21 [00:00<00:00, 3610.41it/s]Skipping existing result for model=ceaser-cipher-10-8, splitting=backward, conditional_alg=bisection_pt, conditional_bisection_optimization=False
+ 24%|██████████████▎                                             | 5/21 [00:00<00:00, 3937.65it/s]Skipping existing result for model=ceaser-cipher-10-8, splitting=backward, conditional_alg=restart, conditional_bisection_optimization=False
+ 29%|█████████████████▏                                          | 6/21 [00:00<00:00, 3914.13it/s]Skipping existing result for model=dpm, splitting=backward, conditional_alg=bisection, conditional_bisection_optimization=True
+ 33%|████████████████████                                        | 7/21 [00:00<00:00, 4114.45it/s]Skipping existing result for model=dpm, splitting=backward, conditional_alg=bisection_pt, conditional_bisection_optimization=False
+ 38%|██████████████████████▊                                     | 8/21 [00:00<00:00, 4357.21it/s] 43%|██████████████████████████▏                                  | 9/21 [05:22<20:09, 100.83s/it] 48%|█████████████████████████████                                | 10/21 [05:29<13:10, 71.83s/it] 52%|███████████████████████████████▉                             | 11/21 [06:24<11:06, 66.65s/it] 57%|██████████████████████████████████▎                         | 12/21 [11:37<21:13, 141.51s/it] 62%|█████████████████████████████████████▊                       | 13/21 [11:39<13:16, 99.50s/it]Timeout expired for model=virus, splitting=backward, conditional_alg=bisection_pt, conditional_bisection_optimization=False
+ 67%|████████████████████████████████████████                    | 14/21 [17:40<20:47, 178.22s/it] 71%|██████████████████████████████████████████▊                 | 15/21 [17:45<12:37, 126.21s/it] 76%|█████████████████████████████████████████████▋              | 16/21 [18:50<08:59, 107.87s/it] 81%|████████████████████████████████████████████████▌           | 17/21 [20:39<07:12, 108.08s/it] 86%|███████████████████████████████████████████████████▍        | 18/21 [25:39<08:17, 165.79s/it] 90%|██████████████████████████████████████████████████████▎     | 19/21 [26:04<04:06, 123.31s/it] 95%|██████████████████████████████████████████████████████████   | 20/21 [26:37<01:36, 96.32s/it]100%|████████████████████████████████████████████████████████████| 21/21 [31:39<00:00, 157.93s/it]100%|█████████████████████████████████████████████████████████████| 21/21 [31:39<00:00, 90.43s/it]
+
+real	31m39.233s
+user	25m10.474s
+sys	0m30.087s
+Results file out/rq2/fast/exact/evaluation_results.csv already exists. Appending new results.
+  0%|                                                                      | 0/21 [00:00<?, ?it/s]Skipping existing result for model=ceaser-cipher-4-10, splitting=backward, conditional_alg=bisection, conditional_bisection_optimization=True
+  5%|██▊                                                         | 1/21 [00:00<00:00, 1555.17it/s]Skipping existing result for model=ceaser-cipher-4-10, splitting=backward, conditional_alg=bisection_pt, conditional_bisection_optimization=False
+ 10%|█████▋                                                      | 2/21 [00:00<00:00, 2172.62it/s]Skipping existing result for model=ceaser-cipher-4-10, splitting=backward, conditional_alg=restart, conditional_bisection_optimization=False
+ 14%|████████▌                                                   | 3/21 [00:00<00:00, 2633.22it/s] 19%|███████████▊                                                  | 4/21 [01:17<08:41, 30.70s/it] 24%|██████████████▊                                               | 5/21 [02:38<13:01, 48.87s/it] 29%|█████████████████▋                                            | 6/21 [04:17<16:28, 65.93s/it] 33%|████████████████████▋                                         | 7/21 [04:30<11:20, 48.61s/it] 38%|███████████████████████▏                                     | 8/21 [09:39<28:26, 131.30s/it] 43%|██████████████████████████▌                                   | 9/21 [09:57<19:12, 96.01s/it] 48%|█████████████████████████████                                | 10/21 [10:12<13:00, 70.97s/it] 52%|███████████████████████████████▍                            | 11/21 [15:43<25:06, 150.61s/it] 57%|██████████████████████████████████▎                         | 12/21 [16:04<16:39, 111.05s/it] 62%|█████████████████████████████████████▊                       | 13/21 [16:18<10:54, 81.80s/it] 67%|████████████████████████████████████████                    | 14/21 [20:00<14:27, 123.99s/it] 71%|███████████████████████████████████████████▌                 | 15/21 [20:11<08:59, 89.91s/it] 76%|█████████████████████████████████████████████▋              | 16/21 [23:40<10:28, 125.71s/it] 81%|████████████████████████████████████████████████▌           | 17/21 [27:02<09:54, 148.65s/it] 86%|███████████████████████████████████████████████████▍        | 18/21 [32:02<09:42, 194.18s/it] 90%|██████████████████████████████████████████████████████▎     | 19/21 [32:45<04:57, 148.80s/it] 95%|█████████████████████████████████████████████████████████▏  | 20/21 [33:48<02:03, 123.17s/it]100%|████████████████████████████████████████████████████████████| 21/21 [38:48<00:00, 176.32s/it]100%|████████████████████████████████████████████████████████████| 21/21 [38:48<00:00, 110.90s/it]
+
+real	38m49.169s
+user	38m17.072s
+sys	0m33.073s
+=====================
+   RQ3 benchmarks    
+=====================
+=====================
+       DONE!
+=====================
+
+Script done on 2026-04-26 10:04:44+02:00 [COMMAND_EXIT_CODE="0"]

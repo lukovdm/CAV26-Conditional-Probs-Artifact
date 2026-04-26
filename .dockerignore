@@ -6,3 +6,4 @@ out/
 docker-image.tar
 .git
 project_backup.tar.gz
+docker/

@@ -57,7 +57,7 @@ Start the smoke test with
 
 The smoke test runs all tools on a reduced set of benchmarks and configurations.
 If everything runs successfully, the script prints out intermediate progress for each RQ seperatly. Example output should look as follows:
-```
+```log
 =====================
   RQ1 benchmarks...
 =====================
@@ -127,7 +127,7 @@ We also provide a reduced experiment set. This experiment set supports our main 
 ./run_fast.sh   # [runtime: 4 hours]
 ```
 
-The commands will print out progress as they execute the benchmarks.
+The commands will print out progress similarly as the smoke test as they execute the benchmarks.
 
 The output will be in the folders `out/rq*/full/` if you ran the full set and `out/rq*/fast/` if you ran the fast experiment set.
 
