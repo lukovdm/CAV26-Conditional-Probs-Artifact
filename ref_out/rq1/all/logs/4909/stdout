@@ -1,0 +1,35 @@
+Storm 1.12.0 (dev)
+
+Date: Fri Apr 24 21:51:33 2026
+Command line arguments: -drn benchmarks/rq1/models/transformed-mdp/brp-N=128-MAX=8-PCHAN=0.1-0.15.drn --prop 'Pmax=? [true];Pmax=? [F "target" || F "retries_MAX_min_3"]' --timeout 300 --dot-maxwidth 4908 --exact '--conditional:algorithm' bisection
+Current working directory: /home/luko/Cond
+
+Time for model construction: 0.124s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	15371
+Transitions: 	31475
+Choices: 	20739
+Reward Models:  none
+State Labels: 	9 labels
+   * success -> 80 item(s)
+   * deadlock -> 265 item(s)
+   * target -> 256 item(s)
+   * retries_MAX_min_2 -> 1665 item(s)
+   * retries_MAX_min_3 -> 1665 item(s)
+   * retries_MAX_min_1 -> 1665 item(s)
+   * retries_MAX_min_4 -> 1665 item(s)
+   * retries_MAX_min_5 -> 1665 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": Pmax=? [true] ...
+Result (for initial states): 1 (approx. 1)
+Time for model checking: 0.002s.
+
+Model checking property "2": Pmax=? [(F "target") || (F "retries_MAX_min_3")] ...
+WARN  (ConditionalHelper.cpp:1093): Bisection solver aborted after 1478iterations. Bound difference is 0.
+Result till abort (for initial states): 7245752149913870224572144519085029174431868712026719240398462842303965600115732921187442666111385149655333609796810029228005811324778866248051151866589806286562549201784976825122523962394871033856703432847614637997276890097292028202988836829831200088778036107912782665738393409417186760275996148058437342885959385114396376775007074940103313693409261233530112718947385038618367082101863712586229781762833136759137104582510195384301001887614791864/68428904570857740832540560300986149598964285106740027181800103717753855449191196734177576717769573668378246485558667549780256651668327819411481222508337370845083178932275851360198240981595859583938690871728337718006061439507894326704142420442324040393272419944081720633010534137968340011334482381769316969270142165934177208016832666552483340032393665849395993039772438621871997975044541459274573470631633854516399172582262182923714957264037845049 (approx. 0.105887303)
+Time for model checking: 300.077s.

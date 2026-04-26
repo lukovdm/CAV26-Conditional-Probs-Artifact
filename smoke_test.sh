@@ -1,8 +1,7 @@
 echo "====================="
 echo "  RQ1 benchmarks..."
 echo "====================="
-python benchmarks/rq1/benchmark.py --models "coin-03-K=4" "asia" --methods bisection bisection-pt restart --output out/rq1/smoke_test/
-
+python benchmarks/rq1/benchmark.py --models "coin-03-K=4" "alarm" --methods bisection bisection-pt restart --output out/rq1/smoke_test/
 
 echo "====================="
 echo "  RQ2 benchmarks..."

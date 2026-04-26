@@ -52,11 +52,44 @@ The command above starts the docker container and places you in a bash environme
 Start the smoke test with
 
 ```bash
-./run-smoke.sh      # [ ~ runtime: 3 minutes]
+./smoke_test.sh      # [ ~ runtime: 3 minutes]
 ```
 
 The smoke test runs all tools on a reduced set of benchmarks and configurations.
-If everything runs successfully, the script should print out intermediate progress.
+If everything runs successfully, the script prints out intermediate progress for each RQ seperatly. Example output should look as follows:
+```
+=====================
+  RQ1 benchmarks...
+=====================
+Benchmarking 2 models with methods: ['bisection', 'bisection-pt', 'restart']
+Testing both exact, exact-tolerance and float
+
+
+Computers / CPU threads / Max jobs to run
+1:local / 24 / 8
+
+Computer:jobs running/jobs completed/%of started jobs/Average seconds to complete
+ETA: 0s Left: 16 AVG: 0.04s  local:7/23/100%/0.0s /opt/storm/build/bin/storm -drn benchmarks/rq1/models/concrete-mdps/coin-03-K=4.drn --prop 'Pmax=? [true];Pmax>=0.5 [F "finished" & "all_coins_equal_0"  || F "all_coins_equal_1"]' --timeout 300 --dot-maxwidth 30 --exact --conditional:algorithm restart
+...
+
+=====================
+  RQ2 benchmarks...
+=====================
+ 83%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████▏                     | 5/6 [00:01<00:00,  3.76it/s]              # <It waits here for a bit>
+ 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 6/6 [00:02<00:00,  2.24it/s]
+
+ =====================
+  RQ3 benchmarks...
+=====================
+Running in smoke test mode with only one benchmark and one configuration.
+  0%|                                            | 0/1 [00:00<?, ?it/s]
+100%|████████████████████████████████████████████| 10/10 [00:01<00:00,  9.59it/s]
+100%|████████████████████████████████████████████| 1/1 [00:11<00:00, 11.24s/it]
+All experiments completed.
+=====================
+       DONE!
+=====================
+```
 
 To generate the plots for the smoke test you can run the following command:
 ```bash
@@ -78,14 +111,17 @@ of the log in the review.
 --------------------------------
 
 Assuming the smoke test passed, run the following command in the docker image to reproduce the
-results. Running the full benchmark suite can take around 18 hours on a standard
+results. Running the full benchmark suite can take around 20 hours on a standard
 laptop.
 
 ```bash
 ./run_all.sh    # [runtime: 18 hours]
 ```
 
-We also provide a reduced experiment set. This experiment set supports our main results while skipping many experiments only used for auxiliary results. This set takes around [n hours]. The reduced experiment set takes a seeded random subset of all models and only runs methods directly contributing to the figures in the paper.
+We also provide a reduced experiment set. This experiment set supports our main results while skipping many experiments only used for auxiliary results. This set takes around [n hours]. The reduced experiment set takes a seeded random subset of all models and only runs methods directly contributing to the figures in the paper, not in the appendix. Concretely it tests:
+- RQ1: on a seeded random half of models and only on methods `treat`, `bis-std`, `pt-bis-std`, and `restart`.
+- RQ2: only on methods `treat`, `pt-bis-std`, and `restart`.
+- RQ3: only with exact arithmetic and qualitative queries.
 
 ```bash
 ./run_fast.sh   # [runtime: 4 hours]

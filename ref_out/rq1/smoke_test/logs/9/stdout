@@ -1,10 +1,10 @@
 Storm 1.12.0 (dev)
 
-Date: Fri Apr 24 09:57:27 2026
-Command line arguments: -drn benchmarks/rq1/models/concrete-mdps/coin-03-K=4.drn --prop 'Pmax=? [true];Pmax>=0.5 [F "finished" & "all_coins_equal_0"  || F "all_coins_equal_1"]' --timeout 10 --dot-maxwidth 8 '--conditional:precision' 1e-6 '--conditional:algorithm' bisection
+Date: Fri Apr 24 16:14:18 2026
+Command line arguments: -drn benchmarks/rq1/models/concrete-mdps/coin-03-K=4.drn --prop 'Pmax=? [true];Pmax=? [F "finished" & "all_coins_equal_0"  || F "all_coins_equal_1"]' --timeout 300 --dot-maxwidth 8 '--conditional:precision' 1e-6 '--conditional:algorithm' restart
 Current working directory: /home/luko/Cond
 
-Time for model construction: 0.024s.
+Time for model construction: 0.023s.
 
 -------------------------------------------------------------- 
 Model type: 	MDP (sparse)
@@ -25,7 +25,6 @@ Model checking property "1": Pmax=? [true] ...
 Result (for initial states): 1
 Time for model checking: 0.000s.
 
-Model checking property "2": Pmax>=1/2 [(F ("finished" & "all_coins_equal_0")) || (F "all_coins_equal_1")] ...
-Result (for initial states): true
-
-Time for model checking: 0.059s.
+Model checking property "2": Pmax=? [(F ("finished" & "all_coins_equal_0")) || (F "all_coins_equal_1")] ...
+Result (for initial states): 0.5371023323
+Time for model checking: 0.069s.

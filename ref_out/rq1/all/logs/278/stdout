@@ -1,0 +1,34 @@
+Storm 1.12.0 (dev)
+
+Date: Fri Apr 24 17:28:48 2026
+Command line arguments: -drn benchmarks/rq1/models/concrete-mdps/wlan-BOFF=10.drn --prop 'Pmax=? [true];Pmax=? [F "collision1" || F "bothbackoff"]' --timeout 300 --dot-maxwidth 277 --exact '--conditional:precision' 1e-6 '--conditional:algorithm' bisection
+Current working directory: /home/luko/Cond
+
+Time for model construction: 77.764s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	7424375
+Transitions: 	16494394
+Choices: 	10351486
+Reward Models:  none
+State Labels: 	7 labels
+   * collision8 -> 2221 item(s)
+   * collision4 -> 164518 item(s)
+   * deadlock -> 3 item(s)
+   * collision2 -> 30730 item(s)
+   * bothbackoff -> 7386204 item(s)
+   * collision -> 7422972 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": Pmax=? [true] ...
+Result (for initial states): 1 (approx. 1)
+Time for model checking: 1.312s.
+
+Model checking property "2": Pmax=? [(F "collision1") || (F "bothbackoff")] ...
+ERROR (SparsePropositionalModelChecker.cpp:46): The property refers to unknown label 'collision1'.
+WARN  (model-handling.h:1147): Cannot handle property: InvalidPropertyException: The property refers to unknown label 'collision1'.
+ERROR (model-handling.h:1093): Property is unsupported by selected engine/settings.
+

@@ -1,0 +1,30 @@
+Storm 1.12.0 (dev)
+
+Date: Fri Apr 24 17:14:18 2026
+Command line arguments: -drn benchmarks/rq1/models/concrete-mdps/coin-05-K=4.drn --prop 'Pmax=? [true];Pmax=? [F "finished" & "all_coins_equal_0"  || F "all_coins_equal_1"]' --timeout 300 --dot-maxwidth 227 --exact '--conditional:precision' 1e-6 '--conditional:algorithm' bisection-advanced-pt
+Current working directory: /home/luko/Cond
+
+Time for model construction: 1.289s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	327936
+Transitions: 	1363120
+Choices: 	1093120
+Reward Models:  none
+State Labels: 	5 labels
+   * finished -> 160 item(s)
+   * all_coins_equal_1 -> 1289 item(s)
+   * init -> 1 item(s)
+   * all_coins_equal_0 -> 43737 item(s)
+   * agree -> 45026 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": Pmax=? [true] ...
+Result (for initial states): 1 (approx. 1)
+Time for model checking: 0.037s.
+
+Model checking property "2": Pmax=? [(F ("finished" & "all_coins_equal_0")) || (F "all_coins_equal_1")] ...
+Result (for initial states): 503129244/922575247 (approx. 0.5453530708)
+Time for model checking: 76.093s.

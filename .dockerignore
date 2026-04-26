@@ -5,3 +5,4 @@ out/
 **/__pycache__/
 docker-image.tar
 .git
+project_backup.tar.gz

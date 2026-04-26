@@ -1,0 +1,358 @@
+\begin{longtable}{lrr@{\hskip 12pt}r@{\hskip 12pt}r@{\hskip 12pt}r@{\hskip 12pt}r@{\hskip 12pt}r}
+\toprule
+ID & Model & States & Transitions & \multicolumn{2}{c}{exact} & \multicolumn{2}{c}{float} \\
+\cmidrule(lr){5-6}\cmidrule(lr){7-8}
+ & & &  & bisection & restart & bisection & restart \\
+\midrule
+\endhead
+1 & \multirow{2}{*}{alarm} & \multirow{2}{*}{1256} & \multirow{2}{*}{12024} & \textbf{<0.01} & 0.08 & \textbf{<0.01} & \textbf{<0.01} \\
+2 &  &  &  & \textbf{0.02} & 1.48 & \textbf{<0.01} & \textbf{<0.01} \\
+\cmidrule{5-8}
+3 & \multirow{2}{*}{child} & \multirow{2}{*}{1450} & \multirow{2}{*}{13350} & \textbf{0.01} & 0.25 & \textbf{<0.01} & 0.02 \\
+4 &  &  &  & 0.02 & \textbf{0.01} & \textbf{<0.01} & \textbf{<0.01} \\
+\midrule
+5 & \multirow{4}{*}{brp-128-0.1-0.05} & \multirow{4}{*}{15371} & \multirow{4}{*}{31475} & \textbf{2.12} & 99.67 & \textbf{0.1} & 1.71 \\
+6 &  &  &  & \textbf{1.88} & 24.24 & \textbf{0.12} & 0.23 \\
+7 &  &  &  & \textbf{2.09} & 192.8 & \textbf{0.35} & 1.72 \\
+8 &  &  &  & \textbf{1.9} & 69.84 & \textbf{0.33} & 0.5 \\
+\cmidrule{5-8}
+9 & \multirow{4}{*}{brp-128-0.1-0.15} & \multirow{4}{*}{15371} & \multirow{4}{*}{31475} & \textbf{3.11} & 106.95 & \textbf{0.14} & 0.27 \\
+10 &  &  &  & \textbf{2.76} & 53.24 & \textbf{0.12} & 0.14 \\
+11 &  &  &  & \textbf{1.62} & 293.92 & \textbf{0.34} & 0.53 \\
+12 &  &  &  & \textbf{1.54} & 135.44 & \textbf{0.27} & 0.34 \\
+\cmidrule{5-8}
+13 & \multirow{4}{*}{brp-128-0.2-0.05} & \multirow{4}{*}{15371} & \multirow{4}{*}{31475} & \textbf{2.15} & 49.7 & \textbf{0.14} & 0.59 \\
+14 &  &  &  & \textbf{1.86} & 58.3 & \textbf{0.12} & 0.15 \\
+15 &  &  &  & \textbf{2.33} & 121.72 & \textbf{0.35} & 0.66 \\
+16 &  &  &  & \textbf{2.06} & 57.83 & \textbf{0.22} & 0.27 \\
+\cmidrule{5-8}
+17 & \multirow{4}{*}{brp-128-0.2-0.15} & \multirow{4}{*}{15371} & \multirow{4}{*}{31475} & \textbf{2.14} & 123.57 & \textbf{0.14} & 0.34 \\
+18 &  &  &  & \textbf{1.86} & 58.82 & \textbf{0.12} & 0.13 \\
+19 &  &  &  & \textbf{2.22} & 215.88 & \textbf{0.24} & 0.56 \\
+20 &  &  &  & \textbf{1.93} & 102.47 & \textbf{0.22} & 0.35 \\
+\cmidrule{5-8}
+21 & \multirow{4}{*}{brp-16-0.1-0.05} & \multirow{4}{*}{1931} & \multirow{4}{*}{3923} & \textbf{0.03} & 0.63 & \textbf{<0.01} & 0.17 \\
+22 &  &  &  & \textbf{0.02} & 0.25 & \textbf{<0.01} & 0.02 \\
+23 &  &  &  & \textbf{0.03} & 0.94 & \textbf{<0.01} & 0.19 \\
+24 &  &  &  & \textbf{0.03} & 0.39 & \textbf{<0.01} & 0.03 \\
+\cmidrule{5-8}
+25 & \multirow{4}{*}{brp-16-0.1-0.15} & \multirow{4}{*}{1931} & \multirow{4}{*}{3923} & \textbf{0.03} & 0.7 & \textbf{<0.01} & 0.02 \\
+26 &  &  &  & \textbf{0.03} & 0.36 & \textbf{<0.01} & \textbf{<0.01} \\
+27 &  &  &  & \textbf{0.03} & 1.25 & \textbf{<0.01} & 0.03 \\
+28 &  &  &  & \textbf{0.02} & 0.5 & \textbf{<0.01} & 0.01 \\
+\cmidrule{5-8}
+29 & \multirow{4}{*}{brp-16-0.2-0.05} & \multirow{4}{*}{1931} & \multirow{4}{*}{3923} & \textbf{0.03} & 0.49 & \textbf{<0.01} & 0.06 \\
+30 &  &  &  & \textbf{0.02} & 0.17 & \textbf{<0.01} & \textbf{<0.01} \\
+31 &  &  &  & \textbf{0.03} & 0.64 & \textbf{<0.01} & 0.03 \\
+32 &  &  &  & \textbf{0.03} & 0.32 & \textbf{<0.01} & 0.01 \\
+\cmidrule{5-8}
+33 & \multirow{4}{*}{brp-16-0.2-0.15} & \multirow{4}{*}{1931} & \multirow{4}{*}{3923} & \textbf{0.03} & 0.63 & \textbf{<0.01} & 0.01 \\
+34 &  &  &  & \textbf{0.02} & 0.33 & \textbf{<0.01} & \textbf{<0.01} \\
+35 &  &  &  & \textbf{0.02} & 0.78 & \textbf{<0.01} & 0.02 \\
+36 &  &  &  & \textbf{0.02} & 0.39 & \textbf{<0.01} & 0.01 \\
+\cmidrule{5-8}
+37 & \multirow{4}{*}{brp-32-0.1-0.05} & \multirow{4}{*}{3851} & \multirow{4}{*}{7859} & \textbf{0.1} & 3.46 & \textbf{0.01} & 0.35 \\
+38 &  &  &  & \textbf{0.09} & 0.86 & \textbf{0.01} & 0.04 \\
+39 &  &  &  & \textbf{0.11} & 5.08 & \textbf{0.02} & 0.38 \\
+40 &  &  &  & \textbf{0.1} & 2.37 & \textbf{0.02} & 0.08 \\
+\cmidrule{5-8}
+41 & \multirow{4}{*}{brp-32-0.1-0.15} & \multirow{4}{*}{3851} & \multirow{4}{*}{7859} & \textbf{0.14} & 3.96 & \textbf{0.01} & 0.04 \\
+42 &  &  &  & \textbf{0.13} & 1.87 & \textbf{0.01} & 0.02 \\
+43 &  &  &  & \textbf{0.1} & 7.09 & \textbf{0.02} & 0.08 \\
+44 &  &  &  & \textbf{0.09} & 3.1 & \textbf{0.02} & 0.03 \\
+\cmidrule{5-8}
+45 & \multirow{4}{*}{brp-32-0.2-0.05} & \multirow{4}{*}{3851} & \multirow{4}{*}{7859} & \textbf{0.11} & 1.78 & \textbf{0.01} & 0.14 \\
+46 &  &  &  & \textbf{0.09} & 0.87 & \textbf{0.01} & 0.02 \\
+47 &  &  &  & \textbf{0.12} & 4.33 & \textbf{0.02} & 0.09 \\
+48 &  &  &  & \textbf{0.11} & 1.64 & \textbf{0.02} & 0.03 \\
+\cmidrule{5-8}
+49 & \multirow{4}{*}{brp-32-0.2-0.15} & \multirow{4}{*}{3851} & \multirow{4}{*}{7859} & \textbf{0.11} & 3.4 & \textbf{0.01} & 0.04 \\
+50 &  &  &  & \textbf{0.09} & 1.61 & \textbf{0.01} & 0.01 \\
+51 &  &  &  & \textbf{0.1} & 5.05 & \textbf{0.02} & 0.05 \\
+52 &  &  &  & \textbf{0.09} & 2.33 & \textbf{0.02} & 0.03 \\
+\cmidrule{5-8}
+53 & \multirow{4}{*}{brp-64-0.1-0.05} & \multirow{4}{*}{7691} & \multirow{4}{*}{15731} & \textbf{0.45} & 19.24 & \textbf{0.04} & 0.7 \\
+54 &  &  &  & \textbf{0.4} & 4.82 & \textbf{0.04} & 0.08 \\
+55 &  &  &  & \textbf{0.46} & 27.9 & \textbf{0.09} & 0.7 \\
+56 &  &  &  & \textbf{0.41} & 13.58 & \textbf{0.08} & 0.21 \\
+\cmidrule{5-8}
+57 & \multirow{4}{*}{brp-64-0.1-0.15} & \multirow{4}{*}{7691} & \multirow{4}{*}{15731} & \textbf{0.68} & 20.82 & \textbf{0.04} & 0.1 \\
+58 &  &  &  & \textbf{0.59} & 10.44 & \textbf{0.04} & 0.04 \\
+59 &  &  &  & \textbf{0.4} & 43.58 & \textbf{0.09} & 0.2 \\
+60 &  &  &  & \textbf{0.37} & 20.66 & \textbf{0.09} & 0.11 \\
+\cmidrule{5-8}
+61 & \multirow{4}{*}{brp-64-0.2-0.05} & \multirow{4}{*}{7691} & \multirow{4}{*}{15731} & \textbf{0.46} & 9.74 & \textbf{0.04} & 0.31 \\
+62 &  &  &  & \textbf{0.39} & 7 & \textbf{0.04} & 0.05 \\
+63 &  &  &  & \textbf{0.47} & 23.67 & \textbf{0.09} & 0.24 \\
+64 &  &  &  & \textbf{0.45} & 11.54 & \textbf{0.09} & 0.11 \\
+\cmidrule{5-8}
+65 & \multirow{4}{*}{brp-64-0.2-0.15} & \multirow{4}{*}{7691} & \multirow{4}{*}{15731} & \textbf{0.46} & 18.92 & \textbf{0.04} & 0.11 \\
+66 &  &  &  & \textbf{0.4} & 9.26 & \textbf{0.04} & 0.04 \\
+67 &  &  &  & \textbf{0.44} & 32.98 & \textbf{0.09} & 0.17 \\
+68 &  &  &  & \textbf{0.4} & 17.84 & \textbf{0.09} & 0.11 \\
+\cmidrule{5-8}
+69 & \multirow{2}{*}{crowds\_10-5-0.01} & \multirow{2}{*}{111294} & \multirow{2}{*}{316044} & \textbf{1.77} & TO & \textbf{0.1} & 0.24 \\
+70 &  &  &  & \textbf{1.29} & TO & \textbf{0.08} & 0.11 \\
+\cmidrule{5-8}
+71 & \multirow{2}{*}{crowds\_10-5-0.05} & \multirow{2}{*}{111294} & \multirow{2}{*}{316044} & \textbf{1.89} & TO & \textbf{0.1} & 0.3 \\
+72 &  &  &  & \textbf{1.39} & TO & \textbf{0.08} & 0.11 \\
+\cmidrule{5-8}
+73 & \multirow{2}{*}{crowds\_10-5-0.15} & \multirow{2}{*}{111294} & \multirow{2}{*}{316044} & \textbf{1.91} & TO & \textbf{0.11} & 0.18 \\
+74 &  &  &  & \textbf{1.35} & TO & \textbf{0.09} & 0.15 \\
+\cmidrule{5-8}
+75 & \multirow{2}{*}{crowds\_12-5-0.01} & \multirow{2}{*}{232709} & \multirow{2}{*}{718229} & \textbf{4.67} & TO & \textbf{0.27} & 0.82 \\
+76 &  &  &  & \textbf{2.99} & TO & \textbf{0.17} & 0.24 \\
+\cmidrule{5-8}
+77 & \multirow{2}{*}{crowds\_12-5-0.05} & \multirow{2}{*}{232709} & \multirow{2}{*}{718229} & \textbf{4.83} & TO & \textbf{0.27} & 0.96 \\
+78 &  &  &  & \textbf{3.06} & TO & \textbf{0.17} & 0.25 \\
+\cmidrule{5-8}
+79 & \multirow{2}{*}{crowds\_13-5-0.01} & \multirow{2}{*}{324089} & \multirow{2}{*}{1040129} & \textbf{7.75} & TO & \textbf{0.41} & 1.3 \\
+80 &  &  &  & \textbf{4.55} & TO & \textbf{0.24} & 0.34 \\
+\cmidrule{5-8}
+81 & \multirow{2}{*}{crowds\_14-5-0.01} & \multirow{2}{*}{442069} & \multirow{2}{*}{1473085} & \textbf{11.74} & TO & \textbf{0.67} & 2.12 \\
+82 &  &  &  & \textbf{6.49} & TO & \textbf{0.33} & 0.42 \\
+\cmidrule{5-8}
+83 & \multirow{2}{*}{crowds\_14-5-0.05} & \multirow{2}{*}{442069} & \multirow{2}{*}{1473085} & \textbf{11.51} & TO & \textbf{0.68} & 2.43 \\
+84 &  &  &  & \textbf{6.22} & TO & \textbf{0.33} & 0.49 \\
+\cmidrule{5-8}
+85 & \multirow{2}{*}{crowds\_15-5-0.01} & \multirow{2}{*}{592060} & \multirow{2}{*}{2045560} & \textbf{14.4} & TO & \textbf{0.97} & 2.17 \\
+86 &  &  &  & \textbf{8.22} & TO & \textbf{0.47} & 0.58 \\
+\cmidrule{5-8}
+87 & \multirow{2}{*}{crowds\_15-5-0.05} & \multirow{2}{*}{592060} & \multirow{2}{*}{2045560} & \textbf{14.59} & TO & \textbf{0.95} & 2.45 \\
+88 &  &  &  & \textbf{8.21} & TO & \textbf{0.47} & 0.59 \\
+\cmidrule{5-8}
+89 & \multirow{2}{*}{crowds\_15-5-0.15} & \multirow{2}{*}{592060} & \multirow{2}{*}{2045560} & \textbf{15.17} & TO & \textbf{0.92} & 1.3 \\
+90 &  &  &  & \textbf{8.35} & TO & \textbf{0.5} & 1 \\
+\cmidrule{5-8}
+91 & \multirow{2}{*}{crowds\_3-5-0.01} & \multirow{2}{*}{1772} & \multirow{2}{*}{4712} & \textbf{0.03} & 0.12 & \textbf{<0.01} & \textbf{<0.01} \\
+92 &  &  &  & \textbf{0.03} & 0.08 & \textbf{<0.01} & \textbf{<0.01} \\
+\cmidrule{5-8}
+93 & \multirow{2}{*}{crowds\_3-5-0.05} & \multirow{2}{*}{1772} & \multirow{2}{*}{4712} & \textbf{0.03} & 0.13 & \textbf{<0.01} & \textbf{<0.01} \\
+94 &  &  &  & \textbf{0.03} & 0.09 & \textbf{<0.01} & \textbf{<0.01} \\
+\cmidrule{5-8}
+95 & \multirow{2}{*}{crowds\_3-5-0.15} & \multirow{2}{*}{1772} & \multirow{2}{*}{4712} & \textbf{0.03} & 0.15 & \textbf{<0.01} & \textbf{<0.01} \\
+96 &  &  &  & \textbf{0.03} & 0.1 & \textbf{<0.01} & \textbf{<0.01} \\
+\cmidrule{5-8}
+97 & \multirow{2}{*}{crowds\_5-5-0.01} & \multirow{2}{*}{8653} & \multirow{2}{*}{19153} & \textbf{0.1} & 11.38 & \textbf{<0.01} & 0.01 \\
+98 &  &  &  & \textbf{0.09} & 6.53 & \textbf{<0.01} & \textbf{<0.01} \\
+\cmidrule{5-8}
+99 & \multirow{2}{*}{crowds\_5-5-0.05} & \multirow{2}{*}{8653} & \multirow{2}{*}{19153} & \textbf{0.11} & 10.55 & \textbf{<0.01} & 0.01 \\
+100 &  &  &  & \textbf{0.09} & 8.01 & \textbf{<0.01} & 0.01 \\
+\cmidrule{5-8}
+101 & \multirow{2}{*}{crowds\_5-5-0.15} & \multirow{2}{*}{8653} & \multirow{2}{*}{19153} & \textbf{0.11} & 15.72 & \textbf{<0.01} & 0.01 \\
+102 &  &  &  & \textbf{0.09} & 8.67 & \textbf{<0.01} & 0.01 \\
+\midrule
+103 & \multirow{1}{*}{coin-03-K=12} & \multirow{1}{*}{15200} & \multirow{1}{*}{39300} & \textbf{0.51} & 0.64 & 1.14 & \textbf{1.07} \\
+104 & \multirow{1}{*}{coin-03-K=4} & \multirow{1}{*}{5216} & \multirow{1}{*}{13380} & \textbf{0.1} & 0.13 & \textbf{0.05} & 0.07 \\
+105 & \multirow{1}{*}{coin-03-K=8} & \multirow{1}{*}{10208} & \multirow{1}{*}{26340} & \textbf{0.35} & 0.42 & 0.41 & \textbf{0.41} \\
+106 & \multirow{1}{*}{coin-04-K=12} & \multirow{1}{*}{125056} & \multirow{1}{*}{420832} & \textbf{9.87} & 40.45 & 11.61 & \textbf{11.3} \\
+107 & \multirow{1}{*}{coin-04-K=4} & \multirow{1}{*}{43136} & \multirow{1}{*}{144352} & \textbf{1.5} & 3.22 & \textbf{0.9} & 0.94 \\
+108 & \multirow{1}{*}{coin-04-K=8} & \multirow{1}{*}{84096} & \multirow{1}{*}{282592} & \textbf{6.28} & 19.12 & \textbf{5.09} & 5.38 \\
+109 & \multirow{1}{*}{coin-05-K=12} & \multirow{1}{*}{947456} & \multirow{1}{*}{3955120} & TO & TO & 182.54 & 152.24 \\
+110 & \multirow{1}{*}{coin-05-K=4} & \multirow{1}{*}{327936} & \multirow{1}{*}{1363120} & \textbf{53.37} & 96.1 & \textbf{6.88} & 10.44 \\
+111 & \multirow{1}{*}{coin-05-K=8} & \multirow{1}{*}{637696} & \multirow{1}{*}{2659120} & TO & TO & 60.24 & 49.19 \\
+112 & \multirow{1}{*}{wlan-BOFF=10} & \multirow{1}{*}{7424375} & \multirow{1}{*}{16494394} & 15.61 & \textbf{15.38} & \textbf{2.01} & 2.37 \\
+113 & \multirow{1}{*}{wlan-BOFF=4} & \multirow{1}{*}{2138800} & \multirow{1}{*}{4566953} & 3.86 & \textbf{3.6} & 0.43 & \textbf{0.42} \\
+114 & \multirow{1}{*}{wlan-BOFF=6} & \multirow{1}{*}{12616368} & \multirow{1}{*}{28137065} & 17.61 & \textbf{13.14} & \textbf{2.38} & 2.41 \\
+\midrule
+115 & \multirow{1}{*}{evadeV-12-4-0-101} & \multirow{1}{*}{10899} & \multirow{1}{*}{51699} & \textbf{0.09} & 1.75 & \textbf{0.01} & $\times$ \\
+116 & \multirow{1}{*}{evadeV-12-4-0-201} & \multirow{1}{*}{23507} & \multirow{1}{*}{111649} & \textbf{0.1} & 1.09 & \textbf{0.02} & $\times$ \\
+117 & \multirow{1}{*}{evadeV-12-4-0-401} & \multirow{1}{*}{35979} & \multirow{1}{*}{171219} & \textbf{0.09} & 0.92 & \textbf{0.04} & $\times$ \\
+118 & \multirow{1}{*}{evadeV-12-4-0-76} & \multirow{1}{*}{8006} & \multirow{1}{*}{38161} & \textbf{0.06} & 1.09 & \textbf{0.01} & $\times$ \\
+119 & \multirow{1}{*}{evadeV-12-4-1-76} & \multirow{1}{*}{8234} & \multirow{1}{*}{39316} & \textbf{0.07} & 0.93 & \textbf{0.01} & $\times$ \\
+120 & \multirow{1}{*}{evadeV-12-4-11-101} & \multirow{1}{*}{10848} & \multirow{1}{*}{51191} & \textbf{0.09} & 0.98 & \textbf{0.01} & $\times$ \\
+121 & \multirow{1}{*}{evadeV-12-4-12-201} & \multirow{1}{*}{26831} & \multirow{1}{*}{128649} & \textbf{0.16} & 3.47 & \textbf{0.04} & TO \\
+122 & \multirow{1}{*}{evadeV-12-4-12-601} & \multirow{1}{*}{69976} & \multirow{1}{*}{334053} & \textbf{0.28} & 1.27 & \textbf{0.05} & 0.53 \\
+123 & \multirow{1}{*}{evadeV-12-4-14-101} & \multirow{1}{*}{11993} & \multirow{1}{*}{57027} & \textbf{0.06} & 3.44 & \textbf{0.02} & $\times$ \\
+124 & \multirow{1}{*}{evadeV-12-4-14-401} & \multirow{1}{*}{56349} & \multirow{1}{*}{270736} & \textbf{0.4} & 8.39 & \textbf{0.11} & TO \\
+125 & \multirow{1}{*}{evadeV-12-4-14-601} & \multirow{1}{*}{49802} & \multirow{1}{*}{236461} & \textbf{0.13} & 1.77 & \textbf{0.03} & 0.3 \\
+126 & \multirow{1}{*}{evadeV-12-4-15-101} & \multirow{1}{*}{7989} & \multirow{1}{*}{37691} & \textbf{0.07} & 3.04 & \textbf{0.01} & $\times$ \\
+127 & \multirow{1}{*}{evadeV-12-4-15-201} & \multirow{1}{*}{18157} & \multirow{1}{*}{86135} & \textbf{0.18} & 21.51 & \textbf{0.03} & $\times$ \\
+128 & \multirow{1}{*}{evadeV-12-4-15-601} & \multirow{1}{*}{68496} & \multirow{1}{*}{327040} & \textbf{0.12} & 3.78 & \textbf{0.03} & $\times$ \\
+129 & \multirow{1}{*}{evadeV-12-4-16-201} & \multirow{1}{*}{21594} & \multirow{1}{*}{102569} & \textbf{0.08} & 1.93 & \textbf{0.02} & 1.18 \\
+130 & \multirow{1}{*}{evadeV-12-4-17-201} & \multirow{1}{*}{26183} & \multirow{1}{*}{125371} & \textbf{0.19} & 9.86 & \textbf{0.03} & TO \\
+131 & \multirow{1}{*}{evadeV-12-4-18-101} & \multirow{1}{*}{9670} & \multirow{1}{*}{45081} & \textbf{0.07} & 1.99 & \textbf{0.01} & $\times$ \\
+132 & \multirow{1}{*}{evadeV-12-4-18-201} & \multirow{1}{*}{24627} & \multirow{1}{*}{117119} & \textbf{0.2} & 18.99 & \textbf{0.03} & $\times$ \\
+133 & \multirow{1}{*}{evadeV-12-4-18-401} & \multirow{1}{*}{25814} & \multirow{1}{*}{121101} & \textbf{0.09} & 2.35 & \textbf{0.02} & $\times$ \\
+134 & \multirow{1}{*}{evadeV-12-4-19-201} & \multirow{1}{*}{26215} & \multirow{1}{*}{125207} & \textbf{0.23} & 8.27 & \textbf{0.04} & $\times$ \\
+135 & \multirow{1}{*}{evadeV-12-4-19-401} & \multirow{1}{*}{49168} & \multirow{1}{*}{234420} & \textbf{0.15} & 4.64 & \textbf{0.03} & $\times$ \\
+136 & \multirow{1}{*}{evadeV-12-4-3-101} & \multirow{1}{*}{11652} & \multirow{1}{*}{55281} & \textbf{0.1} & 1.85 & \textbf{0.02} & $\times$ \\
+137 & \multirow{1}{*}{evadeV-12-4-3-401} & \multirow{1}{*}{45065} & \multirow{1}{*}{213518} & \textbf{0.07} & 1.37 & \textbf{0.03} & 2.77 \\
+138 & \multirow{1}{*}{evadeV-12-4-3-601} & \multirow{1}{*}{68887} & \multirow{1}{*}{326857} & \textbf{0.2} & 1.98 & \textbf{0.04} & $\times$ \\
+139 & \multirow{1}{*}{evadeV-12-4-3-76} & \multirow{1}{*}{8047} & \multirow{1}{*}{38387} & \textbf{0.05} & 1.08 & \textbf{0.01} & $\times$ \\
+140 & \multirow{1}{*}{evadeV-12-4-4-401} & \multirow{1}{*}{14507} & \multirow{1}{*}{67797} & \textbf{0.06} & 1.43 & \textbf{0.02} & $\times$ \\
+141 & \multirow{1}{*}{evadeV-12-4-5-76} & \multirow{1}{*}{7186} & \multirow{1}{*}{33997} & \textbf{0.05} & 0.89 & \textbf{0.01} & $\times$ \\
+142 & \multirow{1}{*}{evadeV-12-4-6-101} & \multirow{1}{*}{8638} & \multirow{1}{*}{40660} & \textbf{0.07} & 2.12 & \textbf{0.01} & $\times$ \\
+143 & \multirow{1}{*}{evadeV-12-4-7-101} & \multirow{1}{*}{8443} & \multirow{1}{*}{39755} & \textbf{0.06} & 2.16 & \textbf{0.01} & $\times$ \\
+144 & \multirow{1}{*}{evadeV-12-4-7-201} & \multirow{1}{*}{26650} & \multirow{1}{*}{127437} & \textbf{0.25} & 21.91 & \textbf{0.04} & TO \\
+145 & \multirow{1}{*}{evadeV-12-4-7-401} & \multirow{1}{*}{50935} & \multirow{1}{*}{243689} & \textbf{0.14} & 1.52 & \textbf{0.04} & $\times$ \\
+146 & \multirow{1}{*}{evadeV-12-4-8-601} & \multirow{1}{*}{61295} & \multirow{1}{*}{291813} & \textbf{0.38} & 51.97 & \textbf{0.06} & TO \\
+147 & \multirow{1}{*}{evadeV-12-4-9-1001} & \multirow{1}{*}{79084} & \multirow{1}{*}{373343} & \textbf{0.21} & 1.9 & \textbf{0.05} & $\times$ \\
+148 & \multirow{1}{*}{evadeV-12-4-9-201} & \multirow{1}{*}{23521} & \multirow{1}{*}{111558} & \textbf{0.21} & 10.04 & \textbf{0.04} & TO \\
+149 & \multirow{1}{*}{evadeV-12-4-9-401} & \multirow{1}{*}{46527} & \multirow{1}{*}{220170} & \textbf{0.16} & 2.04 & \textbf{0.03} & $\times$ \\
+150 & \multirow{1}{*}{evadeV-14-4-0-101} & \multirow{1}{*}{10899} & \multirow{1}{*}{51699} & \textbf{0.06} & 1.17 & \textbf{0.01} & $\times$ \\
+151 & \multirow{1}{*}{evadeV-14-4-12-201} & \multirow{1}{*}{26831} & \multirow{1}{*}{128649} & \textbf{0.25} & 3.52 & \textbf{0.04} & TO \\
+152 & \multirow{1}{*}{evadeV-14-4-12-601} & \multirow{1}{*}{69976} & \multirow{1}{*}{334053} & \textbf{0.18} & 1.76 & \textbf{0.04} & 0.59 \\
+153 & \multirow{1}{*}{evadeV-14-4-14-101} & \multirow{1}{*}{11993} & \multirow{1}{*}{57027} & \textbf{0.1} & 3.31 & \textbf{0.02} & $\times$ \\
+154 & \multirow{1}{*}{evadeV-14-4-14-401} & \multirow{1}{*}{56349} & \multirow{1}{*}{270736} & \textbf{0.26} & 5.5 & \textbf{0.07} & TO \\
+155 & \multirow{1}{*}{evadeV-14-4-15-101} & \multirow{1}{*}{11552} & \multirow{1}{*}{54988} & \textbf{0.1} & 2.86 & \textbf{0.02} & $\times$ \\
+156 & \multirow{1}{*}{evadeV-14-4-15-201} & \multirow{1}{*}{26920} & \multirow{1}{*}{129022} & \textbf{0.23} & 21.79 & \textbf{0.04} & TO \\
+157 & \multirow{1}{*}{evadeV-14-4-15-601} & \multirow{1}{*}{68496} & \multirow{1}{*}{327040} & \textbf{0.17} & 3.66 & \textbf{0.04} & $\times$ \\
+158 & \multirow{1}{*}{evadeV-14-4-16-201} & \multirow{1}{*}{21594} & \multirow{1}{*}{102569} & \textbf{0.11} & 1.99 & \textbf{0.02} & 1.39 \\
+159 & \multirow{1}{*}{evadeV-14-4-17-201} & \multirow{1}{*}{26183} & \multirow{1}{*}{125371} & \textbf{0.23} & 9.84 & \textbf{0.04} & TO \\
+160 & \multirow{1}{*}{evadeV-14-4-18-101} & \multirow{1}{*}{9670} & \multirow{1}{*}{45081} & \textbf{0.07} & 2.03 & \textbf{0.01} & $\times$ \\
+161 & \multirow{1}{*}{evadeV-14-4-18-201} & \multirow{1}{*}{24627} & \multirow{1}{*}{117119} & \textbf{0.21} & 24.45 & \textbf{0.03} & $\times$ \\
+162 & \multirow{1}{*}{evadeV-14-4-18-401} & \multirow{1}{*}{54218} & \multirow{1}{*}{259518} & \textbf{0.55} & 79 & \textbf{0.08} & TO \\
+163 & \multirow{1}{*}{evadeV-14-4-19-201} & \multirow{1}{*}{26215} & \multirow{1}{*}{125207} & \textbf{0.14} & 8.14 & \textbf{0.03} & TO \\
+164 & \multirow{1}{*}{evadeV-14-4-19-401} & \multirow{1}{*}{49168} & \multirow{1}{*}{234420} & \textbf{0.18} & 4.47 & \textbf{0.04} & $\times$ \\
+165 & \multirow{1}{*}{evadeV-14-4-3-101} & \multirow{1}{*}{11652} & \multirow{1}{*}{55281} & \textbf{0.11} & 2.61 & \textbf{0.02} & $\times$ \\
+166 & \multirow{1}{*}{evadeV-14-4-3-601} & \multirow{1}{*}{68887} & \multirow{1}{*}{326857} & \textbf{0.2} & 2.3 & \textbf{0.05} & $\times$ \\
+167 & \multirow{1}{*}{evadeV-14-4-6-101} & \multirow{1}{*}{12245} & \multirow{1}{*}{58162} & \textbf{0.11} & 3 & \textbf{0.02} & $\times$ \\
+168 & \multirow{1}{*}{evadeV-14-4-7-101} & \multirow{1}{*}{12003} & \multirow{1}{*}{57028} & \textbf{0.1} & 3.14 & \textbf{0.02} & $\times$ \\
+169 & \multirow{1}{*}{evadeV-14-4-7-201} & \multirow{1}{*}{26650} & \multirow{1}{*}{127437} & \textbf{0.16} & 21.09 & \textbf{0.04} & $\times$ \\
+170 & \multirow{1}{*}{evadeV-14-4-8-601} & \multirow{1}{*}{61295} & \multirow{1}{*}{291813} & \textbf{0.4} & 54 & \textbf{0.07} & TO \\
+171 & \multirow{1}{*}{evadeV-14-4-9-1001} & \multirow{1}{*}{79084} & \multirow{1}{*}{373343} & \textbf{0.21} & 1.68 & \textbf{0.04} & $\times$ \\
+172 & \multirow{1}{*}{evadeV-14-4-9-201} & \multirow{1}{*}{23521} & \multirow{1}{*}{111558} & \textbf{0.14} & 6.53 & \textbf{0.04} & TO \\
+173 & \multirow{1}{*}{evadeV-14-4-9-401} & \multirow{1}{*}{46527} & \multirow{1}{*}{220170} & \textbf{0.18} & 2.26 & \textbf{0.03} & $\times$ \\
+174 & \multirow{1}{*}{patrol-12-2-1-151} & \multirow{1}{*}{6529} & \multirow{1}{*}{52925} & \textbf{0.06} & 1.77 & \textbf{0.01} & 63.57 \\
+175 & \multirow{1}{*}{patrol-12-2-1-76} & \multirow{1}{*}{1822} & \multirow{1}{*}{14132} & \textbf{0.01} & 0.21 & \textbf{<0.01} & 11.55 \\
+176 & \multirow{1}{*}{patrol-12-2-10-101} & \multirow{1}{*}{4110} & \multirow{1}{*}{32981} & \textbf{0.03} & 0.44 & \textbf{<0.01} & 41.69 \\
+177 & \multirow{1}{*}{patrol-12-2-10-151} & \multirow{1}{*}{8615} & \multirow{1}{*}{71311} & \textbf{0.08} & 2.18 & \textbf{0.01} & 98.28 \\
+178 & \multirow{1}{*}{patrol-12-2-10-201} & \multirow{1}{*}{10495} & \multirow{1}{*}{87435} & \textbf{0.06} & 0.56 & \textbf{0.02} & 133.83 \\
+179 & \multirow{1}{*}{patrol-12-2-10-251} & \multirow{1}{*}{11698} & \multirow{1}{*}{96540} & \textbf{0.07} & 0.57 & \textbf{0.01} & 82.89 \\
+180 & \multirow{1}{*}{patrol-12-2-10-301} & \multirow{1}{*}{12727} & \multirow{1}{*}{104312} & \textbf{0.12} & 0.85 & \textbf{0.01} & 115.09 \\
+181 & \multirow{1}{*}{patrol-12-2-10-351} & \multirow{1}{*}{13966} & \multirow{1}{*}{113566} & \textbf{0.14} & 1.28 & \textbf{0.02} & 126.64 \\
+182 & \multirow{1}{*}{patrol-12-2-12-76} & \multirow{1}{*}{2038} & \multirow{1}{*}{16143} & \textbf{0.02} & 0.22 & \textbf{<0.01} & 22.21 \\
+183 & \multirow{1}{*}{patrol-12-2-13-101} & \multirow{1}{*}{5612} & \multirow{1}{*}{46255} & \textbf{0.06} & 1.71 & \textbf{0.01} & 69.98 \\
+184 & \multirow{1}{*}{patrol-12-2-13-76} & \multirow{1}{*}{3417} & \multirow{1}{*}{28085} & \textbf{0.04} & 0.64 & \textbf{<0.01} & 52.32 \\
+185 & \multirow{1}{*}{patrol-12-2-14-151} & \multirow{1}{*}{5925} & \multirow{1}{*}{48421} & \textbf{0.03} & 1.4 & \textbf{<0.01} & 59.05 \\
+186 & \multirow{1}{*}{patrol-12-2-14-201} & \multirow{1}{*}{7555} & \multirow{1}{*}{61363} & \textbf{0.05} & 0.51 & \textbf{<0.01} & 66.72 \\
+187 & \multirow{1}{*}{patrol-12-2-14-76} & \multirow{1}{*}{2665} & \multirow{1}{*}{21785} & \textbf{0.03} & 0.36 & \textbf{<0.01} & 31.14 \\
+188 & \multirow{1}{*}{patrol-12-2-17-101} & \multirow{1}{*}{4725} & \multirow{1}{*}{37847} & \textbf{0.04} & 0.59 & \textbf{<0.01} & 36.74 \\
+189 & \multirow{1}{*}{patrol-12-2-17-76} & \multirow{1}{*}{3170} & \multirow{1}{*}{25938} & \textbf{0.03} & 0.38 & \textbf{<0.01} & 35.84 \\
+190 & \multirow{1}{*}{patrol-12-2-18-101} & \multirow{1}{*}{3169} & \multirow{1}{*}{25472} & \textbf{0.02} & 0.19 & \textbf{<0.01} & 22.74 \\
+191 & \multirow{1}{*}{patrol-12-2-4-51} & \multirow{1}{*}{1867} & \multirow{1}{*}{14484} & \textbf{0.02} & 0.24 & \textbf{<0.01} & 25.89 \\
+192 & \multirow{1}{*}{patrol-12-2-5-76} & \multirow{1}{*}{2428} & \multirow{1}{*}{19205} & \textbf{0.02} & 0.39 & \textbf{<0.01} & 21.38 \\
+193 & \multirow{1}{*}{patrol-12-2-8-201} & \multirow{1}{*}{7540} & \multirow{1}{*}{59246} & \textbf{0.04} & 0.72 & \textbf{<0.01} & 50.75 \\
+194 & \multirow{1}{*}{patrol-12-2-8-251} & \multirow{1}{*}{10595} & \multirow{1}{*}{84518} & \textbf{0.09} & 2.82 & \textbf{0.01} & 80.58 \\
+195 & \multirow{1}{*}{patrol-12-2-8-301} & \multirow{1}{*}{14768} & \multirow{1}{*}{119195} & \textbf{0.15} & 5.88 & \textbf{0.02} & 139.86 \\
+196 & \multirow{1}{*}{patrol-12-2-8-51} & \multirow{1}{*}{1864} & \multirow{1}{*}{14803} & \textbf{0.02} & 0.26 & \textbf{<0.01} & 28.64 \\
+197 & \multirow{1}{*}{patrol-12-2-8-76} & \multirow{1}{*}{2955} & \multirow{1}{*}{23881} & \textbf{0.02} & 0.35 & \textbf{<0.01} & 18.74 \\
+198 & \multirow{1}{*}{patrol-15-3-0-51} & \multirow{1}{*}{1849} & \multirow{1}{*}{14252} & \textbf{0.02} & 0.29 & \textbf{<0.01} & 26.27 \\
+199 & \multirow{1}{*}{patrol-15-3-1-101} & \multirow{1}{*}{3737} & \multirow{1}{*}{29874} & \textbf{0.03} & 0.57 & \textbf{<0.01} & 37.29 \\
+200 & \multirow{1}{*}{patrol-15-3-1-51} & \multirow{1}{*}{1688} & \multirow{1}{*}{12740} & \textbf{0.02} & 0.29 & \textbf{<0.01} & 25.48 \\
+201 & \multirow{1}{*}{patrol-15-3-2-101} & \multirow{1}{*}{3008} & \multirow{1}{*}{22882} & \textbf{0.02} & 0.1 & \textbf{<0.01} & 21.82 \\
+202 & \multirow{1}{*}{patrol-15-3-2-151} & \multirow{1}{*}{4672} & \multirow{1}{*}{36387} & \textbf{0.02} & 0.19 & \textbf{<0.01} & 24.9 \\
+203 & \multirow{1}{*}{patrol-15-3-2-51} & \multirow{1}{*}{1762} & \multirow{1}{*}{13961} & \textbf{0.01} & 0.12 & \textbf{<0.01} & 19.73 \\
+204 & \multirow{1}{*}{patrol-15-3-2-76} & \multirow{1}{*}{2148} & \multirow{1}{*}{16558} & \textbf{0.01} & 0.21 & \textbf{<0.01} & 19.92 \\
+205 & \multirow{1}{*}{patrol-15-3-4-101} & \multirow{1}{*}{4369} & \multirow{1}{*}{34912} & \textbf{0.04} & 0.49 & \textbf{<0.01} & 47 \\
+206 & \multirow{1}{*}{patrol-15-3-4-51} & \multirow{1}{*}{1532} & \multirow{1}{*}{11893} & \textbf{0.01} & 0.16 & \textbf{<0.01} & 12.26 \\
+207 & \multirow{1}{*}{patrol-15-3-5-101} & \multirow{1}{*}{3351} & \multirow{1}{*}{26769} & \textbf{0.03} & 0.54 & \textbf{<0.01} & 32.48 \\
+208 & \multirow{1}{*}{patrol-15-3-5-151} & \multirow{1}{*}{5776} & \multirow{1}{*}{44736} & \textbf{0.05} & 1.23 & \textbf{<0.01} & 49.27 \\
+209 & \multirow{1}{*}{patrol-15-3-5-201} & \multirow{1}{*}{8120} & \multirow{1}{*}{64212} & \textbf{0.06} & 1.4 & \textbf{<0.01} & 77.49 \\
+210 & \multirow{1}{*}{patrol-15-3-5-51} & \multirow{1}{*}{1571} & \multirow{1}{*}{12325} & \textbf{0.02} & 0.14 & \textbf{<0.01} & 17.75 \\
+211 & \multirow{1}{*}{patrol-15-3-8-101} & \multirow{1}{*}{4493} & \multirow{1}{*}{36191} & \textbf{0.02} & 0.57 & \textbf{<0.01} & 54.29 \\
+212 & \multirow{1}{*}{patrol-15-3-8-251} & \multirow{1}{*}{10958} & \multirow{1}{*}{85932} & \textbf{0.08} & 1.45 & \textbf{0.01} & 86.98 \\
+213 & \multirow{1}{*}{patrol-15-3-8-351} & \multirow{1}{*}{16639} & \multirow{1}{*}{132609} & \textbf{0.09} & 5.18 & \textbf{0.02} & 133.37 \\
+214 & \multirow{1}{*}{patrol-15-3-8-51} & \multirow{1}{*}{1634} & \multirow{1}{*}{12774} & \textbf{0.01} & 0.22 & \textbf{<0.01} & 20.29 \\
+215 & \multirow{1}{*}{refuelC-12-40-0-301} & \multirow{1}{*}{328051} & \multirow{1}{*}{6327847} & \textbf{3.12} & 10.3 & \textbf{0.7} & 1.75 \\
+216 & \multirow{1}{*}{refuelC-12-40-1-101} & \multirow{1}{*}{49598} & \multirow{1}{*}{840643} & \textbf{0.48} & 1.19 & \textbf{0.21} & 0.36 \\
+217 & \multirow{1}{*}{refuelC-12-40-1-151} & \multirow{1}{*}{139499} & \multirow{1}{*}{2572137} & \textbf{1.7} & 4.73 & \textbf{0.37} & 0.84 \\
+218 & \multirow{1}{*}{refuelC-12-40-1-251} & \multirow{1}{*}{462804} & \multirow{1}{*}{9158477} & \textbf{3.03} & 16.7 & \textbf{0.79} & 1.89 \\
+219 & \multirow{1}{*}{refuelC-12-40-10-251} & \multirow{1}{*}{392834} & \multirow{1}{*}{7712481} & \textbf{2.85} & 8.75 & \textbf{0.67} & 2.25 \\
+220 & \multirow{1}{*}{refuelC-12-40-11-151} & \multirow{1}{*}{118158} & \multirow{1}{*}{2175231} & \textbf{1.04} & 3.98 & \textbf{0.36} & 0.69 \\
+221 & \multirow{1}{*}{refuelC-12-40-11-351} & \multirow{1}{*}{424292} & \multirow{1}{*}{8268007} & \textbf{4.03} & 12.6 & \textbf{0.72} & 1.62 \\
+222 & \multirow{1}{*}{refuelC-12-40-12-151} & \multirow{1}{*}{264776} & \multirow{1}{*}{5140919} & \textbf{2.71} & 7.53 & \textbf{0.55} & 1.13 \\
+223 & \multirow{1}{*}{refuelC-12-40-12-251} & \multirow{1}{*}{409440} & \multirow{1}{*}{7957855} & \textbf{3.77} & 13.54 & \textbf{0.67} & 1.68 \\
+224 & \multirow{1}{*}{refuelC-12-40-12-26} & \multirow{1}{*}{44333} & \multirow{1}{*}{846083} & \textbf{0.62} & 1.53 & \textbf{0.2} & 0.37 \\
+225 & \multirow{1}{*}{refuelC-12-40-12-301} & \multirow{1}{*}{560082} & \multirow{1}{*}{11001643} & \textbf{4.39} & 20.03 & \textbf{0.79} & 2.05 \\
+226 & \multirow{1}{*}{refuelC-12-40-12-401} & \multirow{1}{*}{941654} & \multirow{1}{*}{18833031} & \textbf{8.21} & 28.42 & \textbf{1.15} & 4.88 \\
+227 & \multirow{1}{*}{refuelC-12-40-13-251} & \multirow{1}{*}{330443} & \multirow{1}{*}{6418159} & \textbf{3.38} & 12.27 & \textbf{0.69} & 1.39 \\
+228 & \multirow{1}{*}{refuelC-12-40-14-101} & \multirow{1}{*}{267498} & \multirow{1}{*}{5385735} & \textbf{2.98} & 11.2 & \textbf{0.54} & 1.35 \\
+229 & \multirow{1}{*}{refuelC-12-40-14-151} & \multirow{1}{*}{386740} & \multirow{1}{*}{7762153} & \textbf{3.38} & 10.86 & \textbf{0.52} & 2.12 \\
+230 & \multirow{1}{*}{refuelC-12-40-14-201} & \multirow{1}{*}{569861} & \multirow{1}{*}{11481397} & \textbf{5.29} & 17.34 & \textbf{0.83} & 2.25 \\
+231 & \multirow{1}{*}{refuelC-12-40-14-76} & \multirow{1}{*}{149523} & \multirow{1}{*}{2940391} & \textbf{1.2} & 5.39 & \textbf{0.32} & 0.84 \\
+232 & \multirow{1}{*}{refuelC-12-40-15-101} & \multirow{1}{*}{268493} & \multirow{1}{*}{5395101} & \textbf{2.01} & 10.43 & \textbf{0.47} & 1.24 \\
+233 & \multirow{1}{*}{refuelC-12-40-15-26} & \multirow{1}{*}{28653} & \multirow{1}{*}{530109} & \textbf{0.56} & 1.31 & \textbf{0.19} & 0.27 \\
+234 & \multirow{1}{*}{refuelC-12-40-15-51} & \multirow{1}{*}{144692} & \multirow{1}{*}{2922829} & \textbf{1.74} & 4.66 & \textbf{0.36} & 0.7 \\
+235 & \multirow{1}{*}{refuelC-12-40-16-101} & \multirow{1}{*}{201911} & \multirow{1}{*}{3992887} & \textbf{1.64} & 4.95 & \textbf{0.43} & 1.23 \\
+236 & \multirow{1}{*}{refuelC-12-40-16-301} & \multirow{1}{*}{652585} & \multirow{1}{*}{12973697} & \textbf{5.72} & 15.77 & \textbf{0.79} & 3.28 \\
+237 & \multirow{1}{*}{refuelC-12-40-16-51} & \multirow{1}{*}{56069} & \multirow{1}{*}{1074019} & \textbf{0.7} & 2.45 & \textbf{0.29} & 0.34 \\
+238 & \multirow{1}{*}{refuelC-12-40-17-301} & \multirow{1}{*}{393454} & \multirow{1}{*}{7594241} & \textbf{3.68} & 10.07 & \textbf{0.67} & 2.29 \\
+239 & \multirow{1}{*}{refuelC-12-40-18-201} & \multirow{1}{*}{301616} & \multirow{1}{*}{5833435} & \textbf{2.91} & 10.63 & \textbf{0.43} & 1.16 \\
+240 & \multirow{1}{*}{refuelC-12-40-18-251} & \multirow{1}{*}{461650} & \multirow{1}{*}{9072635} & \textbf{2.76} & 13.14 & \textbf{0.79} & 1.76 \\
+241 & \multirow{1}{*}{refuelC-12-40-18-301} & \multirow{1}{*}{697600} & \multirow{1}{*}{13965435} & \textbf{4.61} & 15.52 & \textbf{0.86} & 2.69 \\
+242 & \multirow{1}{*}{refuelC-12-40-19-201} & \multirow{1}{*}{358111} & \multirow{1}{*}{7055153} & \textbf{3.46} & 8.28 & \textbf{0.65} & 1.6 \\
+243 & \multirow{1}{*}{refuelC-12-40-2-101} & \multirow{1}{*}{315255} & \multirow{1}{*}{6450241} & \textbf{2.29} & 7.57 & \textbf{0.47} & 1.3 \\
+244 & \multirow{1}{*}{refuelC-12-40-2-151} & \multirow{1}{*}{395042} & \multirow{1}{*}{7973603} & \textbf{2.7} & 8.81 & \textbf{0.56} & 1.46 \\
+245 & \multirow{1}{*}{refuelC-12-40-2-201} & \multirow{1}{*}{546281} & \multirow{1}{*}{11022691} & \textbf{3.79} & 14.42 & \textbf{0.71} & 2.1 \\
+246 & \multirow{1}{*}{refuelC-12-40-2-351} & \multirow{1}{*}{1002346} & \multirow{1}{*}{20182833} & \textbf{5.72} & 25.4 & \textbf{1.05} & 3.69 \\
+247 & \multirow{1}{*}{refuelC-12-40-2-401} & \multirow{1}{*}{1116829} & \multirow{1}{*}{22441227} & \textbf{6.88} & 26.39 & \textbf{1.17} & 3.99 \\
+248 & \multirow{1}{*}{refuelC-12-40-2-51} & \multirow{1}{*}{79305} & \multirow{1}{*}{1557441} & \textbf{0.9} & 2.56 & \textbf{0.26} & 0.44 \\
+249 & \multirow{1}{*}{refuelC-12-40-2-76} & \multirow{1}{*}{197280} & \multirow{1}{*}{4003841} & \textbf{1.62} & 5.04 & \textbf{0.38} & 0.91 \\
+250 & \multirow{1}{*}{refuelC-12-40-3-201} & \multirow{1}{*}{232751} & \multirow{1}{*}{4379439} & \textbf{1.59} & 4.92 & \textbf{0.38} & 0.89 \\
+251 & \multirow{1}{*}{refuelC-12-40-3-26} & \multirow{1}{*}{40360} & \multirow{1}{*}{766391} & \textbf{0.53} & 1.34 & \textbf{0.17} & 0.24 \\
+252 & \multirow{1}{*}{refuelC-12-40-3-301} & \multirow{1}{*}{321916} & \multirow{1}{*}{6072797} & \textbf{2.24} & 7.72 & \textbf{0.49} & 1.14 \\
+253 & \multirow{1}{*}{refuelC-12-40-3-351} & \multirow{1}{*}{491656} & \multirow{1}{*}{9514221} & \textbf{2.95} & 12.39 & \textbf{0.66} & 1.86 \\
+254 & \multirow{1}{*}{refuelC-12-40-3-601} & \multirow{1}{*}{1047923} & \multirow{1}{*}{20633951} & \textbf{6.12} & 25.45 & \textbf{1.19} & 4.17 \\
+255 & \multirow{1}{*}{refuelC-12-40-4-301} & \multirow{1}{*}{230896} & \multirow{1}{*}{4166207} & \textbf{1.54} & 4.85 & \textbf{0.38} & 0.82 \\
+256 & \multirow{1}{*}{refuelC-12-40-4-351} & \multirow{1}{*}{325376} & \multirow{1}{*}{6037789} & \textbf{2.21} & 7.45 & \textbf{0.45} & 1.38 \\
+257 & \multirow{1}{*}{refuelC-12-40-5-151} & \multirow{1}{*}{282466} & \multirow{1}{*}{5594379} & \textbf{2.08} & 7.84 & \textbf{0.42} & 1.13 \\
+258 & \multirow{1}{*}{refuelC-12-40-6-101} & \multirow{1}{*}{204299} & \multirow{1}{*}{4048835} & \textbf{1.61} & 4.97 & \textbf{0.4} & 1 \\
+259 & \multirow{1}{*}{refuelC-12-40-6-76} & \multirow{1}{*}{86324} & \multirow{1}{*}{1602435} & \textbf{0.84} & 2.32 & \textbf{0.25} & 0.41 \\
+260 & \multirow{1}{*}{refuelC-12-40-7-101} & \multirow{1}{*}{55632} & \multirow{1}{*}{965865} & \textbf{0.54} & 1.28 & \textbf{0.14} & 0.25 \\
+261 & \multirow{1}{*}{refuelC-12-40-7-251} & \multirow{1}{*}{299297} & \multirow{1}{*}{5720721} & \textbf{2.15} & 7.47 & \textbf{0.48} & 1.11 \\
+262 & \multirow{1}{*}{refuelC-12-40-7-301} & \multirow{1}{*}{389972} & \multirow{1}{*}{7509567} & \textbf{2.59} & 8.11 & \textbf{0.52} & 1.6 \\
+263 & \multirow{1}{*}{refuelC-12-40-7-351} & \multirow{1}{*}{489896} & \multirow{1}{*}{9489653} & \textbf{2.97} & 12.42 & \textbf{0.68} & 1.92 \\
+264 & \multirow{1}{*}{refuelC-12-40-8-101} & \multirow{1}{*}{181331} & \multirow{1}{*}{3585487} & \textbf{1.58} & 4.46 & \textbf{0.35} & 0.9 \\
+265 & \multirow{1}{*}{refuelC-12-40-8-76} & \multirow{1}{*}{63356} & \multirow{1}{*}{1139087} & \textbf{0.66} & 1.52 & \textbf{0.23} & 0.37 \\
+266 & \multirow{1}{*}{refuelC-12-40-9-101} & \multirow{1}{*}{250882} & \multirow{1}{*}{5011825} & \textbf{1.89} & 6.85 & \textbf{0.39} & 1.18 \\
+267 & \multirow{1}{*}{refuelC-12-40-9-401} & \multirow{1}{*}{609725} & \multirow{1}{*}{11843865} & \textbf{3.79} & 13.81 & \textbf{0.67} & 2.24 \\
+268 & \multirow{1}{*}{refuelC-12-40-9-76} & \multirow{1}{*}{132907} & \multirow{1}{*}{2565425} & \textbf{1.17} & 4.04 & \textbf{0.31} & 0.69 \\
+269 & \multirow{1}{*}{refuelC-25-20-0-101} & \multirow{1}{*}{38808} & \multirow{1}{*}{493165} & \textbf{0.25} & 0.47 & \textbf{0.07} & 0.12 \\
+270 & \multirow{1}{*}{refuelC-25-20-0-201} & \multirow{1}{*}{402473} & \multirow{1}{*}{7973181} & \textbf{2.56} & 7.41 & \textbf{0.41} & 1.29 \\
+271 & \multirow{1}{*}{refuelC-25-20-1-101} & \multirow{1}{*}{178490} & \multirow{1}{*}{3265263} & \textbf{2.69} & 5.54 & \textbf{0.91} & 1.21 \\
+272 & \multirow{1}{*}{refuelC-25-20-1-201} & \multirow{1}{*}{330989} & \multirow{1}{*}{5936220} & \textbf{2.01} & 4.9 & \textbf{0.44} & 0.95 \\
+273 & \multirow{1}{*}{refuelC-25-20-1-251} & \multirow{1}{*}{441812} & \multirow{1}{*}{7993369} & \textbf{3.55} & 9.69 & \textbf{0.92} & 1.77 \\
+274 & \multirow{1}{*}{refuelC-25-20-1-51} & \multirow{1}{*}{40448} & \multirow{1}{*}{631949} & \textbf{0.27} & 0.58 & \textbf{0.08} & 0.12 \\
+275 & \multirow{1}{*}{refuelC-25-20-1-76} & \multirow{1}{*}{80014} & \multirow{1}{*}{1303548} & \textbf{0.82} & 1.49 & \textbf{0.22} & 0.35 \\
+276 & \multirow{1}{*}{refuelC-25-20-10-101} & \multirow{1}{*}{103554} & \multirow{1}{*}{1783751} & \textbf{1.66} & 3.03 & \textbf{0.59} & 0.74 \\
+277 & \multirow{1}{*}{refuelC-25-20-10-201} & \multirow{1}{*}{628189} & \multirow{1}{*}{12650009} & \textbf{6.61} & 22.95 & \textbf{1.83} & 3.07 \\
+278 & \multirow{1}{*}{refuelC-25-20-11-101} & \multirow{1}{*}{76019} & \multirow{1}{*}{1169966} & \textbf{0.42} & 0.93 & \textbf{0.1} & 0.21 \\
+279 & \multirow{1}{*}{refuelC-25-20-11-351} & \multirow{1}{*}{779163} & \multirow{1}{*}{15101571} & \textbf{7.38} & 23.58 & \textbf{1.88} & 3.47 \\
+280 & \multirow{1}{*}{refuelC-25-20-11-51} & \multirow{1}{*}{60085} & \multirow{1}{*}{975222} & \textbf{0.38} & 0.74 & \textbf{0.09} & 0.15 \\
+281 & \multirow{1}{*}{refuelC-25-20-12-151} & \multirow{1}{*}{744312} & \multirow{1}{*}{15307925} & \textbf{7.41} & 24.25 & \textbf{1.8} & 3.66 \\
+282 & \multirow{1}{*}{refuelC-25-20-12-251} & \multirow{1}{*}{1158864} & \multirow{1}{*}{23849627} & \textbf{9.86} & 37.27 & \textbf{2.09} & 4.93 \\
+283 & \multirow{1}{*}{refuelC-25-20-12-26} & \multirow{1}{*}{102717} & \multirow{1}{*}{2053027} & \textbf{1.96} & 4.52 & \textbf{0.76} & 0.93 \\
+284 & \multirow{1}{*}{refuelC-25-20-12-51} & \multirow{1}{*}{299313} & \multirow{1}{*}{6233291} & \textbf{2.09} & 6.99 & \textbf{0.46} & 1.39 \\
+285 & \multirow{1}{*}{refuelC-25-20-12-76} & \multirow{1}{*}{348479} & \multirow{1}{*}{7088021} & \textbf{2.88} & 7.66 & \textbf{0.66} & 1.52 \\
+286 & \multirow{1}{*}{refuelC-25-20-13-101} & \multirow{1}{*}{205930} & \multirow{1}{*}{3892496} & \textbf{1.36} & 3.73 & \textbf{0.25} & 0.64 \\
+287 & \multirow{1}{*}{refuelC-25-20-13-76} & \multirow{1}{*}{109214} & \multirow{1}{*}{1898323} & \textbf{1.37} & 2.12 & \textbf{0.45} & 0.59 \\
+288 & \multirow{1}{*}{refuelC-25-20-14-26} & \multirow{1}{*}{21332} & \multirow{1}{*}{341074} & \textbf{0.36} & 0.5 & \textbf{0.12} & 0.17 \\
+289 & \multirow{1}{*}{refuelC-25-20-14-76} & \multirow{1}{*}{419645} & \multirow{1}{*}{8804891} & \textbf{5.11} & 14.89 & \textbf{1.47} & 2.51 \\
+290 & \multirow{1}{*}{refuelC-25-20-15-101} & \multirow{1}{*}{696120} & \multirow{1}{*}{14816867} & \textbf{7.22} & 24.67 & \textbf{1.94} & 3.77 \\
+291 & \multirow{1}{*}{refuelC-25-20-15-26} & \multirow{1}{*}{88139} & \multirow{1}{*}{1741583} & \textbf{1.9} & 4.34 & \textbf{0.61} & 0.92 \\
+292 & \multirow{1}{*}{refuelC-25-20-15-51} & \multirow{1}{*}{361663} & \multirow{1}{*}{7722567} & \textbf{5.27} & 16.37 & \textbf{1.67} & 2.83 \\
+293 & \multirow{1}{*}{refuelC-25-20-15-76} & \multirow{1}{*}{422520} & \multirow{1}{*}{8831267} & \textbf{3.38} & 9.82 & \textbf{0.87} & 2.29 \\
+294 & \multirow{1}{*}{refuelC-25-20-17-101} & \multirow{1}{*}{80490} & \multirow{1}{*}{1241509} & \textbf{0.54} & 1.3 & \textbf{0.17} & 0.25 \\
+295 & \multirow{1}{*}{refuelC-25-20-17-201} & \multirow{1}{*}{490658} & \multirow{1}{*}{9518673} & \textbf{2.84} & 8.14 & \textbf{0.45} & 1.5 \\
+296 & \multirow{1}{*}{refuelC-25-20-17-26} & \multirow{1}{*}{14505} & \multirow{1}{*}{207086} & \textbf{0.2} & 0.28 & \textbf{0.08} & 0.09 \\
+297 & \multirow{1}{*}{refuelC-25-20-18-51} & \multirow{1}{*}{156804} & \multirow{1}{*}{2920817} & \textbf{1.93} & 4.2 & \textbf{0.67} & 0.88 \\
+298 & \multirow{1}{*}{refuelC-25-20-19-101} & \multirow{1}{*}{329817} & \multirow{1}{*}{6540159} & \textbf{1.98} & 6.73 & \textbf{0.37} & 1.24 \\
+299 & \multirow{1}{*}{refuelC-25-20-19-76} & \multirow{1}{*}{132077} & \multirow{1}{*}{2295913} & \textbf{1.56} & 2.96 & \textbf{0.55} & 0.62 \\
+300 & \multirow{1}{*}{refuelC-25-20-2-51} & \multirow{1}{*}{225414} & \multirow{1}{*}{4721529} & \textbf{4.17} & 12.61 & \textbf{1.4} & 1.93 \\
+301 & \multirow{1}{*}{refuelC-25-20-3-151} & \multirow{1}{*}{384268} & \multirow{1}{*}{7536827} & \textbf{2.22} & 7 & \textbf{0.36} & 1.21 \\
+302 & \multirow{1}{*}{refuelC-25-20-3-201} & \multirow{1}{*}{701695} & \multirow{1}{*}{14082679} & \textbf{6.76} & 23.59 & \textbf{1.76} & 3.17 \\
+303 & \multirow{1}{*}{refuelC-25-20-3-26} & \multirow{1}{*}{100126} & \multirow{1}{*}{1999159} & \textbf{1.95} & 4.62 & \textbf{0.74} & 1.06 \\
+304 & \multirow{1}{*}{refuelC-25-20-3-301} & \multirow{1}{*}{962903} & \multirow{1}{*}{19379217} & \textbf{8.52} & 25.86 & \textbf{2.2} & 4.36 \\
+305 & \multirow{1}{*}{refuelC-25-20-4-151} & \multirow{1}{*}{360565} & \multirow{1}{*}{6899601} & \textbf{2.85} & 8.02 & \textbf{0.73} & 1.25 \\
+306 & \multirow{1}{*}{refuelC-25-20-4-301} & \multirow{1}{*}{801795} & \multirow{1}{*}{15704931} & \textbf{7.21} & 23.35 & \textbf{1.86} & 3.41 \\
+307 & \multirow{1}{*}{refuelC-25-20-5-101} & \multirow{1}{*}{186384} & \multirow{1}{*}{3341671} & \textbf{1.65} & 3.31 & \textbf{0.48} & 0.82 \\
+308 & \multirow{1}{*}{refuelC-25-20-5-26} & \multirow{1}{*}{59048} & \multirow{1}{*}{1101419} & \textbf{1.18} & 2.12 & \textbf{0.37} & 0.6 \\
+309 & \multirow{1}{*}{refuelC-25-20-5-51} & \multirow{1}{*}{129993} & \multirow{1}{*}{2417172} & \textbf{1.05} & 2.53 & \textbf{0.3} & 0.43 \\
+310 & \multirow{1}{*}{refuelC-25-20-6-51} & \multirow{1}{*}{270187} & \multirow{1}{*}{5654619} & \textbf{4.67} & 16.23 & \textbf{1.53} & 2.19 \\
+311 & \multirow{1}{*}{refuelC-25-20-8-76} & \multirow{1}{*}{200295} & \multirow{1}{*}{3906279} & \textbf{3.47} & 9.78 & \textbf{1.35} & 1.84 \\
+312 & \multirow{1}{*}{refuelC-25-20-9-51} & \multirow{1}{*}{131495} & \multirow{1}{*}{2435032} & \textbf{0.72} & 2.03 & \textbf{0.14} & 0.38 \\
+313 & \multirow{1}{*}{refuelC-25-20-9-76} & \multirow{1}{*}{388095} & \multirow{1}{*}{7932685} & \textbf{5.24} & 15.45 & \textbf{1.65} & 2.28 \\
+\bottomrule
+\end{longtable}

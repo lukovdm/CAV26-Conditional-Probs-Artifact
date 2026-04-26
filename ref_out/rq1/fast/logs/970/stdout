@@ -1,0 +1,32 @@
+Storm 1.12.0 (dev)
+
+Date: Sat Apr 25 12:46:48 2026
+Command line arguments: -drn benchmarks/rq1/models/concrete-mdps/wlan-BOFF=10.drn --prop 'Pmax=? [true];Pmax=? [F "collision8" || F "collision2"]' --timeout 300 --dot-maxwidth 969 --exact '--conditional:precision' 1e-6 '--conditional:algorithm' bisection
+Current working directory: /home/luko/Cond
+
+Time for model construction: 48.890s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	7424375
+Transitions: 	16494394
+Choices: 	10351486
+Reward Models:  none
+State Labels: 	7 labels
+   * collision8 -> 2221 item(s)
+   * collision4 -> 164518 item(s)
+   * deadlock -> 3 item(s)
+   * collision2 -> 30730 item(s)
+   * bothbackoff -> 7386204 item(s)
+   * collision -> 7422972 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": Pmax=? [true] ...
+Result (for initial states): 1 (approx. 1)
+Time for model checking: 0.996s.
+
+Model checking property "2": Pmax=? [(F "collision8") || (F "collision2")] ...
+Result (for initial states): 985349287/48545660869559382848 (approx. 2.029737096e-11)
+Time for model checking: 9.888s.

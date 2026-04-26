@@ -1,7 +1,7 @@
 model,splitting,conditional_alg,bisection_optimization,family_size,avg_mdp_size,time,iterations
-ceaser-cipher-4-10,backward,bisection,True,1048576,265,0.21,178
-ceaser-cipher-4-10,backward,bisection,False,1048576,265,0.3,178
-ceaser-cipher-4-10,backward,bisection_advanced,False,1048576,265,0.25,178
-ceaser-cipher-4-10,backward,bisection_pt,False,1048576,265,0.25,178
-ceaser-cipher-4-10,backward,bisection_advanced_pt,False,1048576,265,0.25,178
-ceaser-cipher-4-10,backward,restart,False,1048576,265,0.3,178
+ceaser-cipher-4-10,backward,bisection,True,1048576,265,0.25,178
+ceaser-cipher-4-10,backward,bisection,False,1048576,265,0.35,178
+ceaser-cipher-4-10,backward,bisection_advanced,False,1048576,265,0.28,178
+ceaser-cipher-4-10,backward,bisection_pt,False,1048576,265,0.29,178
+ceaser-cipher-4-10,backward,bisection_advanced_pt,False,1048576,265,0.29,178
+ceaser-cipher-4-10,backward,restart,False,1048576,265,0.35,178

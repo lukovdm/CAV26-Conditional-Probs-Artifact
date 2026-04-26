@@ -1,0 +1,29 @@
+Storm 1.12.0 (dev)
+
+Date: Fri Apr 24 18:19:14 2026
+Command line arguments: -drn benchmarks/rq1/models/monitoring-cond-mdps/evadeV-14-4-19-201.drn --prop 'Pmax=? [true];Pmax=? [F "_goal" || F "_end"]' --timeout 300 --dot-maxwidth 1276 --exact '--conditional:algorithm' restart
+Current working directory: /home/luko/Cond
+
+Time for model construction: 0.106s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	26215
+Transitions: 	125207
+Choices: 	64657
+Reward Models:  none
+State Labels: 	4 labels
+   * _goal -> 1 item(s)
+   * _end -> 2 item(s)
+   * init -> 1 item(s)
+   * _violated -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": Pmax=? [true] ...
+Result (for initial states): 1 (approx. 1)
+Time for model checking: 0.004s.
+
+Model checking property "2": Pmax=? [(F "_goal") || (F "_end")] ...
+Result (for initial states): 257876797763289015018446073603669566054463764501770725229213428653077652734691/313952761899806420675673734876909293234348305510262861322465634320000000000000 (approx. 0.8213872565)
+Time for model checking: 8.027s.

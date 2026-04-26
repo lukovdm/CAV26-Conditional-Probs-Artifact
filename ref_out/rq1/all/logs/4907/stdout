@@ -1,0 +1,35 @@
+Storm 1.12.0 (dev)
+
+Date: Fri Apr 24 21:51:28 2026
+Command line arguments: -drn benchmarks/rq1/models/transformed-mdp/brp-N=128-MAX=8-PCHAN=0.1-0.15.drn --prop 'Pmax=? [true];Pmax=? [F "target" || F "retries_MAX_min_1"]' --timeout 300 --dot-maxwidth 4906 --exact '--conditional:algorithm' bisection
+Current working directory: /home/luko/Cond
+
+Time for model construction: 0.129s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	15371
+Transitions: 	31475
+Choices: 	20739
+Reward Models:  none
+State Labels: 	9 labels
+   * success -> 80 item(s)
+   * deadlock -> 265 item(s)
+   * target -> 256 item(s)
+   * retries_MAX_min_2 -> 1665 item(s)
+   * retries_MAX_min_3 -> 1665 item(s)
+   * retries_MAX_min_1 -> 1665 item(s)
+   * retries_MAX_min_4 -> 1665 item(s)
+   * retries_MAX_min_5 -> 1665 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": Pmax=? [true] ...
+Result (for initial states): 1 (approx. 1)
+Time for model checking: 0.002s.
+
+Model checking property "2": Pmax=? [(F "target") || (F "retries_MAX_min_1")] ...
+WARN  (ConditionalHelper.cpp:1093): Bisection solver aborted after 968iterations. Bound difference is 5.78928e-292.
+Result till abort (for initial states): 862047544580544045040074592570864537917643800217823265657281476951604444233163000829212963148078956566444290041695111151672213035588769705177393417022374787585491426905275067303992466390120209814531434626644787747863598237583062228092384739726617811393514795491879488537562714869687294612871/3454662309910501393589729803862083668175264509691083026676495611931993687044184319287701045466639400616358922368931468822239217337604374251758988132569575852937414914355391234267880495611235786061773874059229439561661540847536581199464060710178119009352943736094632703525452132432409342151208 (approx. 0.2495316379)
+Time for model checking: 300.145s.

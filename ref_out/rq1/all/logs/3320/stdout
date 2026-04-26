@@ -1,0 +1,30 @@
+Storm 1.12.0 (dev)
+
+Date: Fri Apr 24 19:07:23 2026
+Command line arguments: -drn benchmarks/rq1/models/monitoring-cond-mdps/refuelC-25-20-0-201.drn --prop 'Pmax=? [true];Pmax=? [F "_goal" || F "_end"]' --timeout 300 --dot-maxwidth 3319 '--conditional:precision' 1e-6 '--conditional:algorithm' bisection-advanced-pt
+Current working directory: /home/luko/Cond
+
+Time for model construction: 7.807s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	402473
+Transitions: 	7973181
+Choices: 	1542892
+Reward Models:  none
+State Labels: 	4 labels
+   * _goal -> 1 item(s)
+   * _end -> 2 item(s)
+   * init -> 1 item(s)
+   * _violated -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": Pmax=? [true] ...
+Result (for initial states): 1
+Time for model checking: 0.002s.
+
+Model checking property "2": Pmax=? [(F "_goal") || (F "_end")] ...
+WARN  (ConditionalHelper.cpp:1055): Precision of non-exact type reached during bisection method. Result might be inaccurate.
+Result (for initial states): 0.01070732823
+Time for model checking: 0.443s.

@@ -1,0 +1,1163 @@
+ETA: 1931s Left: 468 AVG: 4.13s  local:7/6220/100%/4.1s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_12-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6227 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-pt
+ETA: 1928s Left: 467 AVG: 4.13s  local:7/6221/100%/4.1s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_12-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6228 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-advanced
+ETA: 1924s Left: 466 AVG: 4.13s  local:7/6222/100%/4.1s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_12-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6229 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-advanced
+ETA: 1921s Left: 465 AVG: 4.13s  local:7/6223/100%/4.1s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_12-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6230 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-advanced
+-pt
+ETA: 1917s Left: 464 AVG: 4.13s  local:7/6224/100%/4.1s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_12-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6231 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-advanced
+-pt
+ETA: 1914s Left: 463 AVG: 4.13s  local:7/6225/100%/4.1s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_13-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6232 --exact --conditional:algorithm bisection
+ETA: 1910s Left: 462 AVG: 4.14s  local:7/6226/100%/4.1s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_13-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax>=0.5 [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6233 --exact --conditional:algorithm bisection
+ETA: 1906s Left: 461 AVG: 4.14s  local:7/6227/100%/4.1s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_13-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6234 --exact --conditional:algorithm bisection
+ETA: 1902s Left: 460 AVG: 4.14s  local:7/6228/100%/4.1s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_13-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax>=0.5 [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6235 --exact --conditional:algorithm bisection
+ETA: 1898s Left: 459 AVG: 4.14s  local:7/6229/100%/4.1s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_13-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6236 --exact --conditional:algorithm bisection-pt
+ETA: 1894s Left: 458 AVG: 4.14s  local:7/6230/100%/4.1s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_13-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6237 --exact --conditional:algorithm bisection-pt
+ETA: 1893s Left: 457 AVG: 4.14s  local:7/6231/100%/4.1s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_13-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6238 --exact --conditional:algorithm restart
+ETA: 1888s Left: 456 AVG: 4.14s  local:7/6232/100%/4.1s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_13-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax>=0.5 [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6239 --exact --conditional:algorithm restart
+ETA: 1884s Left: 455 AVG: 4.14s  local:7/6233/100%/4.1s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_13-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6240 --exact --conditional:algorithm restart
+ETA: 1880s Left: 454 AVG: 4.14s  local:7/6234/100%/4.1s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_13-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax>=0.5 [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6241 --exact --conditional:algorithm restart
+ETA: 1880s Left: 453 AVG: 4.16s  local:7/6235/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_13-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6242 --exact --conditional:algorithm bisection-advanced
+ETA: 1879s Left: 452 AVG: 4.16s  local:7/6236/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_13-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6243 --exact --conditional:algorithm bisection-advanced
+ETA: 1879s Left: 451 AVG: 4.17s  local:7/6237/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_13-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6244 --exact --conditional:algorithm bisection-advanced-pt
+ETA: 1879s Left: 450 AVG: 4.18s  local:7/6238/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_13-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6245 --exact --conditional:algorithm bisection-advanced-pt
+ETA: 1879s Left: 449 AVG: 4.19s  local:7/6239/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_13-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6246 --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 1874s Left: 448 AVG: 4.19s  local:7/6240/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_13-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax>=0.5 [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6247 --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 1870s Left: 447 AVG: 4.19s  local:7/6241/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_13-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6248 --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 1866s Left: 446 AVG: 4.18s  local:7/6242/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_13-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax>=0.5 [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6249 --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 1862s Left: 445 AVG: 4.18s  local:7/6243/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_13-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6250 --conditional:precision 1e-6 --conditional:algorithm bisection-pt
+ETA: 1857s Left: 444 AVG: 4.18s  local:7/6244/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_13-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6251 --conditional:precision 1e-6 --conditional:algorithm bisection-pt
+ETA: 1853s Left: 443 AVG: 4.18s  local:7/6245/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_13-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6252 --conditional:precision 1e-6 --conditional:algorithm restart
+ETA: 1848s Left: 442 AVG: 4.18s  local:7/6246/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_13-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax>=0.5 [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6253 --conditional:precision 1e-6 --conditional:algorithm restart
+ETA: 1844s Left: 441 AVG: 4.18s  local:7/6247/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_13-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6254 --conditional:precision 1e-6 --conditional:algorithm restart
+ETA: 1840s Left: 440 AVG: 4.18s  local:7/6248/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_13-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax>=0.5 [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6255 --conditional:precision 1e-6 --conditional:algorithm restart
+ETA: 1835s Left: 439 AVG: 4.18s  local:7/6249/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_13-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6256 --conditional:precision 1e-6 --conditional:algorithm bisection-advanced
+ETA: 1831s Left: 438 AVG: 4.18s  local:7/6250/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_13-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6257 --conditional:precision 1e-6 --conditional:algorithm bisection-advanced
+ETA: 1826s Left: 437 AVG: 4.18s  local:7/6251/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_13-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6258 --conditional:precision 1e-6 --conditional:algorithm bisection-advanced-pt
+ETA: 1822s Left: 436 AVG: 4.18s  local:7/6252/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_13-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6259 --conditional:precision 1e-6 --conditional:algorithm bisection-advanced-pt
+ETA: 1818s Left: 435 AVG: 4.18s  local:7/6253/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_13-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6260 --exact --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 1813s Left: 434 AVG: 4.18s  local:7/6254/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_13-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax>=0.5 [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6261 --exact --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 1809s Left: 433 AVG: 4.18s  local:7/6255/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_13-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6262 --exact --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 1804s Left: 432 AVG: 4.18s  local:7/6256/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_13-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax>=0.5 [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6263 --exact --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 1801s Left: 431 AVG: 4.18s  local:7/6257/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_13-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6264 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-pt
+ETA: 1796s Left: 430 AVG: 4.18s  local:7/6258/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_13-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6265 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-pt
+ETA: 1795s Left: 429 AVG: 4.19s  local:7/6259/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_13-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6266 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-advanced
+ETA: 1791s Left: 428 AVG: 4.19s  local:7/6260/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_13-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6267 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-advanced
+ETA: 1787s Left: 427 AVG: 4.19s  local:7/6261/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_13-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6268 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-advanced
+-pt
+ETA: 1783s Left: 426 AVG: 4.19s  local:7/6262/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_13-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6269 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-advanced
+-pt
+ETA: 1780s Left: 425 AVG: 4.19s  local:7/6263/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6270 --exact --conditional:algorithm bisection
+ETA: 1776s Left: 424 AVG: 4.19s  local:7/6264/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax>=0.5 [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6271 --exact --conditional:algorithm bisection
+ETA: 1772s Left: 423 AVG: 4.19s  local:7/6265/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6272 --exact --conditional:algorithm bisection
+ETA: 1768s Left: 422 AVG: 4.19s  local:7/6266/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax>=0.5 [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6273 --exact --conditional:algorithm bisection
+ETA: 1763s Left: 421 AVG: 4.19s  local:7/6267/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6274 --exact --conditional:algorithm bisection-pt
+ETA: 1760s Left: 420 AVG: 4.19s  local:7/6268/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6275 --exact --conditional:algorithm bisection-pt
+ETA: 1756s Left: 419 AVG: 4.19s  local:7/6269/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6276 --exact --conditional:algorithm restart
+ETA: 1752s Left: 418 AVG: 4.19s  local:7/6270/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax>=0.5 [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6277 --exact --conditional:algorithm restart
+ETA: 1750s Left: 417 AVG: 4.20s  local:7/6271/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6278 --exact --conditional:algorithm restart
+ETA: 1746s Left: 416 AVG: 4.20s  local:7/6272/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax>=0.5 [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6279 --exact --conditional:algorithm restart
+ETA: 1743s Left: 415 AVG: 4.20s  local:7/6273/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6280 --exact --conditional:algorithm bisection-advanced
+ETA: 1738s Left: 414 AVG: 4.20s  local:7/6274/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6281 --exact --conditional:algorithm bisection-advanced
+ETA: 1738s Left: 413 AVG: 4.23s  local:7/6275/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6282 --exact --conditional:algorithm bisection-advanced-pt
+ETA: 1738s Left: 412 AVG: 4.23s  local:7/6276/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6283 --exact --conditional:algorithm bisection-advanced-pt
+ETA: 1738s Left: 411 AVG: 4.23s  local:7/6277/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6284 --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 1736s Left: 410 AVG: 4.24s  local:7/6278/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax>=0.5 [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6285 --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 1732s Left: 409 AVG: 4.24s  local:7/6279/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6286 --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 1728s Left: 408 AVG: 4.24s  local:7/6280/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax>=0.5 [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6287 --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 1723s Left: 407 AVG: 4.24s  local:7/6281/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6288 --conditional:precision 1e-6 --conditional:algorithm bisection-pt
+ETA: 1719s Left: 406 AVG: 4.24s  local:7/6282/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6289 --conditional:precision 1e-6 --conditional:algorithm bisection-pt
+ETA: 1715s Left: 405 AVG: 4.24s  local:7/6283/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6290 --conditional:precision 1e-6 --conditional:algorithm restart
+ETA: 1710s Left: 404 AVG: 4.24s  local:7/6284/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax>=0.5 [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6291 --conditional:precision 1e-6 --conditional:algorithm restart
+ETA: 1706s Left: 403 AVG: 4.24s  local:7/6285/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6292 --conditional:precision 1e-6 --conditional:algorithm restart
+ETA: 1702s Left: 402 AVG: 4.23s  local:7/6286/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax>=0.5 [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6293 --conditional:precision 1e-6 --conditional:algorithm restart
+ETA: 1698s Left: 401 AVG: 4.23s  local:7/6287/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6294 --conditional:precision 1e-6 --conditional:algorithm bisection-advanced
+ETA: 1693s Left: 400 AVG: 4.23s  local:7/6288/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6295 --conditional:precision 1e-6 --conditional:algorithm bisection-advanced
+ETA: 1689s Left: 399 AVG: 4.23s  local:7/6289/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6296 --conditional:precision 1e-6 --conditional:algorithm bisection-advanced-pt
+ETA: 1685s Left: 398 AVG: 4.23s  local:7/6290/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6297 --conditional:precision 1e-6 --conditional:algorithm bisection-advanced-pt
+ETA: 1680s Left: 397 AVG: 4.23s  local:7/6291/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6298 --exact --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 1676s Left: 396 AVG: 4.23s  local:7/6292/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax>=0.5 [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6299 --exact --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 1672s Left: 395 AVG: 4.23s  local:7/6293/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6300 --exact --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 1667s Left: 394 AVG: 4.23s  local:7/6294/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax>=0.5 [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6301 --exact --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 1663s Left: 393 AVG: 4.23s  local:7/6295/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6302 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-pt
+ETA: 1659s Left: 392 AVG: 4.23s  local:7/6296/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6303 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-pt
+ETA: 1654s Left: 391 AVG: 4.23s  local:7/6297/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6304 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-advanced
+ETA: 1650s Left: 390 AVG: 4.23s  local:7/6298/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6305 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-advanced
+ETA: 1648s Left: 389 AVG: 4.24s  local:7/6299/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6306 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-advanced
+-pt
+ETA: 1644s Left: 388 AVG: 4.24s  local:7/6300/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6307 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-advanced
+-pt
+ETA: 1642s Left: 387 AVG: 4.24s  local:7/6301/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6308 --exact --conditional:algorithm bisection
+ETA: 1638s Left: 386 AVG: 4.24s  local:7/6302/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax>=0.5 [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6309 --exact --conditional:algorithm bisection
+ETA: 1634s Left: 385 AVG: 4.24s  local:7/6303/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6310 --exact --conditional:algorithm bisection
+ETA: 1629s Left: 384 AVG: 4.24s  local:7/6304/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax>=0.5 [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6311 --exact --conditional:algorithm bisection
+ETA: 1625s Left: 383 AVG: 4.24s  local:7/6305/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6312 --exact --conditional:algorithm bisection-pt
+ETA: 1621s Left: 382 AVG: 4.25s  local:7/6306/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6313 --exact --conditional:algorithm bisection-pt
+ETA: 1618s Left: 381 AVG: 4.25s  local:7/6307/100%/4.2s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6314 --exact --conditional:algorithm restart
+ETA: 1615s Left: 380 AVG: 4.25s  local:7/6308/100%/4.3s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax>=0.5 [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6315 --exact --conditional:algorithm restart
+ETA: 1611s Left: 379 AVG: 4.25s  local:7/6309/100%/4.3s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6316 --exact --conditional:algorithm restart
+ETA: 1607s Left: 378 AVG: 4.25s  local:7/6310/100%/4.3s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax>=0.5 [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6317 --exact --conditional:algorithm restart
+ETA: 1603s Left: 377 AVG: 4.25s  local:7/6311/100%/4.3s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6318 --exact --conditional:algorithm bisection-advanced
+ETA: 1600s Left: 376 AVG: 4.26s  local:7/6312/100%/4.3s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6319 --exact --conditional:algorithm bisection-advanced
+ETA: 1600s Left: 375 AVG: 4.28s  local:7/6313/100%/4.3s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6320 --exact --conditional:algorithm bisection-advanced-pt
+ETA: 1600s Left: 374 AVG: 4.28s  local:7/6314/100%/4.3s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6321 --exact --conditional:algorithm bisection-advanced-pt
+ETA: 1600s Left: 373 AVG: 4.29s  local:7/6315/100%/4.3s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6322 --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 1596s Left: 372 AVG: 4.29s  local:7/6316/100%/4.3s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax>=0.5 [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6323 --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 1592s Left: 371 AVG: 4.29s  local:7/6317/100%/4.3s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6324 --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 1588s Left: 370 AVG: 4.29s  local:7/6318/100%/4.3s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax>=0.5 [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6325 --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 1583s Left: 369 AVG: 4.29s  local:7/6319/100%/4.3s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6326 --conditional:precision 1e-6 --conditional:algorithm bisection-pt
+ETA: 1579s Left: 368 AVG: 4.29s  local:7/6320/100%/4.3s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6327 --conditional:precision 1e-6 --conditional:algorithm bisection-pt
+ETA: 1575s Left: 367 AVG: 4.29s  local:7/6321/100%/4.3s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6328 --conditional:precision 1e-6 --conditional:algorithm restart
+ETA: 1570s Left: 366 AVG: 4.29s  local:7/6322/100%/4.3s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax>=0.5 [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6329 --conditional:precision 1e-6 --conditional:algorithm restart
+ETA: 1566s Left: 365 AVG: 4.29s  local:7/6323/100%/4.3s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6330 --conditional:precision 1e-6 --conditional:algorithm restart
+ETA: 1561s Left: 364 AVG: 4.29s  local:7/6324/100%/4.3s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax>=0.5 [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6331 --conditional:precision 1e-6 --conditional:algorithm restart
+ETA: 1557s Left: 363 AVG: 4.29s  local:7/6325/100%/4.3s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6332 --conditional:precision 1e-6 --conditional:algorithm bisection-advanced
+ETA: 1552s Left: 362 AVG: 4.29s  local:7/6326/100%/4.3s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6333 --conditional:precision 1e-6 --conditional:algorithm bisection-advanced
+ETA: 1548s Left: 361 AVG: 4.29s  local:7/6327/100%/4.3s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6334 --conditional:precision 1e-6 --conditional:algorithm bisection-advanced-pt
+ETA: 1544s Left: 360 AVG: 4.29s  local:7/6328/100%/4.3s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6335 --conditional:precision 1e-6 --conditional:algorithm bisection-advanced-pt
+ETA: 1539s Left: 359 AVG: 4.29s  local:7/6329/100%/4.3s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6336 --exact --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 1535s Left: 358 AVG: 4.29s  local:7/6330/100%/4.3s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax>=0.5 [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6337 --exact --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 1530s Left: 357 AVG: 4.29s  local:7/6331/100%/4.3s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6338 --exact --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 1526s Left: 356 AVG: 4.29s  local:7/6332/100%/4.3s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax>=0.5 [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6339 --exact --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 1521s Left: 355 AVG: 4.29s  local:7/6333/100%/4.3s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6340 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-pt
+ETA: 1517s Left: 354 AVG: 4.29s  local:7/6334/100%/4.3s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6341 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-pt
+ETA: 1513s Left: 353 AVG: 4.29s  local:7/6335/100%/4.3s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6342 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-advanced
+ETA: 1509s Left: 352 AVG: 4.29s  local:7/6336/100%/4.3s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6343 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-advanced
+ETA: 1507s Left: 351 AVG: 4.29s  local:7/6337/100%/4.3s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6344 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-advanced
+-pt
+ETA: 1502s Left: 350 AVG: 4.29s  local:7/6338/100%/4.3s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_14-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6345 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-advanced
+-pt
+ETA: 1498s Left: 349 AVG: 4.29s  local:7/6339/100%/4.3s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6346 --exact --conditional:algorithm bisection
+ETA: 1496s Left: 348 AVG: 4.30s  local:7/6340/100%/4.3s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax>=0.5 [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6347 --exact --conditional:algorithm bisection
+ETA: 1492s Left: 347 AVG: 4.30s  local:7/6341/100%/4.3s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6348 --exact --conditional:algorithm bisection
+ETA: 1488s Left: 346 AVG: 4.30s  local:7/6342/100%/4.3s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax>=0.5 [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6349 --exact --conditional:algorithm bisection
+ETA: 1484s Left: 345 AVG: 4.30s  local:7/6343/100%/4.3s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6350 --exact --conditional:algorithm bisection-pt
+ETA: 1480s Left: 344 AVG: 4.30s  local:7/6344/100%/4.3s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6351 --exact --conditional:algorithm bisection-pt
+ETA: 1477s Left: 343 AVG: 4.31s  local:7/6345/100%/4.3s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6352 --exact --conditional:algorithm restart
+ETA: 1473s Left: 342 AVG: 4.31s  local:7/6346/100%/4.3s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax>=0.5 [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6353 --exact --conditional:algorithm restart
+ETA: 1469s Left: 341 AVG: 4.31s  local:7/6347/100%/4.3s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6354 --exact --conditional:algorithm restart
+ETA: 1465s Left: 340 AVG: 4.31s  local:7/6348/100%/4.3s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax>=0.5 [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6355 --exact --conditional:algorithm restart
+ETA: 1461s Left: 339 AVG: 4.31s  local:7/6349/100%/4.3s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6356 --exact --conditional:algorithm bisection-advanced
+ETA: 1457s Left: 338 AVG: 4.31s  local:7/6350/100%/4.3s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6357 --exact --conditional:algorithm bisection-advanced
+ETA: 1457s Left: 337 AVG: 4.33s  local:7/6351/100%/4.3s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6358 --exact --conditional:algorithm bisection-advanced-pt
+ETA: 1457s Left: 336 AVG: 4.34s  local:7/6352/100%/4.3s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6359 --exact --conditional:algorithm bisection-advanced-pt
+ETA: 1456s Left: 335 AVG: 4.35s  local:7/6353/100%/4.3s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6360 --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 1453s Left: 334 AVG: 4.35s  local:7/6354/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax>=0.5 [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6361 --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 1448s Left: 333 AVG: 4.35s  local:7/6355/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6362 --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 1444s Left: 332 AVG: 4.35s  local:7/6356/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax>=0.5 [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6363 --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 1440s Left: 331 AVG: 4.35s  local:7/6357/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6364 --conditional:precision 1e-6 --conditional:algorithm bisection-pt
+ETA: 1435s Left: 330 AVG: 4.35s  local:7/6358/100%/4.3s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6365 --conditional:precision 1e-6 --conditional:algorithm bisection-pt
+ETA: 1431s Left: 329 AVG: 4.35s  local:7/6359/100%/4.3s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6366 --conditional:precision 1e-6 --conditional:algorithm restart
+ETA: 1426s Left: 328 AVG: 4.35s  local:7/6360/100%/4.3s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax>=0.5 [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6367 --conditional:precision 1e-6 --conditional:algorithm restart
+ETA: 1422s Left: 327 AVG: 4.35s  local:7/6361/100%/4.3s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6368 --conditional:precision 1e-6 --conditional:algorithm restart
+ETA: 1417s Left: 326 AVG: 4.35s  local:7/6362/100%/4.3s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax>=0.5 [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6369 --conditional:precision 1e-6 --conditional:algorithm restart
+ETA: 1413s Left: 325 AVG: 4.35s  local:7/6363/100%/4.3s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6370 --conditional:precision 1e-6 --conditional:algorithm bisection-advanced
+ETA: 1408s Left: 324 AVG: 4.35s  local:7/6364/100%/4.3s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6371 --conditional:precision 1e-6 --conditional:algorithm bisection-advanced
+ETA: 1404s Left: 323 AVG: 4.35s  local:7/6365/100%/4.3s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6372 --conditional:precision 1e-6 --conditional:algorithm bisection-advanced-pt
+ETA: 1399s Left: 322 AVG: 4.35s  local:7/6366/100%/4.3s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6373 --conditional:precision 1e-6 --conditional:algorithm bisection-advanced-pt
+ETA: 1395s Left: 321 AVG: 4.35s  local:7/6367/100%/4.3s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6374 --exact --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 1390s Left: 320 AVG: 4.35s  local:7/6368/100%/4.3s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax>=0.5 [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6375 --exact --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 1386s Left: 319 AVG: 4.35s  local:7/6369/100%/4.3s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6376 --exact --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 1381s Left: 318 AVG: 4.35s  local:7/6370/100%/4.3s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax>=0.5 [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6377 --exact --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 1377s Left: 317 AVG: 4.35s  local:7/6371/100%/4.3s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6378 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-pt
+ETA: 1373s Left: 316 AVG: 4.35s  local:7/6372/100%/4.3s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6379 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-pt
+ETA: 1369s Left: 315 AVG: 4.35s  local:7/6373/100%/4.3s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6380 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-advanced
+ETA: 1364s Left: 314 AVG: 4.35s  local:7/6374/100%/4.3s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6381 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-advanced
+ETA: 1362s Left: 313 AVG: 4.35s  local:7/6375/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6382 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-advanced
+-pt
+ETA: 1358s Left: 312 AVG: 4.35s  local:7/6376/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.01.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6383 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-advanced
+-pt
+ETA: 1355s Left: 311 AVG: 4.36s  local:7/6377/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6384 --exact --conditional:algorithm bisection
+ETA: 1351s Left: 310 AVG: 4.36s  local:7/6378/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax>=0.5 [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6385 --exact --conditional:algorithm bisection
+ETA: 1347s Left: 309 AVG: 4.36s  local:7/6379/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6386 --exact --conditional:algorithm bisection
+ETA: 1342s Left: 308 AVG: 4.36s  local:7/6380/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax>=0.5 [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6387 --exact --conditional:algorithm bisection
+ETA: 1338s Left: 307 AVG: 4.36s  local:7/6381/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6388 --exact --conditional:algorithm bisection-pt
+ETA: 1334s Left: 306 AVG: 4.36s  local:7/6382/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6389 --exact --conditional:algorithm bisection-pt
+ETA: 1330s Left: 305 AVG: 4.36s  local:7/6383/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6390 --exact --conditional:algorithm restart
+ETA: 1326s Left: 304 AVG: 4.36s  local:7/6384/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax>=0.5 [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6391 --exact --conditional:algorithm restart
+ETA: 1322s Left: 303 AVG: 4.37s  local:7/6385/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6392 --exact --conditional:algorithm restart
+ETA: 1319s Left: 302 AVG: 4.37s  local:7/6386/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax>=0.5 [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6393 --exact --conditional:algorithm restart
+ETA: 1316s Left: 301 AVG: 4.37s  local:7/6387/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6394 --exact --conditional:algorithm bisection-advanced
+ETA: 1312s Left: 300 AVG: 4.38s  local:7/6388/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6395 --exact --conditional:algorithm bisection-advanced
+ETA: 1312s Left: 299 AVG: 4.40s  local:7/6389/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6396 --exact --conditional:algorithm bisection-advanced-pt
+ETA: 1311s Left: 298 AVG: 4.40s  local:7/6390/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6397 --exact --conditional:algorithm bisection-advanced-pt
+ETA: 1307s Left: 297 AVG: 4.40s  local:7/6391/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6398 --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 1303s Left: 296 AVG: 4.40s  local:7/6392/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax>=0.5 [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6399 --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 1299s Left: 295 AVG: 4.41s  local:7/6393/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6400 --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 1294s Left: 294 AVG: 4.40s  local:7/6394/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax>=0.5 [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6401 --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 1290s Left: 293 AVG: 4.41s  local:7/6395/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6402 --conditional:precision 1e-6 --conditional:algorithm bisection-pt
+ETA: 1286s Left: 292 AVG: 4.40s  local:7/6396/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6403 --conditional:precision 1e-6 --conditional:algorithm bisection-pt
+ETA: 1282s Left: 291 AVG: 4.41s  local:7/6397/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6404 --conditional:precision 1e-6 --conditional:algorithm restart
+ETA: 1277s Left: 290 AVG: 4.40s  local:7/6398/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax>=0.5 [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6405 --conditional:precision 1e-6 --conditional:algorithm restart
+ETA: 1272s Left: 289 AVG: 4.40s  local:7/6399/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6406 --conditional:precision 1e-6 --conditional:algorithm restart
+ETA: 1268s Left: 288 AVG: 4.40s  local:7/6400/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax>=0.5 [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6407 --conditional:precision 1e-6 --conditional:algorithm restart
+ETA: 1263s Left: 287 AVG: 4.40s  local:7/6401/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6408 --conditional:precision 1e-6 --conditional:algorithm bisection-advanced
+ETA: 1259s Left: 286 AVG: 4.40s  local:7/6402/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6409 --conditional:precision 1e-6 --conditional:algorithm bisection-advanced
+ETA: 1255s Left: 285 AVG: 4.40s  local:7/6403/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6410 --conditional:precision 1e-6 --conditional:algorithm bisection-advanced-pt
+ETA: 1250s Left: 284 AVG: 4.40s  local:7/6404/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6411 --conditional:precision 1e-6 --conditional:algorithm bisection-advanced-pt
+ETA: 1245s Left: 283 AVG: 4.40s  local:7/6405/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6412 --exact --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 1241s Left: 282 AVG: 4.40s  local:7/6406/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax>=0.5 [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6413 --exact --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 1237s Left: 281 AVG: 4.40s  local:7/6407/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6414 --exact --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 1232s Left: 280 AVG: 4.40s  local:7/6408/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax>=0.5 [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6415 --exact --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 1228s Left: 279 AVG: 4.40s  local:7/6409/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6416 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-pt
+ETA: 1224s Left: 278 AVG: 4.40s  local:7/6410/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6417 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-pt
+ETA: 1220s Left: 277 AVG: 4.41s  local:7/6411/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6418 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-advanced
+ETA: 1216s Left: 276 AVG: 4.41s  local:7/6412/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6419 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-advanced
+ETA: 1213s Left: 275 AVG: 4.41s  local:7/6413/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6420 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-advanced
+-pt
+ETA: 1209s Left: 274 AVG: 4.42s  local:7/6414/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.05.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6421 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-advanced
+-pt
+ETA: 1205s Left: 273 AVG: 4.42s  local:7/6415/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.15.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6422 --exact --conditional:algorithm bisection
+ETA: 1201s Left: 272 AVG: 4.42s  local:7/6416/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.15.drn --prop 'Pmax=? [true];Pm
+ax>=0.5 [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6423 --exact --conditional:algorithm bisection
+ETA: 1197s Left: 271 AVG: 4.42s  local:7/6417/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.15.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6424 --exact --conditional:algorithm bisection
+ETA: 1193s Left: 270 AVG: 4.42s  local:7/6418/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.15.drn --prop 'Pmax=? [true];Pm
+ax>=0.5 [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6425 --exact --conditional:algorithm bisection
+ETA: 1189s Left: 269 AVG: 4.42s  local:7/6419/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.15.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6426 --exact --conditional:algorithm bisection-pt
+ETA: 1185s Left: 268 AVG: 4.42s  local:7/6420/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.15.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6427 --exact --conditional:algorithm bisection-pt
+ETA: 1180s Left: 267 AVG: 4.42s  local:7/6421/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.15.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6428 --exact --conditional:algorithm restart
+ETA: 1176s Left: 266 AVG: 4.42s  local:7/6422/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.15.drn --prop 'Pmax=? [true];Pm
+ax>=0.5 [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6429 --exact --conditional:algorithm restart
+ETA: 1172s Left: 265 AVG: 4.43s  local:7/6423/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.15.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6430 --exact --conditional:algorithm restart
+ETA: 1169s Left: 264 AVG: 4.43s  local:7/6424/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.15.drn --prop 'Pmax=? [true];Pm
+ax>=0.5 [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6431 --exact --conditional:algorithm restart
+ETA: 1165s Left: 263 AVG: 4.43s  local:7/6425/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.15.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6432 --exact --conditional:algorithm bisection-advanced
+ETA: 1163s Left: 262 AVG: 4.44s  local:7/6426/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.15.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6433 --exact --conditional:algorithm bisection-advanced
+ETA: 1162s Left: 261 AVG: 4.46s  local:7/6427/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.15.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6434 --exact --conditional:algorithm bisection-advanced-pt
+ETA: 1159s Left: 260 AVG: 4.46s  local:7/6428/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.15.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6435 --exact --conditional:algorithm bisection-advanced-pt
+ETA: 1156s Left: 259 AVG: 4.46s  local:7/6429/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.15.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6436 --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 1152s Left: 258 AVG: 4.47s  local:7/6430/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.15.drn --prop 'Pmax=? [true];Pm
+ax>=0.5 [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6437 --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 1147s Left: 257 AVG: 4.47s  local:7/6431/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.15.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6438 --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 1142s Left: 256 AVG: 4.46s  local:7/6432/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.15.drn --prop 'Pmax=? [true];Pm
+ax>=0.5 [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6439 --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 1138s Left: 255 AVG: 4.46s  local:7/6433/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.15.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6440 --conditional:precision 1e-6 --conditional:algorithm bisection-pt
+ETA: 1133s Left: 254 AVG: 4.46s  local:7/6434/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.15.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6441 --conditional:precision 1e-6 --conditional:algorithm bisection-pt
+ETA: 1129s Left: 253 AVG: 4.46s  local:7/6435/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.15.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6442 --conditional:precision 1e-6 --conditional:algorithm restart
+ETA: 1124s Left: 252 AVG: 4.46s  local:7/6436/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.15.drn --prop 'Pmax=? [true];Pm
+ax>=0.5 [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6443 --conditional:precision 1e-6 --conditional:algorithm restart
+ETA: 1120s Left: 251 AVG: 4.46s  local:7/6437/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.15.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6444 --conditional:precision 1e-6 --conditional:algorithm restart
+ETA: 1115s Left: 250 AVG: 4.46s  local:7/6438/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.15.drn --prop 'Pmax=? [true];Pm
+ax>=0.5 [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6445 --conditional:precision 1e-6 --conditional:algorithm restart
+ETA: 1111s Left: 249 AVG: 4.46s  local:7/6439/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.15.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6446 --conditional:precision 1e-6 --conditional:algorithm bisection-advanced
+ETA: 1106s Left: 248 AVG: 4.46s  local:7/6440/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.15.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6447 --conditional:precision 1e-6 --conditional:algorithm bisection-advanced
+ETA: 1102s Left: 247 AVG: 4.46s  local:7/6441/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.15.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6448 --conditional:precision 1e-6 --conditional:algorithm bisection-advanced-pt
+ETA: 1097s Left: 246 AVG: 4.46s  local:7/6442/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.15.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6449 --conditional:precision 1e-6 --conditional:algorithm bisection-advanced-pt
+ETA: 1093s Left: 245 AVG: 4.46s  local:7/6443/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.15.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6450 --exact --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 1088s Left: 244 AVG: 4.46s  local:7/6444/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.15.drn --prop 'Pmax=? [true];Pm
+ax>=0.5 [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6451 --exact --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 1084s Left: 243 AVG: 4.46s  local:7/6445/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.15.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6452 --exact --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 1079s Left: 242 AVG: 4.46s  local:7/6446/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.15.drn --prop 'Pmax=? [true];Pm
+ax>=0.5 [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6453 --exact --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 1074s Left: 241 AVG: 4.46s  local:7/6447/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.15.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6454 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-pt
+ETA: 1070s Left: 240 AVG: 4.46s  local:7/6448/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.15.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6455 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-pt
+ETA: 1066s Left: 239 AVG: 4.46s  local:7/6449/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.15.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6456 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-advanced
+ETA: 1061s Left: 238 AVG: 4.46s  local:7/6450/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.15.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6457 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-advanced
+ETA: 1057s Left: 237 AVG: 4.46s  local:7/6451/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.15.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6458 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-advanced
+-pt
+ETA: 1054s Left: 236 AVG: 4.47s  local:7/6452/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_15-5-0.15.drn --prop 'Pmax=? [true];Pm
+ax=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6459 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-advanced
+-pt
+ETA: 1049s Left: 235 AVG: 4.47s  local:7/6453/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.01.drn --prop 'Pmax=? [true];Pma
+x=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6460 --exact --conditional:algorithm bisection
+ETA: 1047s Left: 234 AVG: 4.47s  local:7/6454/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.01.drn --prop 'Pmax=? [true];Pma
+x>=0.5 [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6461 --exact --conditional:algorithm bisection
+ETA: 1042s Left: 233 AVG: 4.47s  local:7/6455/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.01.drn --prop 'Pmax=? [true];Pma
+x=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6462 --exact --conditional:algorithm bisection
+ETA: 1037s Left: 232 AVG: 4.47s  local:7/6456/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.01.drn --prop 'Pmax=? [true];Pma
+x>=0.5 [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6463 --exact --conditional:algorithm bisection
+ETA: 1033s Left: 231 AVG: 4.47s  local:7/6457/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.01.drn --prop 'Pmax=? [true];Pma
+x=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6464 --exact --conditional:algorithm bisection-pt
+ETA: 1028s Left: 230 AVG: 4.47s  local:7/6458/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.01.drn --prop 'Pmax=? [true];Pma
+x=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6465 --exact --conditional:algorithm bisection-pt
+ETA: 1023s Left: 229 AVG: 4.47s  local:7/6459/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.01.drn --prop 'Pmax=? [true];Pma
+x=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6466 --exact --conditional:algorithm restart
+ETA: 1019s Left: 228 AVG: 4.47s  local:7/6460/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.01.drn --prop 'Pmax=? [true];Pma
+x>=0.5 [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6467 --exact --conditional:algorithm restart
+ETA: 1014s Left: 227 AVG: 4.47s  local:7/6461/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.01.drn --prop 'Pmax=? [true];Pma
+x=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6468 --exact --conditional:algorithm restart
+ETA: 1010s Left: 226 AVG: 4.47s  local:7/6462/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.01.drn --prop 'Pmax=? [true];Pma
+x>=0.5 [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6469 --exact --conditional:algorithm restart
+ETA: 1005s Left: 225 AVG: 4.47s  local:7/6463/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.01.drn --prop 'Pmax=? [true];Pma
+x=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6470 --exact --conditional:algorithm bisection-advanced
+ETA: 1000s Left: 224 AVG: 4.47s  local:7/6464/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.01.drn --prop 'Pmax=? [true];Pma
+x=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6471 --exact --conditional:algorithm bisection-advanced
+ETA: 996s Left: 223 AVG: 4.47s  local:7/6465/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.01.drn --prop 'Pmax=? [true];Pmax
+=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6472 --exact --conditional:algorithm bisection-advanced-pt
+ETA: 993s Left: 222 AVG: 4.48s  local:7/6466/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.01.drn --prop 'Pmax=? [true];Pmax
+=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6473 --exact --conditional:algorithm bisection-advanced-pt
+ETA: 990s Left: 221 AVG: 4.48s  local:7/6467/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.01.drn --prop 'Pmax=? [true];Pmax
+=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6474 --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 985s Left: 220 AVG: 4.48s  local:7/6468/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.01.drn --prop 'Pmax=? [true];Pmax
+>=0.5 [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6475 --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 981s Left: 219 AVG: 4.48s  local:7/6469/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.01.drn --prop 'Pmax=? [true];Pmax
+=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6476 --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 976s Left: 218 AVG: 4.48s  local:7/6470/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.01.drn --prop 'Pmax=? [true];Pmax
+>=0.5 [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6477 --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 972s Left: 217 AVG: 4.48s  local:7/6471/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.01.drn --prop 'Pmax=? [true];Pmax
+=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6478 --conditional:precision 1e-6 --conditional:algorithm bisection-pt
+ETA: 967s Left: 216 AVG: 4.48s  local:7/6472/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.01.drn --prop 'Pmax=? [true];Pmax
+=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6479 --conditional:precision 1e-6 --conditional:algorithm bisection-pt
+ETA: 962s Left: 215 AVG: 4.48s  local:7/6473/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.01.drn --prop 'Pmax=? [true];Pmax
+=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6480 --conditional:precision 1e-6 --conditional:algorithm restart
+ETA: 958s Left: 214 AVG: 4.48s  local:7/6474/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.01.drn --prop 'Pmax=? [true];Pmax
+>=0.5 [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6481 --conditional:precision 1e-6 --conditional:algorithm restart
+ETA: 953s Left: 213 AVG: 4.48s  local:7/6475/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.01.drn --prop 'Pmax=? [true];Pmax
+=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6482 --conditional:precision 1e-6 --conditional:algorithm restart
+ETA: 948s Left: 212 AVG: 4.48s  local:7/6476/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.01.drn --prop 'Pmax=? [true];Pmax
+>=0.5 [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6483 --conditional:precision 1e-6 --conditional:algorithm restart
+ETA: 944s Left: 211 AVG: 4.48s  local:7/6477/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.01.drn --prop 'Pmax=? [true];Pmax
+=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6484 --conditional:precision 1e-6 --conditional:algorithm bisection-advanced
+ETA: 939s Left: 210 AVG: 4.47s  local:7/6478/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.01.drn --prop 'Pmax=? [true];Pmax
+=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6485 --conditional:precision 1e-6 --conditional:algorithm bisection-advanced
+ETA: 935s Left: 209 AVG: 4.47s  local:7/6479/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.01.drn --prop 'Pmax=? [true];Pmax
+=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6486 --conditional:precision 1e-6 --conditional:algorithm bisection-advanced-pt
+ETA: 930s Left: 208 AVG: 4.47s  local:7/6480/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.01.drn --prop 'Pmax=? [true];Pmax
+=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6487 --conditional:precision 1e-6 --conditional:algorithm bisection-advanced-pt
+ETA: 925s Left: 207 AVG: 4.47s  local:7/6481/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.01.drn --prop 'Pmax=? [true];Pmax
+=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6488 --exact --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 921s Left: 206 AVG: 4.47s  local:7/6482/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.01.drn --prop 'Pmax=? [true];Pmax
+>=0.5 [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6489 --exact --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 916s Left: 205 AVG: 4.47s  local:7/6483/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.01.drn --prop 'Pmax=? [true];Pmax
+=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6490 --exact --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 912s Left: 204 AVG: 4.47s  local:7/6484/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.01.drn --prop 'Pmax=? [true];Pmax
+>=0.5 [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6491 --exact --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 907s Left: 203 AVG: 4.47s  local:7/6485/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.01.drn --prop 'Pmax=? [true];Pmax
+=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6492 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-pt
+ETA: 902s Left: 202 AVG: 4.47s  local:7/6486/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.01.drn --prop 'Pmax=? [true];Pmax
+=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6493 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-pt
+ETA: 898s Left: 201 AVG: 4.47s  local:7/6487/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.01.drn --prop 'Pmax=? [true];Pmax
+=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6494 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-advanced
+ETA: 893s Left: 200 AVG: 4.47s  local:7/6488/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.01.drn --prop 'Pmax=? [true];Pmax
+=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6495 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-advanced
+ETA: 889s Left: 199 AVG: 4.47s  local:7/6489/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.01.drn --prop 'Pmax=? [true];Pmax
+=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6496 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-advanced-p
+t
+ETA: 884s Left: 198 AVG: 4.47s  local:7/6490/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.01.drn --prop 'Pmax=? [true];Pmax
+=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6497 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-advanced-p
+t
+ETA: 879s Left: 197 AVG: 4.47s  local:7/6491/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.05.drn --prop 'Pmax=? [true];Pmax
+=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6498 --exact --conditional:algorithm bisection
+ETA: 876s Left: 196 AVG: 4.47s  local:7/6492/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.05.drn --prop 'Pmax=? [true];Pmax
+>=0.5 [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6499 --exact --conditional:algorithm bisection
+ETA: 871s Left: 195 AVG: 4.47s  local:7/6493/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.05.drn --prop 'Pmax=? [true];Pmax
+=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6500 --exact --conditional:algorithm bisection
+ETA: 866s Left: 194 AVG: 4.47s  local:7/6494/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.05.drn --prop 'Pmax=? [true];Pmax
+>=0.5 [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6501 --exact --conditional:algorithm bisection
+ETA: 862s Left: 193 AVG: 4.47s  local:7/6495/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.05.drn --prop 'Pmax=? [true];Pmax
+=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6502 --exact --conditional:algorithm bisection-pt
+ETA: 857s Left: 192 AVG: 4.47s  local:7/6496/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.05.drn --prop 'Pmax=? [true];Pmax
+=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6503 --exact --conditional:algorithm bisection-pt
+ETA: 853s Left: 191 AVG: 4.47s  local:7/6497/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.05.drn --prop 'Pmax=? [true];Pmax
+=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6504 --exact --conditional:algorithm restart
+ETA: 848s Left: 190 AVG: 4.47s  local:7/6498/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.05.drn --prop 'Pmax=? [true];Pmax
+>=0.5 [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6505 --exact --conditional:algorithm restart
+ETA: 843s Left: 189 AVG: 4.46s  local:7/6499/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.05.drn --prop 'Pmax=? [true];Pmax
+=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6506 --exact --conditional:algorithm restart
+ETA: 839s Left: 188 AVG: 4.46s  local:7/6500/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.05.drn --prop 'Pmax=? [true];Pmax
+>=0.5 [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6507 --exact --conditional:algorithm restart
+ETA: 834s Left: 187 AVG: 4.46s  local:7/6501/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.05.drn --prop 'Pmax=? [true];Pmax
+=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6508 --exact --conditional:algorithm bisection-advanced
+ETA: 830s Left: 186 AVG: 4.46s  local:7/6502/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.05.drn --prop 'Pmax=? [true];Pmax
+=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6509 --exact --conditional:algorithm bisection-advanced
+ETA: 825s Left: 185 AVG: 4.46s  local:7/6503/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.05.drn --prop 'Pmax=? [true];Pmax
+=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6510 --exact --conditional:algorithm bisection-advanced-pt
+ETA: 821s Left: 184 AVG: 4.47s  local:7/6504/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.05.drn --prop 'Pmax=? [true];Pmax
+=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6511 --exact --conditional:algorithm bisection-advanced-pt
+ETA: 817s Left: 183 AVG: 4.47s  local:7/6505/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.05.drn --prop 'Pmax=? [true];Pmax
+=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6512 --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 812s Left: 182 AVG: 4.47s  local:7/6506/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.05.drn --prop 'Pmax=? [true];Pmax
+>=0.5 [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6513 --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 808s Left: 181 AVG: 4.46s  local:7/6507/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.05.drn --prop 'Pmax=? [true];Pmax
+=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6514 --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 803s Left: 180 AVG: 4.46s  local:7/6508/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.05.drn --prop 'Pmax=? [true];Pmax
+>=0.5 [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6515 --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 798s Left: 179 AVG: 4.46s  local:7/6509/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.05.drn --prop 'Pmax=? [true];Pmax
+=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6516 --conditional:precision 1e-6 --conditional:algorithm bisection-pt
+ETA: 794s Left: 178 AVG: 4.46s  local:7/6510/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.05.drn --prop 'Pmax=? [true];Pmax
+=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6517 --conditional:precision 1e-6 --conditional:algorithm bisection-pt
+ETA: 789s Left: 177 AVG: 4.46s  local:7/6511/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.05.drn --prop 'Pmax=? [true];Pmax
+=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6518 --conditional:precision 1e-6 --conditional:algorithm restart
+ETA: 785s Left: 176 AVG: 4.46s  local:7/6512/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.05.drn --prop 'Pmax=? [true];Pmax
+>=0.5 [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6519 --conditional:precision 1e-6 --conditional:algorithm restart
+ETA: 780s Left: 175 AVG: 4.46s  local:7/6513/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.05.drn --prop 'Pmax=? [true];Pmax
+=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6520 --conditional:precision 1e-6 --conditional:algorithm restart
+ETA: 776s Left: 174 AVG: 4.46s  local:7/6514/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.05.drn --prop 'Pmax=? [true];Pmax
+>=0.5 [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6521 --conditional:precision 1e-6 --conditional:algorithm restart
+ETA: 771s Left: 173 AVG: 4.46s  local:7/6515/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.05.drn --prop 'Pmax=? [true];Pmax
+=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6522 --conditional:precision 1e-6 --conditional:algorithm bisection-advanced
+ETA: 766s Left: 172 AVG: 4.46s  local:7/6516/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.05.drn --prop 'Pmax=? [true];Pmax
+=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6523 --conditional:precision 1e-6 --conditional:algorithm bisection-advanced
+ETA: 762s Left: 171 AVG: 4.46s  local:7/6517/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.05.drn --prop 'Pmax=? [true];Pmax
+=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6524 --conditional:precision 1e-6 --conditional:algorithm bisection-advanced-pt
+ETA: 757s Left: 170 AVG: 4.46s  local:7/6518/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.05.drn --prop 'Pmax=? [true];Pmax
+=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6525 --conditional:precision 1e-6 --conditional:algorithm bisection-advanced-pt
+ETA: 753s Left: 169 AVG: 4.46s  local:7/6519/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.05.drn --prop 'Pmax=? [true];Pmax
+=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6526 --exact --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 748s Left: 168 AVG: 4.46s  local:7/6520/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.05.drn --prop 'Pmax=? [true];Pmax
+>=0.5 [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6527 --exact --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 744s Left: 167 AVG: 4.46s  local:7/6521/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.05.drn --prop 'Pmax=? [true];Pmax
+=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6528 --exact --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 739s Left: 166 AVG: 4.45s  local:7/6522/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.05.drn --prop 'Pmax=? [true];Pmax
+>=0.5 [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6529 --exact --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 734s Left: 165 AVG: 4.45s  local:7/6523/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.05.drn --prop 'Pmax=? [true];Pmax
+=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6530 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-pt
+ETA: 730s Left: 164 AVG: 4.45s  local:7/6524/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.05.drn --prop 'Pmax=? [true];Pmax
+=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6531 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-pt
+ETA: 725s Left: 163 AVG: 4.45s  local:7/6525/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.05.drn --prop 'Pmax=? [true];Pmax
+=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6532 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-advanced
+ETA: 721s Left: 162 AVG: 4.45s  local:7/6526/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.05.drn --prop 'Pmax=? [true];Pmax
+=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6533 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-advanced
+ETA: 716s Left: 161 AVG: 4.45s  local:7/6527/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.05.drn --prop 'Pmax=? [true];Pmax
+=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6534 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-advanced-p
+t
+ETA: 712s Left: 160 AVG: 4.45s  local:7/6528/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.05.drn --prop 'Pmax=? [true];Pmax
+=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6535 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-advanced-p
+t
+ETA: 707s Left: 159 AVG: 4.45s  local:7/6529/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.15.drn --prop 'Pmax=? [true];Pmax
+=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6536 --exact --conditional:algorithm bisection
+ETA: 703s Left: 158 AVG: 4.45s  local:7/6530/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.15.drn --prop 'Pmax=? [true];Pmax
+>=0.5 [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6537 --exact --conditional:algorithm bisection
+ETA: 698s Left: 157 AVG: 4.45s  local:7/6531/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.15.drn --prop 'Pmax=? [true];Pmax
+=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6538 --exact --conditional:algorithm bisection
+ETA: 696s Left: 156 AVG: 4.46s  local:7/6532/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.15.drn --prop 'Pmax=? [true];Pmax
+>=0.5 [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6539 --exact --conditional:algorithm bisection
+ETA: 691s Left: 155 AVG: 4.46s  local:7/6533/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.15.drn --prop 'Pmax=? [true];Pmax
+=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6540 --exact --conditional:algorithm bisection-pt
+ETA: 687s Left: 154 AVG: 4.46s  local:7/6534/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.15.drn --prop 'Pmax=? [true];Pmax
+=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6541 --exact --conditional:algorithm bisection-pt
+ETA: 682s Left: 153 AVG: 4.46s  local:7/6535/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.15.drn --prop 'Pmax=? [true];Pmax
+=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6542 --exact --conditional:algorithm restart
+ETA: 677s Left: 152 AVG: 4.46s  local:7/6536/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.15.drn --prop 'Pmax=? [true];Pmax
+>=0.5 [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6543 --exact --conditional:algorithm restart
+ETA: 673s Left: 151 AVG: 4.46s  local:7/6537/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.15.drn --prop 'Pmax=? [true];Pmax
+=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6544 --exact --conditional:algorithm restart
+ETA: 668s Left: 150 AVG: 4.46s  local:7/6538/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.15.drn --prop 'Pmax=? [true];Pmax
+>=0.5 [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6545 --exact --conditional:algorithm restart
+ETA: 664s Left: 149 AVG: 4.46s  local:7/6539/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.15.drn --prop 'Pmax=? [true];Pmax
+=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6546 --exact --conditional:algorithm bisection-advanced
+ETA: 659s Left: 148 AVG: 4.46s  local:7/6540/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.15.drn --prop 'Pmax=? [true];Pmax
+=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6547 --exact --conditional:algorithm bisection-advanced
+ETA: 655s Left: 147 AVG: 4.46s  local:7/6541/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.15.drn --prop 'Pmax=? [true];Pmax
+=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6548 --exact --conditional:algorithm bisection-advanced-pt
+ETA: 650s Left: 146 AVG: 4.46s  local:7/6542/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.15.drn --prop 'Pmax=? [true];Pmax
+=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6549 --exact --conditional:algorithm bisection-advanced-pt
+ETA: 646s Left: 145 AVG: 4.46s  local:7/6543/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.15.drn --prop 'Pmax=? [true];Pmax
+=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6550 --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 641s Left: 144 AVG: 4.46s  local:7/6544/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.15.drn --prop 'Pmax=? [true];Pmax
+>=0.5 [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6551 --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 637s Left: 143 AVG: 4.46s  local:7/6545/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.15.drn --prop 'Pmax=? [true];Pmax
+=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6552 --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 632s Left: 142 AVG: 4.46s  local:7/6546/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.15.drn --prop 'Pmax=? [true];Pmax
+>=0.5 [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6553 --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 628s Left: 141 AVG: 4.46s  local:7/6547/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.15.drn --prop 'Pmax=? [true];Pmax
+=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6554 --conditional:precision 1e-6 --conditional:algorithm bisection-pt
+ETA: 623s Left: 140 AVG: 4.45s  local:7/6548/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.15.drn --prop 'Pmax=? [true];Pmax
+=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6555 --conditional:precision 1e-6 --conditional:algorithm bisection-pt
+ETA: 619s Left: 139 AVG: 4.45s  local:7/6549/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.15.drn --prop 'Pmax=? [true];Pmax
+=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6556 --conditional:precision 1e-6 --conditional:algorithm restart
+ETA: 614s Left: 138 AVG: 4.45s  local:7/6550/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.15.drn --prop 'Pmax=? [true];Pmax
+>=0.5 [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6557 --conditional:precision 1e-6 --conditional:algorithm restart
+ETA: 610s Left: 137 AVG: 4.45s  local:7/6551/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.15.drn --prop 'Pmax=? [true];Pmax
+=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6558 --conditional:precision 1e-6 --conditional:algorithm restart
+ETA: 605s Left: 136 AVG: 4.45s  local:7/6552/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.15.drn --prop 'Pmax=? [true];Pmax
+>=0.5 [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6559 --conditional:precision 1e-6 --conditional:algorithm restart
+ETA: 600s Left: 135 AVG: 4.45s  local:7/6553/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.15.drn --prop 'Pmax=? [true];Pmax
+=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6560 --conditional:precision 1e-6 --conditional:algorithm bisection-advanced
+ETA: 596s Left: 134 AVG: 4.45s  local:7/6554/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.15.drn --prop 'Pmax=? [true];Pmax
+=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6561 --conditional:precision 1e-6 --conditional:algorithm bisection-advanced
+ETA: 591s Left: 133 AVG: 4.45s  local:7/6555/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.15.drn --prop 'Pmax=? [true];Pmax
+=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6562 --conditional:precision 1e-6 --conditional:algorithm bisection-advanced-pt
+ETA: 587s Left: 132 AVG: 4.45s  local:7/6556/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.15.drn --prop 'Pmax=? [true];Pmax
+=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6563 --conditional:precision 1e-6 --conditional:algorithm bisection-advanced-pt
+ETA: 582s Left: 131 AVG: 4.45s  local:7/6557/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.15.drn --prop 'Pmax=? [true];Pmax
+=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6564 --exact --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 578s Left: 130 AVG: 4.45s  local:7/6558/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.15.drn --prop 'Pmax=? [true];Pmax
+>=0.5 [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6565 --exact --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 573s Left: 129 AVG: 4.45s  local:7/6559/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.15.drn --prop 'Pmax=? [true];Pmax
+=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6566 --exact --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 569s Left: 128 AVG: 4.45s  local:7/6560/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.15.drn --prop 'Pmax=? [true];Pmax
+>=0.5 [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6567 --exact --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 564s Left: 127 AVG: 4.45s  local:7/6561/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.15.drn --prop 'Pmax=? [true];Pmax
+=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6568 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-pt
+ETA: 560s Left: 126 AVG: 4.45s  local:7/6562/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.15.drn --prop 'Pmax=? [true];Pmax
+=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6569 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-pt
+ETA: 555s Left: 125 AVG: 4.44s  local:7/6563/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.15.drn --prop 'Pmax=? [true];Pmax
+=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6570 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-advanced
+ETA: 551s Left: 124 AVG: 4.44s  local:7/6564/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.15.drn --prop 'Pmax=? [true];Pmax
+=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6571 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-advanced
+ETA: 546s Left: 123 AVG: 4.44s  local:7/6565/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.15.drn --prop 'Pmax=? [true];Pmax
+=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6572 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-advanced-p
+t
+ETA: 542s Left: 122 AVG: 4.44s  local:7/6566/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_3-5-0.15.drn --prop 'Pmax=? [true];Pmax
+=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6573 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-advanced-p
+t
+ETA: 537s Left: 121 AVG: 4.44s  local:7/6567/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.01.drn --prop 'Pmax=? [true];Pmax
+=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6574 --exact --conditional:algorithm bisection
+ETA: 533s Left: 120 AVG: 4.45s  local:7/6568/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.01.drn --prop 'Pmax=? [true];Pmax
+>=0.5 [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6575 --exact --conditional:algorithm bisection
+ETA: 529s Left: 119 AVG: 4.45s  local:7/6569/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.01.drn --prop 'Pmax=? [true];Pmax
+=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6576 --exact --conditional:algorithm bisection
+ETA: 524s Left: 118 AVG: 4.45s  local:7/6570/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.01.drn --prop 'Pmax=? [true];Pmax
+>=0.5 [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6577 --exact --conditional:algorithm bisection
+ETA: 520s Left: 117 AVG: 4.44s  local:7/6571/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.01.drn --prop 'Pmax=? [true];Pmax
+=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6578 --exact --conditional:algorithm bisection-pt
+ETA: 515s Left: 116 AVG: 4.44s  local:7/6572/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.01.drn --prop 'Pmax=? [true];Pmax
+=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6579 --exact --conditional:algorithm bisection-pt
+ETA: 511s Left: 115 AVG: 4.44s  local:7/6573/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.01.drn --prop 'Pmax=? [true];Pmax
+=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6580 --exact --conditional:algorithm restart
+ETA: 506s Left: 114 AVG: 4.44s  local:7/6574/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.01.drn --prop 'Pmax=? [true];Pmax
+>=0.5 [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6581 --exact --conditional:algorithm restart
+ETA: 502s Left: 113 AVG: 4.45s  local:7/6575/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.01.drn --prop 'Pmax=? [true];Pmax
+=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6582 --exact --conditional:algorithm restart
+ETA: 497s Left: 112 AVG: 4.45s  local:7/6576/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.01.drn --prop 'Pmax=? [true];Pmax
+>=0.5 [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6583 --exact --conditional:algorithm restart
+ETA: 493s Left: 111 AVG: 4.45s  local:7/6577/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.01.drn --prop 'Pmax=? [true];Pmax
+=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6584 --exact --conditional:algorithm bisection-advanced
+ETA: 488s Left: 110 AVG: 4.44s  local:7/6578/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.01.drn --prop 'Pmax=? [true];Pmax
+=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6585 --exact --conditional:algorithm bisection-advanced
+ETA: 484s Left: 109 AVG: 4.44s  local:7/6579/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.01.drn --prop 'Pmax=? [true];Pmax
+=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6586 --exact --conditional:algorithm bisection-advanced-pt
+ETA: 480s Left: 108 AVG: 4.45s  local:7/6580/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.01.drn --prop 'Pmax=? [true];Pmax
+=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6587 --exact --conditional:algorithm bisection-advanced-pt
+ETA: 476s Left: 107 AVG: 4.45s  local:7/6581/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.01.drn --prop 'Pmax=? [true];Pmax
+=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6588 --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 471s Left: 106 AVG: 4.45s  local:7/6582/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.01.drn --prop 'Pmax=? [true];Pmax
+>=0.5 [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6589 --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 467s Left: 105 AVG: 4.45s  local:7/6583/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.01.drn --prop 'Pmax=? [true];Pmax
+=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6590 --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 462s Left: 104 AVG: 4.45s  local:7/6584/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.01.drn --prop 'Pmax=? [true];Pmax
+>=0.5 [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6591 --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 458s Left: 103 AVG: 4.45s  local:7/6585/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.01.drn --prop 'Pmax=? [true];Pmax
+=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6592 --conditional:precision 1e-6 --conditional:algorithm bisection-pt
+ETA: 453s Left: 102 AVG: 4.45s  local:7/6586/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.01.drn --prop 'Pmax=? [true];Pmax
+=? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6593 --conditional:precision 1e-6 --conditional:algorithm bisection-pt
+ETA: 449s Left: 101 AVG: 4.45s  local:7/6587/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.01.drn --prop 'Pmax=? [true];Pmax
+=? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6594 --conditional:precision 1e-6 --conditional:algorithm restart
+ETA: 444s Left: 100 AVG: 4.45s  local:7/6588/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.01.drn --prop 'Pmax=? [true];Pmax
+>=0.5 [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6595 --conditional:precision 1e-6 --conditional:algorithm restart
+ETA: 440s Left: 99 AVG: 4.45s  local:7/6589/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.01.drn --prop 'Pmax=? [true];Pmax=
+? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6596 --conditional:precision 1e-6 --conditional:algorithm restart
+ETA: 435s Left: 98 AVG: 4.45s  local:7/6590/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.01.drn --prop 'Pmax=? [true];Pmax>
+=0.5 [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6597 --conditional:precision 1e-6 --conditional:algorithm restart
+ETA: 431s Left: 97 AVG: 4.45s  local:7/6591/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.01.drn --prop 'Pmax=? [true];Pmax=
+? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6598 --conditional:precision 1e-6 --conditional:algorithm bisection-advanced
+ETA: 426s Left: 96 AVG: 4.45s  local:7/6592/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.01.drn --prop 'Pmax=? [true];Pmax=
+? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6599 --conditional:precision 1e-6 --conditional:algorithm bisection-advanced
+ETA: 422s Left: 95 AVG: 4.45s  local:7/6593/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.01.drn --prop 'Pmax=? [true];Pmax=
+? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6600 --conditional:precision 1e-6 --conditional:algorithm bisection-advanced-pt
+ETA: 417s Left: 94 AVG: 4.44s  local:7/6594/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.01.drn --prop 'Pmax=? [true];Pmax=
+? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6601 --conditional:precision 1e-6 --conditional:algorithm bisection-advanced-pt
+ETA: 413s Left: 93 AVG: 4.44s  local:7/6595/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.01.drn --prop 'Pmax=? [true];Pmax=
+? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6602 --exact --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 408s Left: 92 AVG: 4.44s  local:7/6596/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.01.drn --prop 'Pmax=? [true];Pmax>
+=0.5 [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6603 --exact --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 404s Left: 91 AVG: 4.44s  local:7/6597/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.01.drn --prop 'Pmax=? [true];Pmax=
+? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6604 --exact --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 399s Left: 90 AVG: 4.44s  local:7/6598/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.01.drn --prop 'Pmax=? [true];Pmax>
+=0.5 [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6605 --exact --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 395s Left: 89 AVG: 4.44s  local:7/6599/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.01.drn --prop 'Pmax=? [true];Pmax=
+? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6606 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-pt
+ETA: 390s Left: 88 AVG: 4.44s  local:7/6600/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.01.drn --prop 'Pmax=? [true];Pmax=
+? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6607 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-pt
+ETA: 386s Left: 87 AVG: 4.44s  local:7/6601/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.01.drn --prop 'Pmax=? [true];Pmax=
+? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6608 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-advanced
+ETA: 381s Left: 86 AVG: 4.44s  local:7/6602/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.01.drn --prop 'Pmax=? [true];Pmax=
+? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6609 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-advanced
+ETA: 377s Left: 85 AVG: 4.44s  local:7/6603/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.01.drn --prop 'Pmax=? [true];Pmax=
+? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6610 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-advanced-pt
+ETA: 372s Left: 84 AVG: 4.44s  local:7/6604/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.01.drn --prop 'Pmax=? [true];Pmax=
+? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6611 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-advanced-pt
+ETA: 368s Left: 83 AVG: 4.44s  local:7/6605/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.05.drn --prop 'Pmax=? [true];Pmax=
+? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6612 --exact --conditional:algorithm bisection
+ETA: 365s Left: 82 AVG: 4.46s  local:7/6606/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.05.drn --prop 'Pmax=? [true];Pmax>
+=0.5 [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6613 --exact --conditional:algorithm bisection
+ETA: 361s Left: 81 AVG: 4.46s  local:7/6607/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.05.drn --prop 'Pmax=? [true];Pmax=
+? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6614 --exact --conditional:algorithm bisection
+ETA: 356s Left: 80 AVG: 4.46s  local:7/6608/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.05.drn --prop 'Pmax=? [true];Pmax>
+=0.5 [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6615 --exact --conditional:algorithm bisection
+ETA: 352s Left: 79 AVG: 4.46s  local:7/6609/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.05.drn --prop 'Pmax=? [true];Pmax=
+? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6616 --exact --conditional:algorithm bisection-pt
+ETA: 347s Left: 78 AVG: 4.46s  local:7/6610/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.05.drn --prop 'Pmax=? [true];Pmax=
+? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6617 --exact --conditional:algorithm bisection-pt
+ETA: 343s Left: 77 AVG: 4.46s  local:7/6611/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.05.drn --prop 'Pmax=? [true];Pmax=
+? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6618 --exact --conditional:algorithm restart
+ETA: 338s Left: 76 AVG: 4.46s  local:7/6612/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.05.drn --prop 'Pmax=? [true];Pmax>
+=0.5 [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6619 --exact --conditional:algorithm restart
+ETA: 334s Left: 75 AVG: 4.46s  local:7/6613/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.05.drn --prop 'Pmax=? [true];Pmax=
+? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6620 --exact --conditional:algorithm restart
+ETA: 329s Left: 74 AVG: 4.46s  local:7/6614/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.05.drn --prop 'Pmax=? [true];Pmax>
+=0.5 [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6621 --exact --conditional:algorithm restart
+ETA: 325s Left: 73 AVG: 4.46s  local:7/6615/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.05.drn --prop 'Pmax=? [true];Pmax=
+? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6622 --exact --conditional:algorithm bisection-advanced
+ETA: 320s Left: 72 AVG: 4.46s  local:7/6616/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.05.drn --prop 'Pmax=? [true];Pmax=
+? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6623 --exact --conditional:algorithm bisection-advanced
+ETA: 316s Left: 71 AVG: 4.46s  local:7/6617/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.05.drn --prop 'Pmax=? [true];Pmax=
+? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6624 --exact --conditional:algorithm bisection-advanced-pt
+ETA: 312s Left: 70 AVG: 4.46s  local:7/6618/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.05.drn --prop 'Pmax=? [true];Pmax=
+? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6625 --exact --conditional:algorithm bisection-advanced-pt
+ETA: 307s Left: 69 AVG: 4.46s  local:7/6619/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.05.drn --prop 'Pmax=? [true];Pmax=
+? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6626 --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 303s Left: 68 AVG: 4.46s  local:7/6620/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.05.drn --prop 'Pmax=? [true];Pmax>
+=0.5 [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6627 --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 298s Left: 67 AVG: 4.46s  local:7/6621/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.05.drn --prop 'Pmax=? [true];Pmax=
+? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6628 --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 294s Left: 66 AVG: 4.46s  local:7/6622/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.05.drn --prop 'Pmax=? [true];Pmax>
+=0.5 [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6629 --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 289s Left: 65 AVG: 4.46s  local:7/6623/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.05.drn --prop 'Pmax=? [true];Pmax=
+? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6630 --conditional:precision 1e-6 --conditional:algorithm bisection-pt
+ETA: 285s Left: 64 AVG: 4.46s  local:7/6624/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.05.drn --prop 'Pmax=? [true];Pmax=
+? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6631 --conditional:precision 1e-6 --conditional:algorithm bisection-pt
+ETA: 280s Left: 63 AVG: 4.46s  local:7/6625/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.05.drn --prop 'Pmax=? [true];Pmax=
+? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6632 --conditional:precision 1e-6 --conditional:algorithm restart
+ETA: 276s Left: 62 AVG: 4.46s  local:7/6626/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.05.drn --prop 'Pmax=? [true];Pmax>
+=0.5 [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6633 --conditional:precision 1e-6 --conditional:algorithm restart
+ETA: 271s Left: 61 AVG: 4.46s  local:7/6627/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.05.drn --prop 'Pmax=? [true];Pmax=
+? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6634 --conditional:precision 1e-6 --conditional:algorithm restart
+ETA: 267s Left: 60 AVG: 4.46s  local:7/6628/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.05.drn --prop 'Pmax=? [true];Pmax>
+=0.5 [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6635 --conditional:precision 1e-6 --conditional:algorithm restart
+ETA: 262s Left: 59 AVG: 4.46s  local:7/6629/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.05.drn --prop 'Pmax=? [true];Pmax=
+? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6636 --conditional:precision 1e-6 --conditional:algorithm bisection-advanced
+ETA: 258s Left: 58 AVG: 4.46s  local:7/6630/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.05.drn --prop 'Pmax=? [true];Pmax=
+? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6637 --conditional:precision 1e-6 --conditional:algorithm bisection-advanced
+ETA: 253s Left: 57 AVG: 4.45s  local:7/6631/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.05.drn --prop 'Pmax=? [true];Pmax=
+? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6638 --conditional:precision 1e-6 --conditional:algorithm bisection-advanced-pt
+ETA: 249s Left: 56 AVG: 4.45s  local:7/6632/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.05.drn --prop 'Pmax=? [true];Pmax=
+? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6639 --conditional:precision 1e-6 --conditional:algorithm bisection-advanced-pt
+ETA: 244s Left: 55 AVG: 4.45s  local:7/6633/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.05.drn --prop 'Pmax=? [true];Pmax=
+? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6640 --exact --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 240s Left: 54 AVG: 4.45s  local:7/6634/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.05.drn --prop 'Pmax=? [true];Pmax>
+=0.5 [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6641 --exact --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 235s Left: 53 AVG: 4.45s  local:7/6635/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.05.drn --prop 'Pmax=? [true];Pmax=
+? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6642 --exact --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 231s Left: 52 AVG: 4.45s  local:7/6636/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.05.drn --prop 'Pmax=? [true];Pmax>
+=0.5 [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6643 --exact --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 226s Left: 51 AVG: 4.45s  local:7/6637/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.05.drn --prop 'Pmax=? [true];Pmax=
+? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6644 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-pt
+ETA: 222s Left: 50 AVG: 4.45s  local:7/6638/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.05.drn --prop 'Pmax=? [true];Pmax=
+? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6645 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-pt
+ETA: 218s Left: 49 AVG: 4.45s  local:7/6639/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.05.drn --prop 'Pmax=? [true];Pmax=
+? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6646 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-advanced
+ETA: 213s Left: 48 AVG: 4.45s  local:7/6640/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.05.drn --prop 'Pmax=? [true];Pmax=
+? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6647 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-advanced
+ETA: 209s Left: 47 AVG: 4.45s  local:7/6641/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.05.drn --prop 'Pmax=? [true];Pmax=
+? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6648 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-advanced-pt
+ETA: 204s Left: 46 AVG: 4.45s  local:7/6642/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.05.drn --prop 'Pmax=? [true];Pmax=
+? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6649 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-advanced-pt
+ETA: 200s Left: 45 AVG: 4.45s  local:7/6643/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.15.drn --prop 'Pmax=? [true];Pmax=
+? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6650 --exact --conditional:algorithm bisection
+ETA: 195s Left: 44 AVG: 4.45s  local:7/6644/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.15.drn --prop 'Pmax=? [true];Pmax>
+=0.5 [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6651 --exact --conditional:algorithm bisection
+ETA: 191s Left: 43 AVG: 4.45s  local:7/6645/100%/4.4s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.15.drn --prop 'Pmax=? [true];Pmax=
+? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6652 --exact --conditional:algorithm bisection
+ETA: 187s Left: 42 AVG: 4.46s  local:7/6646/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.15.drn --prop 'Pmax=? [true];Pmax>
+=0.5 [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6653 --exact --conditional:algorithm bisection
+ETA: 182s Left: 41 AVG: 4.46s  local:7/6647/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.15.drn --prop 'Pmax=? [true];Pmax=
+? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6654 --exact --conditional:algorithm bisection-pt
+ETA: 178s Left: 40 AVG: 4.45s  local:7/6648/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.15.drn --prop 'Pmax=? [true];Pmax=
+? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6655 --exact --conditional:algorithm bisection-pt
+ETA: 173s Left: 39 AVG: 4.45s  local:7/6649/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.15.drn --prop 'Pmax=? [true];Pmax=
+? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6656 --exact --conditional:algorithm restart
+ETA: 169s Left: 38 AVG: 4.46s  local:7/6650/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.15.drn --prop 'Pmax=? [true];Pmax>
+=0.5 [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6657 --exact --conditional:algorithm restart
+ETA: 164s Left: 37 AVG: 4.46s  local:7/6651/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.15.drn --prop 'Pmax=? [true];Pmax=
+? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6658 --exact --conditional:algorithm restart
+ETA: 160s Left: 36 AVG: 4.46s  local:7/6652/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.15.drn --prop 'Pmax=? [true];Pmax>
+=0.5 [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6659 --exact --conditional:algorithm restart
+ETA: 156s Left: 35 AVG: 4.46s  local:7/6653/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.15.drn --prop 'Pmax=? [true];Pmax=
+? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6660 --exact --conditional:algorithm bisection-advanced
+ETA: 152s Left: 34 AVG: 4.47s  local:7/6654/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.15.drn --prop 'Pmax=? [true];Pmax=
+? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6661 --exact --conditional:algorithm bisection-advanced
+ETA: 147s Left: 33 AVG: 4.47s  local:7/6655/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.15.drn --prop 'Pmax=? [true];Pmax=
+? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6662 --exact --conditional:algorithm bisection-advanced-pt
+ETA: 143s Left: 32 AVG: 4.47s  local:7/6656/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.15.drn --prop 'Pmax=? [true];Pmax=
+? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6663 --exact --conditional:algorithm bisection-advanced-pt
+ETA: 138s Left: 31 AVG: 4.47s  local:7/6657/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.15.drn --prop 'Pmax=? [true];Pmax=
+? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6664 --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 134s Left: 30 AVG: 4.47s  local:7/6658/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.15.drn --prop 'Pmax=? [true];Pmax>
+=0.5 [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6665 --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 129s Left: 29 AVG: 4.47s  local:7/6659/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.15.drn --prop 'Pmax=? [true];Pmax=
+? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6666 --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 125s Left: 28 AVG: 4.47s  local:7/6660/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.15.drn --prop 'Pmax=? [true];Pmax>
+=0.5 [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6667 --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 120s Left: 27 AVG: 4.47s  local:7/6661/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.15.drn --prop 'Pmax=? [true];Pmax=
+? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6668 --conditional:precision 1e-6 --conditional:algorithm bisection-pt
+ETA: 116s Left: 26 AVG: 4.47s  local:7/6662/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.15.drn --prop 'Pmax=? [true];Pmax=
+? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6669 --conditional:precision 1e-6 --conditional:algorithm bisection-pt
+ETA: 111s Left: 25 AVG: 4.47s  local:7/6663/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.15.drn --prop 'Pmax=? [true];Pmax=
+? [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6670 --conditional:precision 1e-6 --conditional:algorithm restart
+ETA: 107s Left: 24 AVG: 4.47s  local:7/6664/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.15.drn --prop 'Pmax=? [true];Pmax>
+=0.5 [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6671 --conditional:precision 1e-6 --conditional:algorithm restart
+ETA: 102s Left: 23 AVG: 4.47s  local:7/6665/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.15.drn --prop 'Pmax=? [true];Pmax=
+? [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6672 --conditional:precision 1e-6 --conditional:algorithm restart
+ETA: 98s Left: 22 AVG: 4.46s  local:7/6666/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.15.drn --prop 'Pmax=? [true];Pmax>=
+0.5 [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6673 --conditional:precision 1e-6 --conditional:algorithm restart
+ETA: 93s Left: 21 AVG: 4.46s  local:7/6667/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.15.drn --prop 'Pmax=? [true];Pmax=?
+ [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6674 --conditional:precision 1e-6 --conditional:algorithm bisection-advanced
+ETA: 89s Left: 20 AVG: 4.46s  local:7/6668/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.15.drn --prop 'Pmax=? [true];Pmax=?
+ [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6675 --conditional:precision 1e-6 --conditional:algorithm bisection-advanced
+ETA: 84s Left: 19 AVG: 4.46s  local:7/6669/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.15.drn --prop 'Pmax=? [true];Pmax=?
+ [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6676 --conditional:precision 1e-6 --conditional:algorithm bisection-advanced-pt
+ETA: 80s Left: 18 AVG: 4.46s  local:7/6670/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.15.drn --prop 'Pmax=? [true];Pmax=?
+ [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6677 --conditional:precision 1e-6 --conditional:algorithm bisection-advanced-pt
+ETA: 75s Left: 17 AVG: 4.46s  local:7/6671/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.15.drn --prop 'Pmax=? [true];Pmax=?
+ [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6678 --exact --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 71s Left: 16 AVG: 4.46s  local:7/6672/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.15.drn --prop 'Pmax=? [true];Pmax>=
+0.5 [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6679 --exact --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 66s Left: 15 AVG: 4.46s  local:7/6673/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.15.drn --prop 'Pmax=? [true];Pmax=?
+ [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6680 --exact --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 62s Left: 14 AVG: 4.46s  local:7/6674/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.15.drn --prop 'Pmax=? [true];Pmax>=
+0.5 [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6681 --exact --conditional:precision 1e-6 --conditional:algorithm bisection
+ETA: 57s Left: 13 AVG: 4.46s  local:7/6675/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.15.drn --prop 'Pmax=? [true];Pmax=?
+ [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6682 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-pt
+ETA: 53s Left: 12 AVG: 4.46s  local:7/6676/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.15.drn --prop 'Pmax=? [true];Pmax=?
+ [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6683 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-pt
+ETA: 49s Left: 11 AVG: 4.46s  local:7/6677/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.15.drn --prop 'Pmax=? [true];Pmax=?
+ [F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6684 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-advanced
+ETA: 44s Left: 10 AVG: 4.46s  local:7/6678/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.15.drn --prop 'Pmax=? [true];Pmax=?
+ [F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6685 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-advanced
+ETA: 40s Left: 9 AVG: 4.46s  local:7/6679/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.15.drn --prop 'Pmax=? [true];Pmax=?
+[F "observe0Greater1" || F "observeIGreater1"]' --timeout 300 --dot-maxwidth 6686 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-advanced-pt
+ETA: 35s Left: 8 AVG: 4.46s  local:7/6680/100%/4.5s storm/build/bin/storm -drn benchmarks/rq1/models/transformed-mdp/crowds_5-5-0.15.drn --prop 'Pmax=? [true];Pmax=?
+[F "observeIGreater1" || F "observe0Greater1"]' --timeout 300 --dot-maxwidth 6687 --exact --conditional:precision 1e-6 --conditional:algorithm bisection-advanced-pt
+ETA: 0s Left: 0 AVG: 4.49s  local:0/6688/100%/4.5s
+=====================
+  RQ2 benchmarks...
+=====================
+ 65%|█████████████████████████████████▋                  | 35/54 [3:13:11<2:57:42, 561.17s/it]Timeout expired for model=ladder-network-input, splitting=backward, cond
+itional_alg=restart, conditional_bisection_optimization=False
+ 69%|███████████████████████████████████▋                | 37/54 [3:31:13<2:22:22, 502.47s/it]Timeout expired for model=virus, splitting=backward, conditional_alg=bis
+ection, conditional_bisection_optimization=False
+ 70%|████████████████████████████████████▌               | 38/54 [3:49:13<3:00:12, 675.76s/it]Timeout expired for model=virus, splitting=backward, conditional_alg=bis
+ection_advanced, conditional_bisection_optimization=False
+ 72%|█████████████████████████████████████▌              | 39/54 [4:07:13<3:19:15, 797.07s/it]Timeout expired for model=virus, splitting=backward, conditional_alg=bis
+ection_pt, conditional_bisection_optimization=False
+ 74%|██████████████████████████████████████▌             | 40/54 [4:25:13<3:25:47, 881.98s/it]Timeout expired for model=virus, splitting=backward, conditional_alg=bis
+ection_advanced_pt, conditional_bisection_optimization=False
+100%|██████████████████████████████████████████████████████| 54/54 [5:21:48<00:00, 357.57s/it]
+100%|██████████████████████████████████████████████████████| 54/54 [5:50:40<00:00, 389.63s/it]
+=====================
+  RQ3 benchmarks...
+=====================
+  0%|                                                                                                                                                      | 0/48 [00:
+00<?, ?it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:01<00:00
+,  9.00it/s]
+  2%|██▉                                                                                                                                           | 1/48 [00:12<09:42
+, 12.39s/it]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:02<00:00
+,  4.06it/s]
+  6%|████████▉                                                                                                                                     | 3/48 [00:16<03:27
+,  4.62s/it]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:28<00:00
+,  2.86s/it]
+ 12%|█████████████████▊                                                                                                                            | 6/48 [00:46<05:32
+,  7.92s/it]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:29<00:00
+,  2.93s/it]
+ 21%|█████████████████████████████▍                                                                                                               | 10/48 [01:16<04:55
+,  7.79s/it]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:27<00:00
+, 20.72s/it]
+ 31%|████████████████████████████████████████████                                                                                                 | 15/48 [04:45<13:26
+, 24.43s/it]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:02<00:00
+,  4.98it/s]
+ 44%|█████████████████████████████████████████████████████████████▋                                                                               | 21/48 [04:48<06:05
+, 13.53s/it]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:07<00:00
+,  1.34it/s]
+ 58%|██████████████████████████████████████████████████████████████████████████████████▎                                                          | 28/48 [05:06<02:54
+,  8.75s/it]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [02:42<00:00
+, 16.27s/it]
+ 75%|█████████████████████████████████████████████████████████████████████████████████████████████████████████▊                                   | 36/48 [07:58<02:48
+, 14.04s/it]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:41<00:00
+, 22.17s/it]
+ 94%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏        | 45/48 [11:49<00:56
+, 18.70s/it]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [04:19<00:00
+, 25.95s/it]
+55it [16:19, 21.90s/it]
+
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [01:15<00:00
+,  7.51s/it]
+66it [17:44, 16.54s/it]███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [01:15<00:00
+,  8.77s/it]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [01:15<00:00
+,  7.51s/it]
+78it [19:09, 13.03s/it]███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [01:15<00:00
+,  8.83s/it]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:01<00:00
+,  9.96it/s]
+91it [19:11,  8.34s/it]███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:01<00:00
+,  9.82it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:01<00:00
+,  9.97it/s]
+105it [19:13,  5.37s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:01<00:00
+,  9.82it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:27<00:00
+, 20.72s/it]
+120it [22:40,  8.37s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:27<00:00
+, 21.75s/it]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:21<00:00
+, 20.18s/it]
+136it [26:02,  9.87s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:21<00:00
+, 21.59s/it]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:04<00:00
+,  2.45it/s]
+153it [26:06,  6.52s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:04<00:00
+,  2.56it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:01<00:00
+,  7.23it/s]
+171it [26:08,  4.31s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:01<00:00
+,  7.08it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:02<00:00
+,  3.65it/s]
+190it [26:12,  2.90s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:02<00:00
+,  3.60it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:02<00:00
+,  3.60it/s]
+210it [26:16,  1.98s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:02<00:00
+,  3.51it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:16<00:00
+,  1.69s/it]
+231it [26:34,  1.60s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:16<00:00
+,  1.49s/it]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:15<00:00
+,  1.55s/it]
+253it [26:50,  1.32s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:15<00:00
+,  1.42s/it]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:05<00:00
+,  1.88it/s]
+276it [26:57,  1.03it/s]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:05<00:00
+,  1.83it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:05<00:00
+,  1.91it/s]
+300it [27:03,  1.36it/s]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:05<00:00
+,  1.89it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:04<00:00
+,  2.49it/s]
+325it [27:07,  1.82it/s]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:04<00:00
+,  2.62it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:04<00:00
+,  2.44it/s]
+351it [27:11,  2.38it/s]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:04<00:00
+,  2.57it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:38<00:00
+,  3.85s/it]
+378it [27:50,  1.33it/s]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:38<00:00
+,  3.93s/it]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:38<00:00
+,  3.84s/it]
+406it [28:28,  1.05it/s]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:38<00:00
+,  3.89s/it]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:37<00:00
+,  3.77s/it]
+435it [29:06,  1.07s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:37<00:00
+,  3.81s/it]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:08<00:00
+,  1.19it/s]
+465it [29:15,  1.23it/s]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:08<00:00
+,  1.27it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:17<00:00
+,  1.77s/it]
+496it [29:33,  1.36it/s]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:17<00:00
+,  1.65s/it]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:22<00:00
+,  2.24s/it]
+528it [29:55,  1.38it/s]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:22<00:00
+,  2.09s/it]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:03<00:00
+, 18.39s/it]
+561it [32:59,  2.29s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:03<00:00
+, 18.13s/it]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:09<00:00
+, 18.91s/it]
+595it [36:09,  3.35s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:09<00:00
+, 18.62s/it]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [01:14<00:00
+,  7.46s/it]
+630it [37:23,  2.96s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [01:14<00:00
+,  5.85s/it]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [01:15<00:00
+,  7.59s/it]
+666it [38:39,  2.69s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [01:15<00:00
+,  5.94s/it]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:08<00:00
+,  1.12it/s]
+703it [42:22,  3.76s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:08<00:00
+,  1.12it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:08<00:00
+,  1.15it/s]
+741it [43:01,  2.88s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:08<00:00
+,  1.14it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:23<00:00
+,  2.39s/it]
+780it [43:56,  2.41s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:23<00:00
+,  2.71s/it]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:23<00:00
+,  2.37s/it]
+820it [44:50,  2.07s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:23<00:00
+,  2.67s/it]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:09<00:00
+,  1.10it/s]
+861it [45:29,  1.71s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:09<00:00
+,  1.09it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:09<00:00
+,  1.09it/s]
+903it [46:08,  1.47s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:09<00:00
+,  1.07it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:20<00:00
+,  2.05s/it]
+946it [49:40,  2.56s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:20<00:00
+,  2.17s/it]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:20<00:00
+,  2.08s/it]
+990it [53:19,  3.33s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:20<00:00
+,  2.23s/it]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:53<00:00
+,  5.34s/it]
+1035it [57:30,  4.04s/it]█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:53<00:00
+,  6.54s/it]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:52<00:00
+,  5.25s/it]
+1081it [1:01:37,  4.46s/it]███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:52<00:00
+,  6.08s/it]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:27<00:00
+,  2.75s/it]
+1128it [1:05:20,  4.55s/it]███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:27<00:00
+,  2.96s/it]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:28<00:00
+,  2.83s/it]
+1176it [1:08:59,  4.56s/it]All experiments completed.█████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:28<00:00
+,  3.10s/it]
+1176it [1:09:00,  3.52s/it]
+=====================
+       DONE!
+=====================
+
+real	1247m41.584s
+user	4939m54.815s
+sys	45m30.865s

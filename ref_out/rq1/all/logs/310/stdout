@@ -1,0 +1,32 @@
+Storm 1.12.0 (dev)
+
+Date: Fri Apr 24 17:31:32 2026
+Command line arguments: -drn benchmarks/rq1/models/concrete-mdps/wlan-BOFF=4.drn --prop 'Pmax=? [true];Pmax=? [F "collision8" || F "collision2"]' --timeout 300 --dot-maxwidth 309 '--conditional:precision' 1e-6 '--conditional:algorithm' bisection-advanced
+Current working directory: /home/luko/Cond
+
+Time for model construction: 12.669s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	2138800
+Transitions: 	4566953
+Choices: 	3312957
+Reward Models:  none
+State Labels: 	6 labels
+   * collision8 -> 464870 item(s)
+   * collision4 -> 164518 item(s)
+   * collision2 -> 30730 item(s)
+   * bothbackoff -> 2110816 item(s)
+   * collision -> 2137397 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": Pmax=? [true] ...
+Result (for initial states): 1
+Time for model checking: 0.012s.
+
+Model checking property "2": Pmax=? [(F "collision8") || (F "collision2")] ...
+WARN  (ConditionalHelper.cpp:1055): Precision of non-exact type reached during bisection method. Result might be inaccurate.
+Result (for initial states): 1.62114655e-10
+Time for model checking: 0.416s.

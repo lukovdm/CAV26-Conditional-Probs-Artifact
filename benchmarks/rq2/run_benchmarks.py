@@ -50,7 +50,13 @@ def add_result_to_csv(
     default=False,
     help="Run a quick smoke test with only one configuration to verify setup.",
 )
-def main(results_folder, exact, timeout, smoke_test):
+@click.option(
+    "--fast",
+    is_flag=True,
+    default=False,
+    help="Run a faster version of the benchmarks by skipping some configurations (not implemented yet).",
+)
+def main(results_folder, exact, timeout, smoke_test, fast):
     # init results file
     if not os.path.exists(results_folder):
         os.makedirs(results_folder, exist_ok=True)
@@ -101,6 +107,15 @@ def main(results_folder, exact, timeout, smoke_test):
         ("bisection_advanced_pt", False),
         ("restart", False),
     ]
+
+    if fast:
+        conditional_algorithm_settings = [
+            ("bisection", True),
+            ("bisection_pt", False),
+            ("restart", False),
+        ]
+        del models["ladder-network"]
+        del models["ladder-network-input"]
 
     exact_setting = "--exact" if exact else ""
     timeout_setting = f"--timeout {timeout}"

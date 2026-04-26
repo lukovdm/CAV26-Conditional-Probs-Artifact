@@ -9,6 +9,7 @@ out/
 **/__pycache__/
 
 docker-image.tar
+project_backup.tar.gz
 
 # Ignore all buildable models in rq1
 benchmarks/rq1/models/transformed-mdp
