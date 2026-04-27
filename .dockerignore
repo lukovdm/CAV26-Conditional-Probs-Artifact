@@ -7,3 +7,6 @@ docker-image.tar
 .git
 project_backup.tar.gz
 docker/
+storm/build
+stormpy/build
+synthesis/build

@@ -88,6 +88,9 @@ All experiments completed.
 =====================
 ```
 
+If RQ1 is not successful, look into the folder logs. If any of its subfolders has a non-empty `stderr` file please include its contents in the review.
+If RQ2 is not successful, look into the folder out/rq2/smoke_test/exact/evaluation_log.log. Please include its contents in the review.
+
 To generate the plots for the smoke test you can run the following command:
 ```bash
 ./create_plots.sh smoke_test out
