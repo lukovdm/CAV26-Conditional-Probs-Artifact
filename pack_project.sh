@@ -13,6 +13,7 @@ tar -c \
     --exclude='__pycache__' \
     --exclude='.git' \
     --exclude='project_backup.tar.gz' \
+    --exclude='docker' \
     . | pv -s 19g | gzip > "$ARCHIVE"
 
 echo "Created $ARCHIVE ($(du -sh "$ARCHIVE" | cut -f1))"

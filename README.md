@@ -10,26 +10,23 @@ Justification for the badges:
     - The full source code of the tools is attached with the artifact. The tools can be compiled by following the instructions available in their respective README files. We also provide a docker container with all tools already installed.
   * **Reusable**: 
     + Our algorithms as described in the paper are built into the existing tool Storm with its python bindings stormpy.
-    + In our docker image you can use the storm tool to model check conditional properties on any MDP accepted by storm (i.e., in the `.prism`, `.jani`, `.drn`, and `.umb` formats). Additionally, you can use our python bindings to do any of these operations from within python. Examples of this can be found in the notebook: [notebooks/Usage.ipynb].
-    + We include a unittests as part of storm here: `storm/src/test/storm/modelchecker/prctl/mdp/ConditionalMdpPrctlModelCheckerTest.cpp`. 
+    + In our docker image you can use the storm tool to model check conditional properties on any MDP accepted by storm (i.e., in the `.prism`, `.jani`, `.drn`, and `.umb` formats). Additionally, you can use our python bindings to do any of these operations from within python. Examples of this can be found in the section Example Usage.
+    + We include unit tests as part of storm here: `storm/src/test/storm/modelchecker/prctl/mdp/ConditionalMdpPrctlModelCheckerTest.cpp`. 
     + All changes in Storm have already been merged into upstream and will be released as part of Storm 1.13. After it is released, you will be able to install storm with python bindings using the python package manager: `pip install stormpy`.
     + More documentation on Storm and Stormpy can also be found here: https://www.stormchecker.org/.
 
 Requirements:
   * RAM: 8GB
   * CPU cores: 8 (If you use more cores the benchmarks will go faster and consume more RAM)
-  * Time (smoke test): [expected time to execute the smoke test on a standard
-    laptop (including compilation, installation, etc.)]
-  * Time (full review): [expected time to execute the full review (do not
-    include the time of reviewers reading the paper, playing with the tool on
-    their own, etc.)]
+  * Time (smoke test): 10 minutes
+  * Time (full review): 5 hours when using the fast experiment set, 21 hours when using the full experiment set
 
-external connectivity: NO
+External connectivity: NO
 
 ### Contents
 - Smoke Test
 - Full Review
-- Example Usage Notebook
+- Example Usage
 - Replicating the Figures from the Original Experiment Data
 
 **Smoke Test**
@@ -56,7 +53,7 @@ Start the smoke test with
 ```
 
 The smoke test runs all tools on a reduced set of benchmarks and configurations.
-If everything runs successfully, the script prints out intermediate progress for each RQ seperatly. Example output should look as follows:
+If everything runs successfully, the script prints out intermediate progress for each RQ separately. Example output should look as follows:
 ```log
 =====================
   RQ1 benchmarks...
@@ -174,10 +171,20 @@ Or for the fast experiment set:
 
 > Note that we did find a bug in our experiments for RQ2. This did not affect the treat and restart methods, and thus did our main conclusions of RQ 2, that the restart method was not able to solve many of the instances that treat solved. The bug did impact how the bisection methods performed, they perform worse in general after fixing the bug. However, treat already outperformed these methods in most models anyway and thus did not influence the conclusions here either.
 
-**Example Usage Notebook**
+**Example Usage**
 ----------------------------------------
 
-We provide a notebook showing example usages of our tool. When starting the docker image a Jupyter Lab server is started alongside it. You can access this Jupyter notebook server using the following URL: [http://127.0.0.1:8888/lab?token=cav26](). In the folder notebooks you can open the file `Usage.ipynb`.
+Storm can be called from the command line or using python bindings. We give examples of both. To calculate a conditional probability on the wlan example model you can run the following:
+
+```bash
+/opt/storm/build/bin/storm -drn ../benchmarks/rq1/models/concrete-mdps/wlan-BOFF=4.drn \
+    --prop 'Pmax=? [F "collision8" || F "collision2"]' \
+    --conditional:algorithm bisection
+```
+
+You can select different algorithms by changing the `--conditional:algorithm` flag. To use exact arithmetic add the `--exact` flag, and to use epsilon-exact arithmetic also add `--conditional:precision 1e-6`.
+
+We provide a notebook showing example usages of the python bindings our tool. When starting the docker image a Jupyter Lab server is started alongside it. You can access this Jupyter notebook server using the following URL: [http://127.0.0.1:8888/lab?token=cav26](). In the folder notebooks you can open the file `Usage.ipynb`.
 
 Furthermore, you can also view all files in the artifact and all output generated in the `out/` folder in this interface.
 
