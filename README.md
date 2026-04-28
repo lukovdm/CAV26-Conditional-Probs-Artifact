@@ -7,7 +7,7 @@ Claimed badges: Available + Functional + Reusable
 Justification for the badges:
   * **Functional**:
     - We provide (1) the benchmarks, (2) scripts to rerun the experiments, (3) the raw data that we obtained from running the experiments, and (4) scripts to summarize the data as in the paper. All is available in a single docker container.  
-      Specifically: All experiments can be rerun in the docker file using three simple scripts and this raw data can be automatically formatted as presented in the paper.  The results in figures 2-4 and tables 2-4 can be replicated by following the full review steps outlined below. Table 1 is a hand combined version of tables 3 and 4. The main results can be obtained with a reduced benchmark suite.
+      Specifically: All experiments can be rerun in the docker file using three simple scripts and this raw data can be automatically formatted as presented in the paper.  The results in figures 2-4 and tables 2-4 can be reproduced by following the full review steps outlined below. Table 1 is a hand combined version of tables 3 and 4. The main results can be obtained with a reduced benchmark suite.
     - The full source code of the tools is attached with the artifact. The tools can be compiled by following the instructions available in their respective README files. We also provide a docker container with all tools already installed.
   * **Reusable**: 
     + Our algorithms as described in the paper are built into the existing tool Storm with its python bindings stormpy.
